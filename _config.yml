@@ -1,3 +1,4 @@
 theme: minima
+skin: dark
 minima:
-  skin: solarized
+  skin: dark
