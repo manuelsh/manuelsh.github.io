@@ -33,6 +33,16 @@ RUN apt-get update -y && \
         zlib1g-dev && \
     pip --no-cache-dir install --upgrade --break-system-packages nbconvert
 
+# install npm (needed for Prettier)
+RUN apt-get install -y npm
+
+# install prettier globally
+RUN npm install -g prettier
+
+
+# install the missing Prettier plugin for Liquid
+RUN npm install --save-dev @shopify/prettier-plugin-liquid
+
 # clean up
 RUN apt-get clean && \
     apt-get autoremove && \
