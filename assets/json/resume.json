@@ -218,8 +218,20 @@
   ],
   "languages": [
     {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
       "language": "English",
-      "fluency": "Native Speaker"
+      "fluency": "Full professional proficiency"
+    },
+    {
+      "language": "Catalan",
+      "fluency": "Limited working proficiency"
+    },
+    {
+      "language": "German",
+      "fluency": "Limited working proficiency"
     }
   ],
   "interests": [],
