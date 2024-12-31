@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "A collection of some of my projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
         },{id: "nav-cv",
           title: "cv",
           description: "Exported from my [LinkedIn profile](https://www.linkedin.com/in/manuelsh/)",
@@ -23,15 +30,26 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-a-post-with-images",
+        },{id: "post-normalization-in-tensorflow-speed-is-an-issue",
       
-        title: "a post with images",
+        title: 'Normalization in TensorFlow: speed is an issue <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
       
-      description: "this is what included images could look like",
+      description: "",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2015/images/";
+          window.open("https://medium.com/@mansanher/normalization-in-tensorflow-speed-is-an-issue-b8ae14336685?source=rss-45dc57f14df6------2", "_blank");
+        
+      },
+    },{id: "post-setting-up-your-gpu-tensorflow-platform",
+      
+        title: 'Setting up your GPU TensorFlow platform <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://medium.com/@mansanher/setting-up-your-gpu-tensorflow-platform-1ba2c8b533a?source=rss-45dc57f14df6------2", "_blank");
         
       },
     },{id: "post-fin-de-la-transmisión",
