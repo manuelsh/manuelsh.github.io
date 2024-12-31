@@ -45,72 +45,6 @@ ninja.data = [{
           window.open("https://inquietudes.wordpress.com/2008/07/20/fin-de-la-transmision/", "_blank");
         
       },
-    },{id: "post-creatividad",
-      
-        title: 'Creatividad <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "«La generosidad y la piedad pueden ser un gran combustible de la creatividad.» &amp;#8212; Florian Henckel von Donnersmarck, director y guionista de La Vida de los Otros.",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://inquietudes.wordpress.com/2008/06/28/creatividad/", "_blank");
-        
-      },
-    },{id: "post-verdad-psicoanalítica",
-      
-        title: 'Verdad psicoanalítica <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "«La verdadera patria del hombre es su infancia.» &amp;#8212; Rainer Maria Rilke",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://inquietudes.wordpress.com/2008/06/04/verdad-psicoanalitica/", "_blank");
-        
-      },
-    },{id: "post-demostración-de-fuerza",
-      
-        title: 'Demostración de fuerza <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "Según un antiguo manual de política internacional, hay tres tipos de acciones políticas: movimientos para cambiar el status quo, movimientos para mantenerlo y por último, demostraciones de fuerza, tales como ensayos o exhibiciones militares, que suelen provocar el recelo de los países rivales. El desfile militar ruso del 9 de Mayo puede sin duda englobarse dentro [&amp;#8230;]",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://inquietudes.wordpress.com/2008/05/10/demostracion-de-fuerza/", "_blank");
-        
-      },
-    },{id: "post-caja-autoconsciente",
-      
-        title: 'Caja autoconsciente <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "Vía: The Smoke Sellers.",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://inquietudes.wordpress.com/2008/05/03/caja-autoconsciente/", "_blank");
-        
-      },
-    },{id: "post-viejas-glorias",
-      
-        title: 'Viejas glorias <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "Mi viejo Commodore 64, ¡cuántas horas de diversión que me diste! Aquellos que se sientan nostálgicos podrán leer sobre la historia de los videojuegos en esta completa anotación: Historia de los Videojuegos.",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://inquietudes.wordpress.com/2008/04/30/viejas-glorias/", "_blank");
-        
-      },
-    },{id: "post-polifacético-dalí",
-      
-        title: 'Polifacético Dalí <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "Para muchos un artista genial, para algunos un vende humos: él es Salvador Dalí, uno de los primeros artistas que explotó su extravagante personalidad en los medios de masas. En el siguiente vídeo lo vemos en un programa de entretenimiento americano, en el que un grupo de personas con los ojos tapados tienen que adivinar [&amp;#8230;]",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://inquietudes.wordpress.com/2008/04/21/polifacetico-dali/", "_blank");
-        
-      },
     },{id: "post-la-materia-al-descubierto",
       
         title: 'La materia al descubierto <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
@@ -122,26 +56,92 @@ ninja.data = [{
           window.open("https://inquietudes.wordpress.com/2008/04/13/la-materia-al-descubierto/", "_blank");
         
       },
-    },{id: "post-está-lleno-de-estrellas",
+    },{id: "post-el-nacimiento-de-la-mecánica-cuántica",
       
-        title: 'Está lleno de estrellas <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        title: 'El nacimiento de la mecánica cuántica <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
       
-      description: "«Tras cada hombre viviente se encuentran treinta fantasmas, pues tal es la proporción numérica en que los muertos superan a los vivos. Desde el alba de los tiempos aproximadamente cien mil millones de seres humanos han transitado por el planeta Tierra. Y es en verdad un número interesante, pues por curiosa coincidencia hay aproximadamente cien [&amp;#8230;]",
+      description: "Cuando una teoría que intenta explicar la naturaleza comienza a dar resultados que no concuerdan con lo que medimos, ¡es un buen momento para cambiarla por otra nueva! Esta es la historia de cómo un truco matemático significó en realidad una nueva interpretación de la realidad: el nacimiento de la mecánica cuántica. Y ocurrió a [&amp;#8230;]",
       section: "Posts",
       handler: () => {
         
-          window.open("https://inquietudes.wordpress.com/2008/04/01/esta-lleno-de-estrellas/", "_blank");
+          window.open("https://inquietudes.wordpress.com/2008/02/23/el-nacimiento-de-la-mecanica-cuantica/", "_blank");
         
       },
-    },{id: "post-por-qué-son-tan-pequeños-los-átomos",
+    },{id: "post-entendiendo-la-entropía",
       
-        title: '¿Por qué son tan pequeños los átomos? <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        title: 'Entendiendo la entropía <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
       
-      description: "«Se han imaginado muchos ejemplos para familliarizar al público con esta idea, pero ninguno es más sorprendente que el empleado por Lord Kelvin: supongamos que pudiéramos marcar las moléculas de un vaso de agua; vertamos entonces el contenido del vaso en el océano y agitemos de forma que las moléculas marcadas se distribuyan uniformemente por [&amp;#8230;]",
+      description: "La entropía puede parecer un concepto misterioso y difícil de entender, que comúnmente se relaciona con el desorden. Sin embargo, si nos adentramos en el significado de éste, no sólo veremos que se entiende fácilmente, sino que además encierra una serie de sutilezas que lo hacen muy interesante. Antes de comenzar a explicar la entropía [&amp;#8230;]",
       section: "Posts",
       handler: () => {
         
-          window.open("https://inquietudes.wordpress.com/2008/03/27/%c2%bfpor-que-son-tan-pequenos-los-atomos/", "_blank");
+          window.open("https://inquietudes.wordpress.com/2008/01/27/entendiendo-la-entropia/", "_blank");
+        
+      },
+    },{id: "post-tautología",
+      
+        title: 'Tautología <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Es insulso no ser creativo. De hecho, lo es, por definición.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://inquietudes.wordpress.com/2008/01/07/tautologia/", "_blank");
+        
+      },
+    },{id: "post-distribución-de-visitas-de-inquietudes",
+      
+        title: 'Distribución de visitas de Inquietudes <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "En el post sobre el record de visitas de Agosto, mi hermano Dani me hizo un inspirador comentario que me llevó a la siguiente pregunta: ¿cómo se distribuyen las visitas a lo largo de los posts de Inquietudes? Con un poco de Excel y paciencia, obtuve la respuesta: ¿Qué significa esta gráfica? Aquí se representa [&amp;#8230;]",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://inquietudes.wordpress.com/2007/09/21/distribucion-de-visitas-de-inquietudes/", "_blank");
+        
+      },
+    },{id: "post-dulce-retorno",
+      
+        title: 'Dulce retorno <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Tras dos semanas de periplo centroeuropeo por la elegante Viena, la enigmática Praga y la robusta y nueva Berlín, aterrizo con fuerzas renovadas. No sabría decir qué ciudad me gustó más. Creo que lo mejor sería aprovechar cada una con su configuración de historias, personas y lugares: podría vivir y trabajar en Berlín, escribir una [&amp;#8230;]",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://inquietudes.wordpress.com/2007/08/22/retornando/", "_blank");
+        
+      },
+    },{id: "post-es-más-rentable-comprar-o-alquilar-un-piso",
+      
+        title: '¿Es más rentable comprar o alquilar un piso? <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Desde hace un tiempo, y ante el panorama que se presenta, me hago la siguiente pregunta: ¿es más rentable comprar o alquilar un piso? Para darle respuesta he construido una pequeña tabla con el Excel en la que comparo, año a año, los costes que se van acumulando por alquilar un piso, frente a los [&amp;#8230;]",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://inquietudes.wordpress.com/2007/06/24/%c2%bfes-mas-rentable-comprar-o-alquilar-un-piso/", "_blank");
+        
+      },
+    },{id: "post-inteligencia-artificial-con-google",
+      
+        title: '¿Inteligencia Artificial con Google? <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Imagínate un programa capaz de ordenar una serie de palabras en una frase con sentido. Por ejemplo; tú le introduces: «ti, pensando, en, estoy» y él es capaz de ordenarlas y decirte: «estoy pensando en ti». Llevo varios días aprendiendo a programar en Java, .NET y a utilizar API&amp;#8216;s para intentar hacer precisamente esto. Y [&amp;#8230;]",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://inquietudes.wordpress.com/2007/05/16/%c2%a1ordena-las-palabras/", "_blank");
+        
+      },
+    },{id: "post-el-paño-de-la-cocina",
+      
+        title: 'El paño de la cocina <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Inquietud doméstica, pero no banal. Veamos las siguientes opciones: 1. Escurrir el paño de la cocina con una mano. 2. Escurrir el paño con dos manos. ¿Cuál de estas dos es más efectiva? La respuesta, no evidente, es la 2: cada mano escurre medio paño, pues con el doble de esfuerzo que el anterior se [&amp;#8230;]",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://inquietudes.wordpress.com/2007/04/19/el-pano-de-la-cocina/", "_blank");
         
       },
     },{id: "news-a-simple-inline-announcement",
