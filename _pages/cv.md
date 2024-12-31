@@ -5,8 +5,7 @@ title: cv
 nav: true
 nav_order: 5
 cv_pdf: Manuel_Sanchez.pdf # you can also use external links here
-description:
+description: Exported from my [LinkedIn profile](https://www.linkedin.com/in/manuelsh/)
 toc:
   sidebar: left
 ---
-See below my CV, exported from my [LinkedIn profile](https://www.linkedin.com/in/manuelsh/)
