@@ -125,7 +125,7 @@ external_sources:
   - name: wordpress.com
     rss_url: https://inquietudes.wordpress.com/category/essentials/feed/
   - name: medium.com
-    url: https://medium.com/feed/@mansanher
+    rss_url: https://medium.com/feed/@mansanher
     # posts:
     #   - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
     #     published_date: 2024-05-14
@@ -150,7 +150,7 @@ collections:
     output: false
     permalink: /:collection/:title/
   projects:
-    output: false
+    output: true
     permalink: /:collection/:title/
 
 announcements:
