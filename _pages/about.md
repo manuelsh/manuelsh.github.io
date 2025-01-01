@@ -15,7 +15,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I currently work as Engineering Director of Machine Learning at [Adevinta](www.adevinta.com) in Barcelona, with the mission of accelerating the AI transformation of our marketplaces.
+I currently work as Engineering Director of Machine Learning at [Adevinta](https://www.adevinta.com) in Barcelona, with the mission of accelerating the AI transformation of our marketplaces.
 
 I have also worked at [Morgan Stanley](https://www.morganstanley.com/) in London and at [Procter & Gamble](https://us.pg.com/) in Barcelona.
 
