@@ -122,10 +122,12 @@ giscus:
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: wordpress.com
+  - name: Blog Inquietudes
     rss_url: https://inquietudes.wordpress.com/category/essentials/feed/
   - name: medium.com
     rss_url: https://medium.com/feed/@mansanher
+  - name: Mind Over Matters
+    rss_url: https://realmindovermatters.wordpress.com/feed/
     # posts:
     #   - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
     #     published_date: 2024-05-14
@@ -161,7 +163,7 @@ announcements:
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 8 # leave blank to include all the blog posts
+  limit: 10 # leave blank to include all the blog posts
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

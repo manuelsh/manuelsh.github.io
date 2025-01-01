@@ -8,6 +8,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
+    <p>mansanher@gmail.com</p>
     <p>Barcelona, Spain</p>
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -20,9 +21,9 @@ I have also worked at [Morgan Stanley](https://www.morganstanley.com/) in London
 
 I studied Theoretical Physics at [Imperial College London](https://www.imperial.ac.uk/theoretical-physics/) and in the [Universidad de La Laguna](https://www.ull.es/departamentos/fisica/).
 
-I do many other things in my free time, like occasionally teaching machine learning in a few universities, competing in [Kaggle](https://www.kaggle.com/manuelsh), contributing to [open source](https://github.com/huggingface/transformers/releases/tag/v4.46.0), writing, reading, etc. I am also lucky to be father of three kids.
+I do many other things in my free time, like occasionally teaching machine learning in a few universities, [coding](https://github.com/manuelsh), a bit of [Kaggle](https://www.kaggle.com/manuelsh), [writing](/blog), reading, etc. I am also lucky to be father of three amazing kids.
 
-I hope you find something interesting in this website.
+I hope you find something interesting here.
 
 <!-- ## selected projects
 
