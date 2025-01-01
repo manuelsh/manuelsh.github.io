@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-normalization-in-tensorflow-speed-is-an-issue",
+        },{id: "post-the-path-to-agi-quantifying-bottlenecks",
+      
+        title: 'The path to AGI: quantifying bottlenecks <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Scaling artificial intelligence to new heights comes with significant challenges, particularly in hardware, energy, and data availability. As we strive towards Artificial General Intelligence (AGI), the hurdles grow—from the immense GPU requirements to the daunting energy consumption and even the scarcity of high-quality training data. These obstacles are demanding, yet they are not insurmountable, paving the way for ambitious innovations and new solutions.",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://realmindovermatters.wordpress.com/2024/10/06/the-path-to-agi-quantifying-bottlenecks/", "_blank");
+        
+      },
+    },{id: "post-normalization-in-tensorflow-speed-is-an-issue",
       
         title: 'Normalization in TensorFlow: speed is an issue <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
       
