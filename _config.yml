@@ -205,6 +205,7 @@ exclude:
   - vendor
   - _bibliography
   - _about
+  - _posts/_drafts
 keep_files:
   - CNAME
   - .nojekyll
