@@ -21,7 +21,7 @@ I have also worked at [Morgan Stanley](https://www.morganstanley.com/) in London
 
 I studied Theoretical Physics at [Imperial College London](https://www.imperial.ac.uk/theoretical-physics/) and in the [Universidad de La Laguna](https://www.ull.es/departamentos/fisica/).
 
-I do many other things in my free time, like occasionally teaching machine learning in a few universities, [coding](https://github.com/manuelsh), a bit of [Kaggle](https://www.kaggle.com/manuelsh), [writing](/blog), reading, etc. I am also lucky to be father of three kids.
+I occasionally teach machine learning in a few places, do some [coding](https://github.com/manuelsh), a bit of [Kaggle](https://www.kaggle.com/manuelsh), [writing](/blog), reading, etc. I am also lucky to be father of three kids. 
 
 I hope you find something interesting here. Was tempted to add a picture of my cat, but I don't have one.
 
