@@ -63,19 +63,13 @@ Data preparation mainly means data acquisition, data transformation (deduplicati
 To acquire data, crawling is common. However, it’s [becoming harder to crawl data](https://www.dataprovenance.org/Consent_in_Crisis.pdf). Many websites are opting out or implementing anti crawlers protection, as shown in the figure below. Note that this will create a barrier to enter for new players. As Kyle Lo said: we are not running out of data, we are running out of _open_ data.
 
 <div class="row mt-3">
-
     <div class="col-sm mt-3 mt-md-0">
-
         {% include figure.liquid loading="eager" path="assets/img/blog_images/crawling_data.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
-
     </div>
-
 </div>
 
 <div class="caption">
-
     Longpre et. al.  2024.  Consent in Crisis: The Rapid Decline of the AI Data Commons. Data Provenance Initiative.
-
 </div>
 
 Crawling data from websites implies, for many of them, understanding the JavaScript logic, which in many cases is unique to the website. This can be challenging because each website may use different frameworks or obfuscation techniques, making it necessary to decipher custom implementations. For example, a site might load data dynamically through complex API calls embedded in asynchronous scripts, requiring tailored solutions for successful extraction. It also requires to parse the data from all the HTML, which is not easy. For PDF's or scanned documents is also difficult, as many tools are not able to parse the data correctly.
@@ -105,17 +99,13 @@ Pre-training, the process where you train a LLM on next token prediction with a 
 <div class="row mt-3">
 
     <div class="col-sm mt-3 mt-md-0">
-
         {% include figure.liquid loading="eager" path="assets/img/blog_images/LLM_hyperparameter_configuration.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
-
     </div>
 
 </div>
 
 <div class="caption">
-
     Different configurations of the hyperparameters (marked in red) can lead to successful models. From the tutorial authors.
-
 </div>
 
 In terms of scale the approximate good scaling law given by the [Chinchilla paper](https://arxiv.org/abs/2203.15556) (compute budget approximately 6 times the number of parameters by data tokens, and data tokens approx 20 times the number of parameters), although in practice everybody keeps training further.
@@ -123,19 +113,13 @@ In terms of scale the approximate good scaling law given by the [Chinchilla pape
 In terms of costs, the pre-training can be very expensive, as it is very intensive in computational resources. See for example the table below, by the authors of the tutorials: a 7b parameter model and 150B tokens (just above the Chinchilla paper budget), will cost approx $10k.
 
 <div class="row mt-3">
-
     <div class="col-sm mt-3 mt-md-0">
-
         {% include figure.liquid loading="eager" path="assets/img/blog_images/cost_of_LLM_training.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
-
     </div>
-
 </div>
 
 <div class="caption">
-
     Costs for different models and data sizes. From the tutorial authors.
-
 </div>
 
 Common positional embeddings today are [rotary positional embeddings](https://arxiv.org/abs/2104.09864) (RoPE) and the [SwiGLU activation](https://arxiv.org/abs/2002.05202v1), which, unlike ReLU activation, is smooth (differentiable) at zero.
@@ -173,9 +157,7 @@ Currently, in many open source LLMs, different process from [Reinforcement Learn
 <div class="row mt-3">
 
     <div class="col-sm mt-3 mt-md-0">
-
         {% include figure.liquid loading="eager" path="assets/img/blog_images/dpo_summary_from_paper.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
-
     </div>
 
 </div>
@@ -193,9 +175,7 @@ Currently, in many open source LLMs, different process from [Reinforcement Learn
 <div class="row mt-3">
 
     <div class="col-sm mt-3 mt-md-0">
-
         {% include figure.liquid loading="eager" path="assets/img/blog_images/RL_with+VR_schema.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
-
     </div>
 
 </div>
