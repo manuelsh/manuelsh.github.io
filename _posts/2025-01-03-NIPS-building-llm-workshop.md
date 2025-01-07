@@ -30,7 +30,7 @@ _styles: >
     text-align: center;
     font-size: 16px;
   }
-
+giscus_comments: true
 toc:
   - name: Data preparation
     subsections:
