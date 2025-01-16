@@ -50,7 +50,7 @@ toc:
   - name: Conclusions
 ---
 
-This post summarizes a very nice tutorial about building LLM, titled ["Opening the Language Model Pipeline: A Tutorial on Data Preparation, Model Training, and Adaptation"](https://neurips.cc/virtual/2024/tutorial/99526) ([slides](https://docs.google.com/presentation/d/179dpzWSQ9G7EAUlvaJdeE0av9PLuk9Rl33nfhHSJ4xI/edit#slide=id.g30a4c7e9678_0_0)). It was presented at NeurIPS 2024, by [Kyle Lo](https://kyleclo.com/), [Akshita Bhagia](https://akshitab.github.io/) and [Nathan Lambert](https://www.natolambert.com/), all from the [Allen Institute for AI](https://allenai.org/). I think it would be useful to share some of the main takeaways from the tutorial.
+This post summarizes a fanstic tutorial about building LLM, titled ["Opening the Language Model Pipeline: A Tutorial on Data Preparation, Model Training, and Adaptation"](https://neurips.cc/virtual/2024/tutorial/99526) ([slides](https://docs.google.com/presentation/d/179dpzWSQ9G7EAUlvaJdeE0av9PLuk9Rl33nfhHSJ4xI/edit#slide=id.g30a4c7e9678_0_0)). It was presented at NeurIPS 2024, by [Kyle Lo](https://kyleclo.com/), [Akshita Bhagia](https://akshitab.github.io/) and [Nathan Lambert](https://www.natolambert.com/), all from the [Allen Institute for AI](https://allenai.org/). I think it could be useful to share some of the main ideas.
 
 The process to build a Large Language Model is very involved, and the authors went through it end to end, providing many details and practical knowledge: starting with the data preparation, continuing wiht model training (also called pre-training), and adaptation (or post-training). Here I summarize the main takeaways from each part, with some additional notes added.
 

@@ -1,0 +1,41 @@
+---
+layout: distill
+title: Big ideas from NeurIPS 2024
+date: 2025-01-19 12:00:00
+description: NeurIPS 2024, the largest AI research conference, provides a glimpse into the next frontiers. Here are some of the most exciting ideas from the conference.
+tags: LLM, NeurIPS
+categories: NeurIPS
+# thumbnail: assets/img/9.jpg
+# giscus_comments: false
+# authors:
+#   - name: Manuel Sánchez Hernández
+#     url: "https://manuelsh.github.io/"
+#     affiliations:
+#       name: Adevinta
+#       url: "https://www.adevinta.com/"
+# Below is an example of injecting additional post-specific styles.
+# If you use this post as a template, delete this _styles block.
+_styles: >
+  .fake-img {
+    background: #bbb;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+  }
+  .fake-img p {
+    font-family: monospace;
+    color: white;
+    text-align: left;
+    margin: 12px 0;
+    text-align: center;
+    font-size: 16px;
+  }
+giscus_comments: true
+# toc:
+#   - name:
+#     subsections:
+#       - name:
+#     - name:
+#         subsections:
+#         - name:
+---
