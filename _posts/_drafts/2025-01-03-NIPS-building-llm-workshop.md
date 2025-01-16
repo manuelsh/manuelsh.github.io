@@ -222,4 +222,4 @@ The folks from the Allen Institute were very generous in sharing their knowledge
 
 I hope the video is shared soon in [the tutorial page](https://neurips.cc/virtual/2024/tutorial/99526).
 
-Edit: [Nathan Lambert](https://www.natolambert.com/) tells me that he re-recorded the last part of the tutorial, you can enjoy it here: [The state of post-training in 2025](https://www.interconnects.ai/p/the-state-of-post-training-2025).
+EDIT: 
