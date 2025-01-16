@@ -67,17 +67,6 @@ ninja.data = [{
           window.open("https://medium.com/@mansanher/setting-up-your-gpu-tensorflow-platform-1ba2c8b533a?source=rss-45dc57f14df6------2", "_blank");
         
       },
-    },{id: "post-fin-de-la-transmisión",
-      
-        title: 'FIN DE LA TRANSMISIÓN <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "Con este corto mensaje me despido de mi pequeña pero fiel audiencia. El motivo: no puedo dedicarme a este blog como él se merece. Es posible que, muy esporádicamente, escriba algo que piense que merezca la pena publicar; pero os aviso: será muy esporádicamente. Ahora no puedo asumir un nivel de compromiso mayor. Como dice [&amp;#8230;]",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://inquietudes.wordpress.com/2008/07/20/fin-de-la-transmision/", "_blank");
-        
-      },
     },{id: "post-la-materia-al-descubierto",
       
         title: 'La materia al descubierto <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
@@ -175,6 +164,17 @@ ninja.data = [{
       handler: () => {
         
           window.open("https://inquietudes.wordpress.com/2007/04/19/el-pano-de-la-cocina/", "_blank");
+        
+      },
+    },{id: "post-essentials",
+      
+        title: 'Essentials <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Habitualmente publico en Inquietudes todo aquello que me gusta y considero que puede interesar a otros. Sin embargo, hay algunas entradas que son&amp;#8230; como decirlo&amp;#8230; especiales. Bien porque aportan algo o bien porque los considero originales, esas entradas las voy a marcar con la categoría «essentials«, de manera que sólo escogiendo esa categoría podrás ver (y probar) el [&amp;#8230;]",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://inquietudes.wordpress.com/2007/04/14/essentials/", "_blank");
         
       },
     },{id: "news-a-simple-inline-announcement",
