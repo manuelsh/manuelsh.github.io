@@ -40,38 +40,110 @@ giscus_comments: true
 #         - name:
 ---
 
-[NeurIPS](https://neurips.cc/Conferences/2024) is widely considered _the_ major AI research conference. With over 16,000 participants, 56 workshops, countless parallel tracks, and a staggering 3,650 posters, it’s not just an event—it’s an intellectual marathon. This year, Vancouver, Canada, hosted it, and during six packed days, it offered a privileged vantage point into the state of the art in the field and their current challenges. While it’s impossible to capture its vast scope in a single post, here’s a glimpse of the most exciting ideas that stood out to me.
+[NeurIPS](https://neurips.cc/Conferences/2024) is widely considered _the_ major AI research conference. With over 16,000 participants, 56 workshops, countless parallel tracks, and a staggering 3,650 posters, it’s not just an event—it’s an intellectual marathon. This year 2024, Vancouver, Canada, hosted it, and during six packed days, it offered a privileged vantage point into the state of the art in the field and their current challenges. While it’s impossible to capture its vast scope in a single post, here’s a glimpse of the most exciting ideas that stood out to me.
 
 I will divide it into xxx main themes: [[[put them  here]]]
 
 ## Agents, the next frontier
 
-Many researchers agree that to bring intelligent systems to the next level one needs to focus on “Agents”, instead of just models (such as LLMs). This was mentioned by Ilya Sutskever in his presentations and there were many interesting presentations on the topic, including showcases of agentic libraries, like [Autogen](https://www.microsoft.com/en-us/research/project/autogen/), presented by Microsoft, and [Llama Stack](https://github.com/meta-llama/llama-stack), by the folks of Meta.
+Many researchers agree that to bring intelligent systems to the next level we need to focus on “Agents”, instead of just models (such as LLMs). This was mentioned by Ilya Sutskever in his presentations and there were many interesting presentations on the topic, including showcases of agentic libraries, like [Autogen](https://www.microsoft.com/en-us/research/project/autogen/), presented by Microsoft, and [Llama Stack](https://github.com/meta-llama/llama-stack), by the folks of Meta.
 
-[[[[[[CONTINUE HERE]]]]]]
+## Conquering human user interfaces
 
-## Conquering human UIs
-
-Very promising the [OmniParser method](https://microsoft.github.io/OmniParser/), also from Microsoft, which can be used to build agents able to interact with a screen or browser. In a future were our interactions with the digital world are intermediated by AI agents, these AI agents should be able at first, to interact with the content as we do, using a keyboard, a mouse or tapping in a screen to navigate through user interfaces.
-
-Now this is a problem with current models. GPT4 multimodal, for example, fails miserably on these tasks, and I’ve personally tested that myself. As an agent using a browser (easily done by asking the LLM to build code with [Selenium](https://www.selenium.dev/) or similar libraries after providing a parsed version of the html and an image of the page) it is really bad in basic tasks that are very easy to humans, like booking a hotel or a flight ticket. The accuracy
+Very promising the [OmniParser method](https://microsoft.github.io/OmniParser/), also from Microsoft, which can be used to build agents able to interact with a screen or browser. In a future where our interactions with the digital world are intermediated by AI agents, they should be able to interact with the content as we do, using keyboard, mouse or tapping in a screen to navigate through user interfaces.
 
 For example, as I have tested myself, giving the LLM the control of the mouse and keyboard and the ability to use a browser (easily done by asking the LLM to build code with [Selenium](https://www.selenium.dev/) or similar libraries), if you ask it to do certain tasks, like book a flight, fails miserably, with accuracies around 16% in the ScreenSpot benchmark.
 
-But if the model is supplemented with the input coming from Omniparser, this accuracy jumps to 73% on the same dataset. Though this increase is very significant, it has already been surpassed [by other models](https://paperswithcode.com/sota/natural-language-visual-grounding-on), which means that in less than one year, we will likely see AI operating seamlessly with the UI of our phones or computers.
+But if the model is supplemented with the input coming from Omniparser, this accuracy jumps to 73% on the same dataset. Though this increase is very significant, it has already been surpassed [by other models](https://paperswithcode.com/sota/natural-language-visual-grounding-on), which means that in less than one year, we will likely see AI operating seamlessly with the UI of our phones or computers as humans do.
 
-\[show screenshot of omniparser\]
+<div class="row mt-3">
+
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/blog_images/omniparser_example.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+
+</div>
+<div class="caption">
+
+    Example of the output of Omniparser from a screenshot with Google Slides.
+
+</div>
+
+
 
 ## Other useful resources about Agents
 
-The folks of Meta showed how to build agents with their [Llama Stack](https://github.com/meta-llama/llama-stack), providing also a great [notebook with many relevant examples](https://colab.research.google.com/drive/1F2ksmkoGQPa4pzRjMOE6BXWeOxWFIW6n#scrollTo=K4AvfUAJZOeS), including RAG evaluation with LLM as a judge.
+The folks of Meta showed how to build agents with their [Llama Stack](https://github.com/meta-llama/llama-stack), providing also a great [notebook with many relevant examples](https://colab.research.google.com/drive/1F2ksmkoGQPa4pzRjMOE6BXWeOxWFIW6n#scrollTo=K4AvfUAJZOeS), which includes RAG evaluation with LLM as a judge.
 
 A couple of highlights were their agentic proposed architecture where a central executor orchestrates everything, as shown in the image below. Just follow the numbers in order to better understand it.
 
-![][image1]  
-They also provided some hints on which model size to use for different tasks. I found the guide useful.
+<div class="row mt-3">
 
-![][image2]
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/blog_images/Meta_agentic_archirecture_proposal.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+
+</div>
+<div class="caption">
+
+    Architecture of an agent as proposed by Meta. Source: *Active Training: Building Agentic Apps with Llama 3.2 and Llama Stack. Neurips 2024.*
+
+</div>
+
+They also provided some hints on which model size to use for different tasks. I found the following table quite useful.
+
+| Model Size      | Recommendation                                                     | Use Cases                                                                                                   |
+|------------------|-------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| **1B (text-only)**  | Retrieval and summarization                                      | - Personal information management                                                                         |
+|                  |                                                                   | - Multilingual knowledge retrieval                                                                        |
+|                  |                                                                   | - Rewriting tasks running locally on edge                                                                |
+| **3B (text-only)**  | Query and prompt rewriting, mobile AI-powered writing assistant | - Tool use                                                                                                 |
+| **8B (text-only)**  | Ideal for limited computational power and resources, faster training times | - Text summarization                                                                                     |
+|                  |                                                                   | - Text classification                                                                                     |
+|                  |                                                                   | - Sentiment analysis                                                                                      |
+|                  |                                                                   | - Language translation                                                                                    |
+|                  |                                                                   | - Entity recognition                                                                                      |
+| **11B (text + image input)** | Image understanding, visual reasoning                                  | - Image captioning                                                                                        |
+|                  |                                                                   | - Image-text retrieval                                                                                    |
+|                  |                                                                   | - Visual grounding                                                                                        |
+|                  |                                                                   | - Visual question answering and reasoning                                                                 |
+|                  |                                                                   | - Document visual question answering                                                                      |
+| **70B (text-only)** | Where performance meets efficiency: content creation, conversational AI, language understanding, research and development, enterprise-level applications | - Text summarization + accuracy                                                                           |
+|                  |                                                                   | - Sentiment analysis + nuanced reasoning                                                                  |
+|                  |                                                                   | - Code generation                                                                                         |
+|                  |                                                                   | - Tool use                                                                                                |
+|                  |                                                                   | - Dialog systems                                                                                          |
+|                  |                                                                   | - Language modeling                                                                                       |
+|                  |                                                                   | - Following instructions                                                                                  |
+| **90B (text + image input)** | Image understanding, visual reasoning                                  | - Image captioning                                                                                        |
+|                  |                                                                   | - Image-text retrieval                                                                                    |
+|                  |                                                                   | - Visual grounding                                                                                        |
+|                  |                                                                   | - Visual question answering and reasoning                                                                 |
+|                  |                                                                   | - Document visual question answering                                                                      |
+| **405B (text-only)** | Enterprise-level applications, research and development, synthetic data generation, model distillation | - Long-form text generation                                                                               |
+|                  |                                                                   | - Advanced reasoning and decision-making                                                                  |
+|                  |                                                                   | - Machine translation                                                                                     |
+|                  |                                                                   | - Enhanced contextual understanding                                                                       |
+|                  |                                                                   | - Better handling of ambiguity, uncertainty                                                               |
+|                  |                                                                   | - Increased creativity and diversity                                                                      |
+|                  |                                                                   | - Multilingual translation                                                                                |
+|                  |                                                                   | - Tool use                                                                                                |
+
+
+<div class="row mt-3">
+
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/blog_images/Meta_model_sizes_and_usages_table.JPG" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+
+</div>
+<div class="caption">
+
+    Architecture of an agent as proposed by Meta. Source: *Active Training: Building Agentic Apps with Llama 3.2 and Llama Stack. Neurips 2024.*
+
+</div>
+
+[[[[[[CONTINUE HERE]]]]]]
 
 # Building and improving Large Language Models
 
