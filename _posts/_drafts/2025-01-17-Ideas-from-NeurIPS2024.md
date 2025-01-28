@@ -118,10 +118,9 @@ One of the standout topics at NeurIPS this year was the process of building and 
 
 Many speakers touched on the topic of data scarcity. Kyle Lo from AllenAI mentioned that we are not running out of data, but of _open_ data. Ilya Sutskever, in his remarks upon receiving the “Test of Time Award” for his paper, described data as the “fossil fuel of AI,” noting that while compute continues to grow, data is not growing at the same pace. He suggested that we should be looking at “synthetic data,” inference time compute, and agents as potential solutions.
 
-
 This was challenged by Jason Weston (vibrant multi-colored hair today), who pointed out that significant portion of the training of LLMs in frontier companies relies on "closed data," which they possess and are generating in substantial quantities. He expressed skepticism about the severity of the data scarcity issue, suggesting that Ilya's perspective might be influenced by his recent departure from OpenAI and the resulting loss of access to that data.
 
-It is worth mentioning the work of Epoch AI on precisely this topic. In their [Will We Run Out of Data?](https://epoch.ai/blog/will-we-run-out-of-data-limits-of-llm-scaling-based-on-human-generated-data) paper they project that human public text, estimated in 300 trillion tokens, will be fully utilized between 2026 and 2032, or earlier (see chart below). 
+It is worth mentioning the work of Epoch AI on precisely this topic. In their [Will We Run Out of Data?](https://epoch.ai/blog/will-we-run-out-of-data-limits-of-llm-scaling-based-on-human-generated-data) paper they project that human public text, estimated in 300 trillion tokens, will be fully utilized between 2026 and 2032, or earlier (see chart below).
 
 <div class="row mt-3">
 
@@ -144,7 +143,6 @@ It's clear that other alternatives to the Transformer architecture are standing 
 
 Also, Reinforcement Learning with Human Feedback (or RLHF), which is the method used by OpenAI ChatGPT to make a language model a chatbot, is being substituted or supplemented by many other methods, like DPO, which is significantly easier and performs at a similar level. More details in my summary on [Opening the LLM pipeline](https://manuelsh.github.io/blog/2025/NIPS-building-llm-workshop/).
 
-
 # Measuring the performance of foundation models
 
 Although benchmarking models is part of building models, this topic is so relevant that requires its own section. Benchmarking is important for several reasons: to understand how good a model is but also to build more intelligent models.
@@ -157,7 +155,7 @@ Intelligence definition is ellusive, that is why those benchmarks that are easy 
 
 The performance of humansin the ARC test is very high, around 90% accuracy, while at the time of Neurips 2024 the best model was at 53%. Interestingly, less than a week after François Chollet presentation in NeurIPS, OpenAI announced that their [new o3 model](https://community.openai.com/t/day-12-of-shipmas-new-frontier-models-o3-and-o3-mini-announcement/1061818) is able to reach to 76% in ARC. A great example of how quickly the field moves!
 
-[Melanie Mitchell](https://melaniemitchell.me/), from the Santa Fe Institute, also showed during a [[[[tutorial/workshop/presentation on....]]]] how current state of the art LLM  fail when performing some trivial modifications on benchmarks. She mentioned an example of the insightful paper [Reasoning or Reciting?](https://arxiv.org/pdf/2307.02477) where in a Python code benchmark, which GPT4 can do very well, just by introducing a simple change in the way the language work ("now lists index start with 1 and not zero) the model fails misserably. See the chart below. This provides a good glimpse on how far are our current best transformer models to be considered AGI.
+[Melanie Mitchell](https://melaniemitchell.me/), from the Santa Fe Institute, also showed during a [[[[tutorial/workshop/presentation on....]]]] how current state of the art LLM fail when performing some trivial modifications on benchmarks. She mentioned an example of the insightful paper [Reasoning or Reciting?](https://arxiv.org/pdf/2307.02477) where in a Python code benchmark, which GPT4 can do very well, just by introducing a simple change in the way the language work ("now lists index start with 1 and not zero) the model fails misserably. See the chart below. This provides a good glimpse on how far are our current best transformer models to be considered AGI.
 
 [[[put image from paper]]]
 
@@ -166,20 +164,52 @@ In reality, building "easy for humans, hard for AI" kind of benchmarks are key t
 ## EUREKA: A comprehensive framework to evaluate LLMs
 
 The folks from Microsoft presented a comprehensive and open source framework to evaluate multimodal and language models called [Eureka](https://www.microsoft.com/en-us/research/blog/eureka-evaluating-and-understanding-progress-in-ai/), which assesses the performance of models across several dimensions. Some of the main conclussions of their evaluation of 14 large foundation models are:
+
 - Models like Claude 3.5 Sonnet, GPT-4o 2024-05-13, and Llama 3.1 405B show distinct strengths in specific tasks but are not universally superior across all benchmarks.
-This highlights the need for task-specific analysis rather than assuming a model's overall superiority.
+  This highlights the need for task-specific analysis rather than assuming a model's overall superiority.
 - Current AI models struggle significantly with multimodal tasks, particularly those requiring detailed image understanding and spatial reasoning. For example, all models perform poorly on Object Detection.
-In the folllowing chart you can see the results. They are quite insightful!
+  In the folllowing chart you can see the results. They are quite insightful!
 
 [[[put image from paper]]]
 
-# Representation learning
+# Unified Representations, shedding light on the black box
 
-- Very cool workshop on representation learning where they have evidence about “different neural networks, trained different, including human neural networks, converge towards the same way of representing the world”.
+Significant progress have been done on the topic of understanding how neural networks (human and artificial) encodes and process information. Several illuminating ideas around the topic were presented in the [UniReps Workshop](https://unireps.org/2024/) at NeurIPS 2024.
 
-# AI Safety
+## The platonic representation
 
-Main idea: we can get all the benefits of AI without the risks by not doing agents but special purpose models.
+We have substantial evidence that different neural networks, including artificial and human neural networks, converge towards the same way of representing the world. This evidence comes by looking at the multidimensional spaces that the activations of the layers of neural networks produce (an embedding) when a concept is used as input. In [The Platonic Representation Hypothesis](https://arxiv.org/abs/2405.07987) paper, authors observed that the spaces generated by embeddings of different models have very similar characteristics: for example the distances between points of the same concepts (e.g. distance between the concepts _pear_ and _giraffe_) in a language model or in a vision model remain very similar, and this similarity increases the better the models are. See chart below.
+
+<div class="row mt-3">
+
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/blog_images/alignment_unified_representations_neurips_2024.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+
+</div>
+<div class="caption">
+    The better the models, the more aligned are their representations. Source: Phillip Isola, Unireps, NeurIPS 2024
+</div>
+
+Not only that, but there is evidence that the same happens with the activation of our neurons in our brain. They also generate a space that is similar to the ones of the frontier models, and we can even use LLM to interpret the output of this human brain activations.
+
+A profound question arises: is there a unique _platonic representation_ that models and humans converge to? Knowing it could help building more intelligent models. If you find this material interesting, I recommend reading [the summary of the paper](https://phillipi.github.io/prh/#what_converging_to).
+
+Having internal representations encoded as perpendicular vectors also leads to conclude that a neural computation is a transformation of a representation into another representation. That's the job of the neural network weight and biases, to transform the input representation (usually in the form of learned embeddings) into another representation that is useful for the task at hand. Incredible the power of linear algebra and some non-linearities!
+
+## Reverse engineerig intelligence
+
+Many other talks in this workshop where about gaining a further understanding of the mechanics of the brain and neural networks. For example, they discovered that[ middle layers of LLMs are better to predict](https://arxiv.org/pdf/2409.05771) the concepts behind human brain activations. There is evidence that LLMs, in order to predict the next token, generate first an internal representation that encodes many functions of the language (which is in the middle layers), which is richer, versus the represenation that just predict the next token, in the final layers.
+
+There is also strong evidence that neural networks encode information in "directions" in a multidimensional space, where each useful abstract concept (for example, the language a text is written in) is encoded in a different direction, each one "almost" perpendicular to each other, which is possible in a multidimensional space (in a 3d space, there are only 3 dimenspossible perpendicular vectors, but in higher dimensions space, if we relax the constraint of perpendicularity from 90 degrees angle to 89-91 degrees, the amount of almost perpendicular vectors grow exponentially with the number of dimensions). Highly recommended to watch this lesson of ThreeBlueOneBrown on [How might LLM store facts](https://www.3blue1brown.com/lessons/mlp). In fact, watch all the Deep Learning videos of this channel, they are the best I've seen explaining the concepts of the transformer.
+
+Very interesting also the Mechanistic Interpretability talk of [Neel Nanda](https://www.neelnanda.io/), from DeepMind. Mechanistic Interpretability aspires to reverse engineer neural networks, working on the hypothesis that models learn human comprehensible structures that can be understood. He showed an example where they are able to identify a "direction in space" that encodes refusal, i.e. when the model refuses to speak about certain topic, usually because of the safety constraints. Knowing this direction, they are able to deactivate it, just by remving that vector. What is very interesting is that this refusal direction is in every model they checked, almost universal.
+
+One clear application of better understanding the inner workings of neural networks is to improve their safety. Which lead us to the next topic.
+
+# AI Safety: toolsTools, not agents
+
+Turing awarded [Youshua Bengio](https://yoshuabengio.org/) and [Max Tegmark](https://physics.mit.edu/faculty/max-tegmark/) participated in a very relevant workshop around AI safety. Their main point was that we can have the benefits of AI without the risks of AI, by not doing autonomous agents but special purpose models, that we can use as tools to, for example, advance science. A great example of this is the [AlphaFold](https://deepmind.com/research/case-studies/alphafold) model, which is a tool that helps scientists to predict the 3D structure of proteins; key for drug discovery and currently widely used.
 
 # Practical applications
 
