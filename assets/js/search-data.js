@@ -100,28 +100,6 @@ ninja.data = [{
           window.open("https://inquietudes.wordpress.com/2008/01/27/entendiendo-la-entropia/", "_blank");
         
       },
-    },{id: "post-tautología",
-      
-        title: 'Tautología <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "Es insulso no ser creativo. De hecho, lo es, por definición.",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://inquietudes.wordpress.com/2008/01/07/tautologia/", "_blank");
-        
-      },
-    },{id: "post-distribución-de-visitas-de-inquietudes",
-      
-        title: 'Distribución de visitas de Inquietudes <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "En el post sobre el record de visitas de Agosto, mi hermano Dani me hizo un inspirador comentario que me llevó a la siguiente pregunta: ¿cómo se distribuyen las visitas a lo largo de los posts de Inquietudes? Con un poco de Excel y paciencia, obtuve la respuesta: ¿Qué significa esta gráfica? Aquí se representa [&amp;#8230;]",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://inquietudes.wordpress.com/2007/09/21/distribucion-de-visitas-de-inquietudes/", "_blank");
-        
-      },
     },{id: "post-dulce-retorno",
       
         title: 'Dulce retorno <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
@@ -155,26 +133,48 @@ ninja.data = [{
           window.open("https://inquietudes.wordpress.com/2007/05/16/%c2%a1ordena-las-palabras/", "_blank");
         
       },
-    },{id: "post-el-paño-de-la-cocina",
+    },{id: "post-nueva-semilla",
       
-        title: 'El paño de la cocina <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        title: 'Nueva Semilla <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
       
-      description: "Inquietud doméstica, pero no banal. Veamos las siguientes opciones: 1. Escurrir el paño de la cocina con una mano. 2. Escurrir el paño con dos manos. ¿Cuál de estas dos es más efectiva? La respuesta, no evidente, es la 2: cada mano escurre medio paño, pues con el doble de esfuerzo que el anterior se [&amp;#8230;]",
+      description: "El Universo llegó a su final: el estado de máxima entropía y homogeneidad. Y Dios dijo: «Randomize Timer«",
       section: "Posts",
       handler: () => {
         
-          window.open("https://inquietudes.wordpress.com/2007/04/19/el-pano-de-la-cocina/", "_blank");
+          window.open("https://inquietudes.wordpress.com/2007/03/17/nueva-semilla/", "_blank");
         
       },
-    },{id: "post-essentials",
+    },{id: "post-google-trends-como-termómetro-social",
       
-        title: 'Essentials <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        title: 'Google Trends como termómetro social <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
       
-      description: "Habitualmente publico en Inquietudes todo aquello que me gusta y considero que puede interesar a otros. Sin embargo, hay algunas entradas que son&amp;#8230; como decirlo&amp;#8230; especiales. Bien porque aportan algo o bien porque los considero originales, esas entradas las voy a marcar con la categoría «essentials«, de manera que sólo escogiendo esa categoría podrás ver (y probar) el [&amp;#8230;]",
+      description: "Kikollan, de SalaBecarios, utiliza el Google Trends para analizar el interés de la gente sobre la burbuja immobiliaria con los siguientes resultados: Dejando aparte las curiosas conclusiones que se pueden hacer sore los resultados de esta gráfica, creo muy prometedor el hecho de poder usar Google Trends como termómetro para medir las inquietudes sociales y [&amp;#8230;]",
       section: "Posts",
       handler: () => {
         
-          window.open("https://inquietudes.wordpress.com/2007/04/14/essentials/", "_blank");
+          window.open("https://inquietudes.wordpress.com/2007/02/25/google-trends-como-termometro-social/", "_blank");
+        
+      },
+    },{id: "post-pobre-rico-salchicha-baile",
+      
+        title: '¿Pobre≠Rico≠Salchicha≠Baile? <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "Realmente, los estudios de conectividad del diccionario de sinónimos tienen una «trampa»: las palabras polisémicas. Éstas son las verdaderas conectoras, pues te permiten saltar de un significado a otro. Por ejemplo, la palabra masa, te permitiría ir desde la palabra «Peso» hasta la palabra «Pasta»: «Peso» -&amp;#62; «Masa» -&amp;#62; «Pasta», puesto que tiene dos significados [&amp;#8230;]",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://inquietudes.wordpress.com/2006/09/12/%c2%bfpobre%e2%89%a0rico%e2%89%a0salchicha%e2%89%a0baile/", "_blank");
+        
+      },
+    },{id: "post-pobre-rico-salchica-baile",
+      
+        title: 'Pobre=Rico=Salchica=Baile <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+      
+      description: "El post anterior me dejó una pregunta en la mente: Si, escogiendo una palabra (pobre) soy capaz, mediante sinónimos, de llegar a su antónima (rico) ¿hasta qué punto están conectadas las palabras entre sí en un diccionario de sinónimos? Según han estudiado algunos autores, el diccionario de sinónimos es una red de mundo pequeño con [&amp;#8230;]",
+      section: "Posts",
+      handler: () => {
+        
+          window.open("https://inquietudes.wordpress.com/2006/09/04/pobrericosalchicabaile/", "_blank");
         
       },
     },{id: "news-a-simple-inline-announcement",
