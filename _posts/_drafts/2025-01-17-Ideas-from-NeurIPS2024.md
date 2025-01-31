@@ -2,9 +2,9 @@
 layout: distill
 title: Ideas from NeurIPS 2024
 date: 2025-01-17 12:00:00
-description: NeurIPS 2024, the largest AI research conference, provides a glimpse into the next frontiers. Here are some of the most exciting ideas from the conference.
+description: NeurIPS 2024, the largest AI research conference, provides a glimpse into the next frontiers. Here are some of the most exciting ideas presented.
 tags: LLM, NeurIPS
-categories: NeurIPS, LLM
+categories: NeurIPS, LLM, Generative AI, Machine Learning
 # thumbnail: assets/img/9.jpg
 # giscus_comments: false
 # authors:
@@ -39,27 +39,34 @@ toc:
   - name: Building and improving Large Language Models
     subsections:
       - name: Are we running out of data?
-
+      - name: Architectures and RL methods
+  - name: Measuring the performance of foundation models
+    subsections:
+      - name: Benchmarks to advance AI
+      - name: "EUREKA: A comprehensive framework to evaluate LLMs"
+  - name: Unified Representations, shedding light on the black box
+    subsections:
+      - name: The platonic representation
+      - name: Reverse engineerig intelligence
+  - name: AI Safety, advocating for tools, not agents
     # - name:
     #     subsections:
     #     - name:
 ---
 
-[NeurIPS](https://neurips.cc/Conferences/2024) is widely considered _the_ major AI research conference. With over 16,000 participants, 56 workshops, countless parallel tracks, and a staggering 3,650 posters, it’s not just an event—it’s an intellectual marathon. This year 2024, Vancouver, Canada, hosted it, and during six packed days, it offered a privileged vantage point into the state of the art in the field and their current challenges. While it’s impossible to capture its vast scope in a single post, here’s a glimpse of the most exciting ideas that stood out to me.
+[NeurIPS](https://neurips.cc/Conferences/2024) is widely considered _the_ major AI research conference. With over 16,000 participants, 56 workshops, countless parallel tracks, and a staggering 3,650 posters, this event is more than just a conference: it offers a privileged vantage point into the state of the art in the field and their current challenges. The 2024 edition was hosted in Vancouver, during 6 packed days.
 
-I will divide it into xxx main themes: [[[put them  here]]]
+While it’s impossible to capture its vast scope in a single post, here’s a glimpse of the most exciting ideas that stood out to me.
 
 # Agents, the next frontier
 
-Many researchers agree that to bring intelligent systems to the next level we need to focus on “Agents”, instead of just models (such as LLMs). This was mentioned by Ilya Sutskever in his presentations and there were many interesting presentations on the topic, including showcases of agentic libraries, like [Autogen](https://www.microsoft.com/en-us/research/project/autogen/), presented by Microsoft, and [Llama Stack](https://github.com/meta-llama/llama-stack), by the folks of Meta.
+It’s clear that to bring intelligent systems to the next level we need to focus on “Agents”, instead of just models (such as LLMs). See for example the latest releases of the frontier labs, such as o1 from OpenAI, DeepSeek, etc, where agentic methods like Chain of Thought are becoming more common.
+
+There were many interesting presentations on the topic, including showcases of agentic libraries, such as[Autogen](https://www.microsoft.com/en-us/research/project/autogen/), presented by Microsoft, or [Llama Stack](https://github.com/meta-llama/llama-stack), by the folks of Meta.
 
 ## Conquering human user interfaces
 
-Very promising the [OmniParser method](https://microsoft.github.io/OmniParser/), also from Microsoft, which can be used to build agents able to interact with a screen or browser. In a future where our interactions with the digital world are intermediated by AI agents, they should be able to interact with the content as we do, using keyboard, mouse or tapping in a screen to navigate through user interfaces.
-
-For example, as I have tested myself, giving the LLM the control of the mouse and keyboard and the ability to use a browser (easily done by asking the LLM to build code with [Selenium](https://www.selenium.dev/) or similar libraries), if you ask it to do certain tasks, like book a flight, fails miserably, with accuracies around 16% in the ScreenSpot benchmark.
-
-But if the model is supplemented with the input coming from Omniparser, this accuracy jumps to 73% on the same dataset. Though this increase is very significant, it has already been surpassed [by other models](https://paperswithcode.com/sota/natural-language-visual-grounding-on), which means that in less than one year, we will likely see AI operating seamlessly with the UI of our phones or computers as humans do.
+[OmniParser](https://microsoft.github.io/OmniParser/), also from Microsoft, is a promising framework that provides more information to a multimodal LLM about the content of a screen or browser, drastically facilitating the interaction of the model with user interfaces. Solving this problem is key to have true agents in our phones or computers.
 
 <div class="row mt-3">
 
@@ -73,6 +80,10 @@ But if the model is supplemented with the input coming from Omniparser, this acc
     Example of the output of Omniparser from a screenshot with Google Slides.
 
 </div>
+
+The current limitation, as I have tested myself, is that providing raw screenshots or html to a multimodal LLM such as GPT4V and enabling it to control the mouse and keyboard it really underperforms in general UI oriented tasks (e.g. book a flight or a hotel). This is reflected in the low accuracy on GUI task oriented benchmarks, such as the [ScreenSpot benchmark](https://paperswithcode.com/dataset/screenspot), where GPT4V arrives to 16% accuracy.
+
+However, if the model is supplemented with the input coming from Omniparser, accuracy jumps to 73% on the same dataset. This has been surpassed [by other models](https://paperswithcode.com/sota/natural-language-visual-grounding-on), which means that in less than one year, we will likely see AI operating seamlessly with the UI of our phones or computers as humans do.
 
 ## Other useful resources about Agents
 
@@ -94,7 +105,7 @@ A couple of highlights were their agentic proposed architecture where a central 
 
 </div>
 
-They also provided some hints on which model size to use for different tasks. I found the following table quite useful.
+They also provided some hints on which model size to use for different tasks. The following table is quite useful.
 
 <div class="row mt-3">
 
@@ -118,9 +129,9 @@ One of the standout topics at NeurIPS this year was the process of building and 
 
 Many speakers touched on the topic of data scarcity. Kyle Lo from AllenAI mentioned that we are not running out of data, but of _open_ data. Ilya Sutskever, in his remarks upon receiving the “Test of Time Award” for his paper, described data as the “fossil fuel of AI,” noting that while compute continues to grow, data is not growing at the same pace. He suggested that we should be looking at “synthetic data,” inference time compute, and agents as potential solutions.
 
-This was challenged by Jason Weston (vibrant multi-colored hair today), who pointed out that significant portion of the training of LLMs in frontier companies relies on "closed data," which they possess and are generating in substantial quantities. He expressed skepticism about the severity of the data scarcity issue, suggesting that Ilya's perspective might be influenced by his recent departure from OpenAI and the resulting loss of access to that data.
+This was challenged by Jason Weston, who pointed out that significant portion of the training of LLMs in frontier companies relies on "closed data," which they possess and are generating in substantial quantities. He expressed skepticism about the severity of the data scarcity issue, suggesting that Ilya's perspective might be influenced by his recent departure from OpenAI and the resulting loss of access to that data.
 
-It is worth mentioning the work of Epoch AI on precisely this topic. In their [Will We Run Out of Data?](https://epoch.ai/blog/will-we-run-out-of-data-limits-of-llm-scaling-based-on-human-generated-data) paper they project that human public text, estimated in 300 trillion tokens, will be fully utilized between 2026 and 2032, or earlier (see chart below).
+It is worth mentioning the work of Epoch AI. In their [Will We Run Out of Data?](https://epoch.ai/blog/will-we-run-out-of-data-limits-of-llm-scaling-based-on-human-generated-data) paper they project that human public text, estimated in 300 trillion tokens, will be fully utilized between 2026 and 2032, or earlier (see chart below).
 
 <div class="row mt-3">
 
@@ -133,33 +144,53 @@ It is worth mentioning the work of Epoch AI on precisely this topic. In their [W
     Source: Epoch AI, June 2024
 </div>
 
-Epoch AI focus here on textual data. However, a significant portion of data exists in other formats, such as images, audio, and video, which can also be used for training. While computational power grows exponentially and data increases at a linear rate, advancements in algorithms and methods continue to become more efficient. Furthermore, alternatives like self-distillation (model generates data and trains with it), [Constitutional AI](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback), synthetic data, and private datasets reduce this open data reliance. For all these reasons I don't think data will be a blocker for the next years.
+Epoch AI focuses in this study on textual data. However, a significant portion of data exists in other formats, such as images, audio, and video, which can also be used for training.
 
-Finally, consider that the most intelligent entities we know, humans, process an estimated 50-100 terabytes of raw data annually (through all our senses) with brain that consumes only ~20 Watts. This sets a benchmark on the efficiency of intelligence.
+While computational power grows exponentially and data increases at a linear rate, algorithms and methods continue to become more efficient. Furthermore, alternatives like self-distillation (model generates data and trains with it), [Constitutional AI](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback), synthetic data, and private datasets reduce this reliance on high data volume. For all these reasons I don't think data will be the main bottleneck.
 
 ## Architectures and RL methods
 
-It's clear that other alternatives to the Transformer architecture are standing out, such us [Mamba](https://arxiv.org/abs/2312.00752) or [xLSTM](https://arxiv.org/abs/2405.04517). These architectures are more efficient at inference, as the computing doesn't grow quadratically with the number of input tokens, while they can parallelize the prediction of the next token in the training, like the Transformer does, instead of sequentially like previous architectures (RNN, LSTM…). xLSTM was presented by Hochreiter, creator of the LSTM architecture, which admitted that is very similar to Mamba: “architectures converge”. However, although they were mentioned many times, they are not clear winners yet.
+[Mamba](https://arxiv.org/abs/2312.00752) or [xLSTM](https://arxiv.org/abs/2405.04517). These architectures are more efficient that the Transformer at inference, as the computing doesn't grow quadratically with the number of input tokens, while they can parallelize the prediction of the next token in the training, like the Transformer does, instead of sequentially like previous architectures (RNN, LSTM…).
+
+xLSTM was presented by Hochreiter, creator of the LSTM architecture, which admitted that is very similar to Mamba: “architectures converge”. However, although they were mentioned many times, they are not clear winners yet.
 
 Also, Reinforcement Learning with Human Feedback (or RLHF), which is the method used by OpenAI ChatGPT to make a language model a chatbot, is being substituted or supplemented by many other methods, like DPO, which is significantly easier and performs at a similar level. More details in my summary on [Opening the LLM pipeline](https://manuelsh.github.io/blog/2025/NIPS-building-llm-workshop/).
 
 # Measuring the performance of foundation models
 
-Although benchmarking models is part of building models, this topic is so relevant that requires its own section. Benchmarking is important for several reasons: to understand how good a model is but also to build more intelligent models.
+Although benchmarking models is part of building models, this topic is so important that requires its own section. Benchmarking is not only important to understand how well a model performs but building relevant benchmarks is key to advance the field.
 
 ## Benchmarks to advance AI
 
-Intelligence definition is ellusive, that is why those benchmarks that are easy for humans but hard for AI models are very relevant. One of them is [ARC](https://arcprize.org/), which requires the ML model to solve a series of puzzles, each one with a different logic, like the one shown below.
+The definition of intelligence is ellusive, that is why those benchmarks that are easy for humans but hard for AI models are critical, as they establish a new baseline to beat. One of them is [ARC](https://arcprize.org/), which requires the ML model to solve a series of puzzles, each one with a different logic, like the one shown below.
 
-[[[[[ADD EXAMPLE!!!]]]]]
+<div class="row mt-3">
 
-The performance of humansin the ARC test is very high, around 90% accuracy, while at the time of Neurips 2024 the best model was at 53%. Interestingly, less than a week after François Chollet presentation in NeurIPS, OpenAI announced that their [new o3 model](https://community.openai.com/t/day-12-of-shipmas-new-frontier-models-o3-and-o3-mini-announcement/1061818) is able to reach to 76% in ARC. A great example of how quickly the field moves!
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/blog_images/ARC-benchmark_example.svg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
 
-[Melanie Mitchell](https://melaniemitchell.me/), from the Santa Fe Institute, also showed during a [[[[tutorial/workshop/presentation on....]]]] how current state of the art LLM fail when performing some trivial modifications on benchmarks. She mentioned an example of the insightful paper [Reasoning or Reciting?](https://arxiv.org/pdf/2307.02477) where in a Python code benchmark, which GPT4 can do very well, just by introducing a simple change in the way the language work ("now lists index start with 1 and not zero) the model fails misserably. See the chart below. This provides a good glimpse on how far are our current best transformer models to be considered AGI.
+</div>
+<div class="caption">
+    Example of an ARC puzzle. Source: https://lab42.global/arc/
+</div>
 
-[[[put image from paper]]]
+The performance of humans in the ARC test is very high, around 90% accuracy according to the ARC team, while at the time of Neurips 2024 the best model was at 53%. Interestingly, less than a week after François Chollet presentation in NeurIPS, OpenAI announced that their [new o3 model](https://community.openai.com/t/day-12-of-shipmas-new-frontier-models-o3-and-o3-mini-announcement/1061818) is able to reach to 76% in ARC. A great example of how quickly the field moves!
 
-In reality, building "easy for humans, hard for AI" kind of benchmarks are key to the development of more intelligent models. Indeed, as Fei Fei pointed out in her inspiring presentation, building the ImageNet benchmark was key for the rebirth of neural networks in 2012, and the newly coined term "Deep Learning".
+[Melanie Mitchell](https://melaniemitchell.me/), from the Santa Fe Institute, also showed during a workshop about [System-2 reasoning](https://en.wikipedia.org/wiki/Dual_process_theory) how current state of the art LLMs fail when some benchmarks are modified in trivial ways. She mentioned an example of the paper [Reasoning or Reciting?](https://arxiv.org/pdf/2307.02477) where in a Python code benchmark, where GPT4 can perform very well, just by introducing a simple change in the way the language works ("now lists index start with one and not zero) the model performance drops drastically. See the chart below.
+
+<div class="row mt-3">
+
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/blog_images/reasoning-or-reciting-benchmark-paper-neurips-post.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+
+</div>
+<div class="caption">
+    GPT4 performance on the default version of various benchmarks and in the modified version (counterfactuals). Source: Reasoning or Reciting? Exploring the Capabilities and Limitations of Language Models Through Counterfactual Tasks. Wu et al. March 2024.
+</div>
+
+Building "easy for humans, hard for AI" kind of benchmarks are key to the development of more intelligent models. Indeed, as Fei Fei pointed out in her inspiring presentation, the ImageNet benchmark that she created was a key element for the rebirth of neural networks in 2012, and the newly coined term "Deep Learning".
 
 ## EUREKA: A comprehensive framework to evaluate LLMs
 
@@ -168,9 +199,19 @@ The folks from Microsoft presented a comprehensive and open source framework to 
 - Models like Claude 3.5 Sonnet, GPT-4o 2024-05-13, and Llama 3.1 405B show distinct strengths in specific tasks but are not universally superior across all benchmarks.
   This highlights the need for task-specific analysis rather than assuming a model's overall superiority.
 - Current AI models struggle significantly with multimodal tasks, particularly those requiring detailed image understanding and spatial reasoning. For example, all models perform poorly on Object Detection.
-  In the folllowing chart you can see the results. They are quite insightful!
 
-[[[put image from paper]]]
+In the folllowing chart you check see the results for both language and multimodal tasks.
+
+<div class="row mt-3">
+
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/blog_images/eureka-benchmark-framework-neurips-post.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+
+</div>
+<div class="caption">
+     Performance of best and worse models for multimodal (left) and language (right) datasets in in Eureka-Bench. Note the room to improve in Object Detection, Information Retrieval or navigation. Source: Eureka: Evaluating and Understanding Progress in AI. Microsoft Research, NeurIPS 2024.
+</div>
 
 # Unified Representations, shedding light on the black box
 
@@ -203,13 +244,13 @@ Many other talks in this workshop where about gaining a further understanding of
 
 There is also strong evidence that neural networks encode information in "directions" in a multidimensional space, where each useful abstract concept (for example, the language a text is written in) is encoded in a different direction, each one "almost" perpendicular to each other, which is possible in a multidimensional space (in a 3d space, there are only 3 dimenspossible perpendicular vectors, but in higher dimensions space, if we relax the constraint of perpendicularity from 90 degrees angle to 89-91 degrees, the amount of almost perpendicular vectors grow exponentially with the number of dimensions). Highly recommended to watch this lesson of ThreeBlueOneBrown on [How might LLM store facts](https://www.3blue1brown.com/lessons/mlp). In fact, watch all the Deep Learning videos of this channel, they are the best I've seen explaining the concepts of the transformer.
 
-Very interesting also the Mechanistic Interpretability talk of [Neel Nanda](https://www.neelnanda.io/), from DeepMind. Mechanistic Interpretability aspires to reverse engineer neural networks, working on the hypothesis that models learn human comprehensible structures that can be understood. He showed an example where they are able to identify a "direction in space" that encodes refusal, i.e. when the model refuses to speak about certain topic, usually because of the safety constraints. Knowing this direction, they are able to deactivate it, just by remving that vector. What is very interesting is that this refusal direction is in every model they checked, almost universal.
+Very interesting also the Mechanistic Interpretability talk of [Neel Nanda](https://www.neelnanda.io/), from DeepMind. Mechanistic Interpretability aspires to reverse engineer neural networks, working on the hypothesis that models learn human comprehensible structures that can be understood. He showed an example where they are able to identify a "direction in space" that encodes refusal, i.e. when the model refuses to speak about certain topic, usually because of the safety constraints. Knowing this direction, they are able to deactivate it, just by subtracting that vector, allowing the model to respond on originally unintended ways. This refusal direction appears in every model they checked, is almost universal.
 
 One clear application of better understanding the inner workings of neural networks is to improve their safety. Which lead us to the next topic.
 
-# AI Safety: toolsTools, not agents
+# AI Safety, advocating for tools, not agents
 
-Turing awarded [Youshua Bengio](https://yoshuabengio.org/) and [Max Tegmark](https://physics.mit.edu/faculty/max-tegmark/) participated in a very relevant workshop around AI safety. Their main point was that we can have the benefits of AI without the risks of AI, by not doing autonomous agents but special purpose models, that we can use as tools to, for example, advance science. A great example of this is the [AlphaFold](https://deepmind.com/research/case-studies/alphafold) model, which is a tool that helps scientists to predict the 3D structure of proteins; key for drug discovery and currently widely used.
+[Youshua Bengio](https://yoshuabengio.org/) and [Max Tegmark](https://physics.mit.edu/faculty/max-tegmark/) participated in a relevant workshop around AI safety. One of their main point was that we can have the benefits of AI without the risks of AI, by not doing autonomous agents but special purpose models, that we can use as tools to, for example, advance science. A great example of this is the [AlphaFold](https://deepmind.com/research/case-studies/alphafold) model, which is a tool that helps scientists to predict the 3D structure of proteins; key for drug discovery and currently widely used.
 
 # Practical applications
 
@@ -217,5 +258,14 @@ Presentation of Shopify
 
 # Drama
 
-- Women that insulted Chinese
-- Price to the main paper with guy that ....
+- Picard
+- Price to the main paper
+
+# Concluding remarks
+
+
+
+Finally, consider that the most intelligent entities we know (for now), humans, process an estimated 50-100 terabytes of raw data annually through all our senses with a brain that consumes only ~20 Watts. In some way this sets an aspirational goal on the efficiency of intelligence.
+
+
+
