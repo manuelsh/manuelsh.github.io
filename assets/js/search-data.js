@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-opening-the-llm-pipeline",
+        },{id: "post-selected-ideas-from-neurips-2024",
+      
+        title: "Selected ideas from NeurIPS 2024",
+      
+      description: "NeurIPS 2024, the largest AI research conference, provides a glimpse into the next frontiers. Here are some of the most exciting ideas presented.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/Selected-ideas-from-NeurIPS2024/";
+        
+      },
+    },{id: "post-opening-the-llm-pipeline",
       
         title: "Opening the LLM pipeline",
       
