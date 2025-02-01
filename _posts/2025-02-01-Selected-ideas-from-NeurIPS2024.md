@@ -152,7 +152,7 @@ While computational power grows exponentially and data increases at a linear rat
 
 ## Architectures and RL methods
 
-It's clear that other alternatives to the Transformer architecture are standing out, such as [Mamba](https://arxiv.org/abs/2312.00752) or [xLSTM](https://neurips.cc/virtual/2024/invited-talk/101129). These architectures are more efficient that the Transformer at inference, as the computing doesn't grow quadratically with the number of input tokens, while they can parallelize the prediction of the next token in the training, like the Transformer does, instead of sequentially like previous architectures (RNN, LSTM…). Sepp Hochreiter, the creator of LSTM, presented xLSTM, acknowledging its strong resemblance to Mamba. 
+It's clear that other alternatives to the Transformer architecture are standing out, such as [Mamba](https://arxiv.org/abs/2312.00752) or [xLSTM](https://neurips.cc/virtual/2024/invited-talk/101129). These architectures are more efficient that the Transformer at inference, as the computing doesn't grow quadratically with the number of input tokens, while they can parallelize the prediction of the next token in the training, like the Transformer does, instead of sequentially like previous architectures (RNN, LSTM…). Sepp Hochreiter, the creator of LSTM, presented xLSTM, acknowledging its strong resemblance to Mamba.
 
 However, although these arechitectures were mentioned many times, in practice they are not yet widely used.
 
@@ -258,7 +258,7 @@ One clear application of better understanding the inner workings of neural netwo
 
 The folks from Shopify presented an initiative to build a [foundation model for e-commerce](https://neurips.cc/Expo/Conferences/2024/talk%20panel/100357), which takes a selection of events as inputs (these are the tokens), and try to predict following events. The idea is that such a model takes many functions of a typical e-commerce platform, like recommendedr system, fraud detection, next best intervention, etc.
 
-They presented a couple of architecture choices to address the problem, [HSTU](https://arxiv.org/abs/2402.17152v1), and  [TIGER](https://arxiv.org/abs/2305.05065). What is promising about their work is that they mention an uplift of 240-480% recall@10 in *offline experiments*. I am looking forward to see the results once models are deployed in production. 
+They presented a couple of architecture choices to address the problem, [HSTU](https://arxiv.org/abs/2402.17152v1), and [TIGER](https://arxiv.org/abs/2305.05065). What is promising about their work is that they mention an uplift of 240-480% recall@10 in _offline experiments_. I am looking forward to see the results once models are deployed in production.
 
 # Concluding remarks
 
