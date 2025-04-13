@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-selected-ideas-from-neurips-2024",
+        },{id: "post-datasets-for-advancing-theoretical-physics-and-ai",
+      
+        title: "Datasets for advancing Theoretical Physics and AI",
+      
+      description: "A review of existing datasets and gaps in physics and machine learning.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/datasets-for-advancing-Theoretical-Physics/";
+        
+      },
+    },{id: "post-selected-ideas-from-neurips-2024",
       
         title: "Selected ideas from NeurIPS 2024",
       
