@@ -2,7 +2,7 @@
 layout: distill
 title: Datasets for advancing Theoretical Physics and AI
 date: 2025-04-13 09:00:00
-description: There is a lack of curated datasets in theoretical physics and machine learning. But what exactly is missing and how can we fill the gaps?
+description: There is a lack of curated datasets in theoretical physics to train better machine learning models. But what exactly is missing and how can we fill the gaps?
 tags: AI, Enterprise, Machine Learning, Business
 categories: Machine Learning
 # thumbnail: assets/img/9.jpg
