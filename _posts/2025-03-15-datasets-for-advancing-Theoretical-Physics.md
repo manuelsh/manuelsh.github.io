@@ -115,6 +115,6 @@ Each of these gaps points to an opportunity for new dataset creation.
 
 # Bridging the Data Gap in Theoretical Physics
 
-The datasets reviewed illustrate both the progress made and the potential for advancing theoretical physics. Filling the identified gaps—particularly in advanced problem-solving, structured theoretical knowledge, underrepresented domains, multimodal integration, and theory-experiment pairing—could catalyze breakthroughs. Just as ImageNet revolutionized computer vision, well-crafted physics datasets could similarly drive transformative developments in physics and AI.
+The datasets reviewed illustrate both the progress made and the potential for advancing theoretical physics. Filling the identified gaps could catalyze breakthroughs. Just as ImageNet revolutionized computer vision, well-crafted physics datasets could similarly drive transformative developments in physics and AI.
 
 I think the task is clear: Physicists and data scientists need to collaborate to create accessible, comprehensive datasets addressing these gaps. Such datasets will not only enhance AI's capability to understand and predict physics but also foster innovation, potentially accelerating the frontiers of science itself.
