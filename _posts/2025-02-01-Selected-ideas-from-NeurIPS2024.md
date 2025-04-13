@@ -56,6 +56,7 @@ toc:
     #     - name:
 ---
 
+<span style="color: grey; font-weight: 300; font-size: 0.9em;">1st February 2025</span>
 [NeurIPS](https://neurips.cc/Conferences/2024) is widely considered _the_ major AI research conference. With over 16,000 participants, 56 workshops, countless parallel tracks, and a staggering 3,650 posters, this event is more than just a conference: it offers a privileged vantage point into the state of the art in the field and their current challenges. The 2024 edition was hosted in Vancouver, during 6 packed days.
 
 While it’s impossible to capture its vast scope in a single post, here’s a glimpse of the most exciting ideas that stood out to me.

@@ -44,9 +44,7 @@ toc:
 #     - name:
 ---
 
-# Datasets for advancing Theoretical Physics and AI
-
-<span style="color: grey; font-weight: 300; font-size: 0.9em;">Published on: April 13, 2025</span>
+<span style="color: grey; font-weight: 300; font-size: 0.9em;">13th April 2025</span>
 
 The history of recent developments in deep learning shows the crucial role played by curated datasets. For example, Fei-Fei Li and her collaborators dramatically reshaped computer vision with the creation of [ImageNet](https://arxiv.org/abs/1409.0575), a large-scale, labeled image collection. This sparked the start of the deep learning revolution. Similarly, datasets like CIFAR-10 and MNIST have provided foundational benchmarks essential for algorithmic progress.
 
@@ -54,9 +52,9 @@ Despite these advances in machine learning, theoretical physics still lacks comp
 
 In this post, I start by looking to the current existing physics related datasets by domain, data type, level of content and availability. Then I try to identify current existing gaps and propose new dataset creations.
 
-## Existing Datasets
+# Existing Datasets
 
-### Theoretical Physics (Knowledge & Simulations)
+## Theoretical Physics (Knowledge & Simulations)
 
 This includes textual corpora of theory papers, equation datasets, and simulation data of theoretical models.
 
@@ -69,7 +67,7 @@ This includes textual corpora of theory papers, equation datasets, and simulatio
 | **Lattice QCD Configurations**                    | Quantum Field Theory (lattice QCD) – gauge field samples, correlation functions                                                                                                                                                                                                | Numeric (lattice data)             | Frontier research  | Partially open ([example](https://www.jldg.org/ildg-data/))                                                                                                 |
 | **SXS Waveforms** (Simulating eXtreme Spacetimes) | General Relativity – Numerical relativity waveforms of binary black holes ([SXS Gravitational Waveform Database](https://data.black-holes.org/waveforms/index.html#:~:text=This%20repository%20contains%20all%20publicly,than%20Lev1%2C%20and%20so%20on))                      | Numerical time-series              | Frontier research  | [Open](https://data.black-holes.org/simulations/index.html) (public catalog)                                                                                |
 
-### Experimental Physics
+## Experimental Physics
 
 Datasets from experiments and simulations that test physical theories, often used to train ML models to detect patterns or surrogate models for experiments.
 
@@ -82,7 +80,7 @@ Datasets from experiments and simulations that test physical theories, often use
 | **Fluid Dynamics/CFD Simulations**         | Classical mechanics – CFD simulation outputs (e.g. flow fields, turbulence)                                                                                                                                                                                                                                                                                                                                                                                                  | Numerical (grids, images)                | Graduate/Research  | Partially open (benchmarks, e.g. NASA CFD data)                                                                                            |
 | **Graph Network Simulations**              | Multi-body physics – Synthetic trajectories for n-body, fluids, rigid bodies ([Physics Simulation With Graph Neural Networks Targeting Mobile \- Mobile, Graphics, and Gaming blog \- Arm Community blogs \- Arm Community](https://community.arm.com/arm-community-blogs/b/mobile-graphics-and-gaming-blog/posts/physics-simulation-graph-neural-networks-targeting-mobile#:~:text=%E2%80%9CLearning%20to%20Simulate%E2%80%9D%20also%20presents,term%20interaction%20data)) | Numeric (graph-based, trajectories)      | Undergrad–Graduate | [Partially open](https://hal.science/hal-03806092/document) (code to generate; DeepMind GNS data)                                          |
 
-### Mathematics for Physics
+## Mathematics for Physics
 
 Datasets of mathematical problems, proofs, and symbolic computations relevant to physics problem-solving and theory.
 
@@ -95,7 +93,7 @@ Datasets of mathematical problems, proofs, and symbolic computations relevant to
 | **Symbolic Integration & ODE Sets**    | Large sets of integrals and differential equations for symbolic solving (e.g. 27M integration pairs)                                                                                                                                            | Symbolic (expressions)    | Undergrad–Grad         | Open (research, [SIRD](https://github.com/mfbalin/SIRD-Symbolic-Integration-Rules-Dataset?tab=readme-ov-file) dataset) |
 | **PINN Benchmark (PINNacle)**          | 20+ distinct physics PDEs (heat eq., Navier-Stokes, etc.) with solution data for PINNs ([PINNacle: A Comprehensive Benchmark of Physics-Informed Neural ...](https://arxiv.org/abs/2306.08827#:~:text=,fluid%20dynamics%2C%20biology%2C%20and)) | Numerical (PDE solutions) | Undergrad–Grad         | [Open](https://github.com/i207M/PINNacle) (benchmark dataset)                                                          |
 
-### Multimodal Physics Data
+## Multimodal Physics Data
 
 Combining text, equations, and visuals.
 
@@ -109,7 +107,7 @@ The tables above show that many **open-access datasets** exist, especially for h
 
 Datasets have been used to train a variety of AI models: large language models (using text corpora of physics papers and Q\&A), graph neural networks (using simulation or detector data structured as graphs), symbolic regression models (using formula datasets like Feynman), and physics-informed neural networks (using synthetic PDE solution datasets).
 
-## Gap Analysis: Missing or Underrepresented Data
+# Gap Analysis: Missing or Underrepresented Data
 
 Despite the above resources, I believe that several important gaps remain:
 
@@ -121,7 +119,7 @@ Despite the above resources, I believe that several important gaps remain:
 
 Each of these gaps points to an opportunity for new dataset creation.
 
-## Bridging the Data Gap in Theoretical Physics
+# Bridging the Data Gap in Theoretical Physics
 
 The datasets reviewed illustrate both the progress made and the potential for advancing theoretical physics. Filling the identified gaps could catalyze breakthroughs. Just as ImageNet revolutionized computer vision, well-crafted physics datasets could similarly drive transformative developments in physics and AI.
 
