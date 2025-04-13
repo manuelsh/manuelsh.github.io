@@ -27,7 +27,7 @@ ninja.data = [{
       
         title: "Datasets for advancing Theoretical Physics and AI",
       
-      description: "A review of existing datasets and gaps in physics and machine learning.",
+      description: "There is a lack of curated datasets in theoretical physics, which could accelerate progress in AI and physics itself.",
       section: "Posts",
       handler: () => {
         
