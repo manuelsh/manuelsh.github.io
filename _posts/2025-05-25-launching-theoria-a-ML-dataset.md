@@ -72,9 +72,9 @@ This is a feature, not a bug: by crowd-sourcing expert review and inviting physi
 
 For now, we have built a simple [web viewer to explore the dataset](https://theoria-dataset.github.io/theoria-dataset/index.html), including each entry, which makes it easy to spot typos.
 
-The main repository is on [GitHub](https://github.com/TheorIA-org/TheorIA), and you can see an example of a raw here, the [Lorentz transformations](https://github.com/theoria-dataset/theoria-dataset/blob/main/entries/lorentz_transformations.json), and the contributing guide here, [CONTRIBUTING.md](https://github.com/theoria-dataset/theoria-dataset/blob/main/CONTRIBUTING.md).
+The [main repository](https://github.com/TheorIA-org/TheorIA) is on GitHub, and you can see an example of a raw entry here, the [Lorentz transformations](https://github.com/theoria-dataset/theoria-dataset/blob/main/entries/lorentz_transformations.json). We also have a comprehensive [contributing guide](https://github.com/theoria-dataset/theoria-dataset/blob/main/CONTRIBUTING.md).
 
-If you are not a software developer but you want to contribute by correcting or adding an entry, just follow the guidelines, create a json and send it to me or add it as an [issue](https://github.com/theoria-dataset/theoria-dataset/issues) in the repo. Remember to add your name or/and ORCID to the entry author field!
+If you are not a software developer but you want to contribute by correcting or adding an entry, just follow the guidelines, create a json and add it as an [issue](https://github.com/theoria-dataset/theoria-dataset/issues) in the repo. Remember to add your name or/and ORCID to the entry author field!
 
 ## Roadmap
 
