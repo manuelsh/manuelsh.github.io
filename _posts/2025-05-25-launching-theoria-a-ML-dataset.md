@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: Launching TheorIA: A Machine-Readable Atlas of Theoretical Physics
+title: "Launching TheorIA: A Machine-Readable Atlas of Theoretical Physics"
 date: 2025-05-25 09:00:00
 description: If we want AI models to reason about physics, we first need to give them physics they can actually read.
 categories: Machine Learning
