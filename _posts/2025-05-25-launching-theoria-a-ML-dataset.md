@@ -36,7 +36,6 @@ toc:
   - name: A quick tour
   - name: Call for collaborators
   - name: Final thoughts
-  
 #     subsections:
 #     - name:
 ---
@@ -58,17 +57,14 @@ ImageNet rewired computer-vision research. In NLP, the Pile, C4 and friends did 
 TheorIA is an attempt to raise the bar:
 
 | Pain point                        | TheorIA’s answer                                                                      |
-| --------------------------------- | --------------------------------------------------------------------------------------------------- |
-| Equations are locked inside prose | Each equation is a first-class JSON object, plus symbol table and AsciiMath rendering               |
-| Derivations are opaque            | Straightforward step-by-step derivations with automated verification with SymPy                  |
-| Reproducibility headaches         | CI in Github validates all PRs against schema and proofs before merge                               |
-
-
+| --------------------------------- | ------------------------------------------------------------------------------------- |
+| Equations are locked inside prose | Each equation is a first-class JSON object, plus symbol table and AsciiMath rendering |
+| Derivations are opaque            | Straightforward step-by-step derivations with automated verification with SymPy       |
+| Reproducibility headaches         | CI in Github validates all PRs against schema and proofs before merge                 |
 
 ## TheorIA is a work in progress
 
 Many of the entries you’ll find in TheorIA are currently in draft form, built with the help of AI tooling to bootstrap content at scale. Hence, they often contain typos, notation inconsistencies or even subtle mathematical errors. This is a feature, not a bug: by crowd-sourcing expert review and inviting physicists, mathematicians and educators to correct each derivation, we hope to rapidly turn these skeletal drafts into rock-solid reference materials. Your contributions will ensure that TheorIA remains both rigorous and reliable.
-
 
 ## A quick tour
 
@@ -84,20 +80,19 @@ The project is still early, and it requires significant work to make it useful a
 
 The general steps we have in mind are:
 
-1) Build some critical mass: Have 100 AI generated entries (I expect them to have many errors, from the ones generated already) and at least 20 curaated by physicists.
-2) Test LLMs performance with the curated examples and compare their output.
-3) Reduce contributors friction: Have an easy way for users to modify or add entries to the dataset, from a user-friendly web interface.
-4) Automate output formats. Provide “one-click” scripts (JSON→LaTeX/Markdown/API) so adopters can plug TheorIA into documentation, teaching materials or model workflows without a learning curve.
-5) Once we have enough entries, deliver a demo. Fine-tune an LLM on the dataset and publicly compare its derivation-explanation quality against baselines.
+1. Build some critical mass: Have 100 AI generated entries (I expect them to have many errors, from the ones generated already) and at least 20 curaated by physicists.
+2. Test LLMs performance with the curated examples and compare their output.
+3. Reduce contributors friction: Have an easy way for users to modify or add entries to the dataset, from a user-friendly web interface.
+4. Automate output formats. Provide “one-click” scripts (JSON→LaTeX/Markdown/API) so adopters can plug TheorIA into documentation, teaching materials or model workflows without a learning curve.
+5. Once we have enough entries, deliver a demo. Fine-tune an LLM on the dataset and publicly compare its derivation-explanation quality against baselines.
 
 ## Call for collaborators
 
 We’re especially looking for:
 
-* **Physicists or students** to review or add entries.
-* **Toolsmiths** to build visualisers, dataset converters or training scripts.
+- **Physicists or students** to review or add entries.
+- **Toolsmiths** to build visualisers, dataset converters or training scripts.
 
 ## Final thoughts
 
-I hope that TheorIA will graduate from “neat GitHub repo” to a reference for physicists, educators and AI researchers alike. Join us in turning raw drafts into rock-solid derivations—and let’s build the data foundation that physics and AI have been waiting for.
-
+I hope that TheorIA will graduate from “neat GitHub repo” to a reference for physicists, educators and AI researchers alike. Join us in turning raw drafts into rock-solid derivations—and let’s build the data foundation that physics and AI have been waiting for.s
