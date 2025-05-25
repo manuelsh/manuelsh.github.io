@@ -48,7 +48,7 @@ We are trying to make something robust and with high-quality: built-in CI valida
 
 We currently have 15 entries, many written with AI, but some already curated by physicists, but we need hundreds. Your favourite derivation is probably still missing.
 
-All code and content is open source under the CC-BY 4.0 license on [GitHub](https://github.com/TheorIA-org/TheorIA). Pull requests are welcome!
+All code and content is open source under the CC-BY 4.0 license on [GitHub](https://github.com/theoria-dataset/theoria-dataset). Pull requests are welcome!
 
 ## Why bother?
 

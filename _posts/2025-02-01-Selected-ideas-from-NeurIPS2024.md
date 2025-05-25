@@ -59,7 +59,7 @@ toc:
 <span style="color: grey; font-weight: 300; font-size: 0.9em;">1st February 2025</span>
 [NeurIPS](https://neurips.cc/Conferences/2024) is widely considered _the_ major AI research conference. With over 16,000 participants, 56 workshops, countless parallel tracks, and a staggering 3,650 posters, this event is more than just a conference: it offers a privileged vantage point into the state of the art in the field and their current challenges. The 2024 edition was hosted in Vancouver, during 6 packed days.
 
-While it’s impossible to capture its vast scope in a single post, here’s a glimpse of the most exciting ideas that stood out to me.
+While it's impossible to capture its vast scope in a single post, here's a glimpse of the most exciting ideas that stood out to me.
 
 # Agents, the next frontier
 
@@ -84,9 +84,9 @@ There were many interesting presentations on the topic, including showcases of a
 
 </div>
 
-A key limitation, as I have observed in my own tests, is that feeding raw screenshots or HTML to a multimodal LLM (e.g., GPT4V) and granting it control over the mouse and keyboard results in poor performance on UI-driven tasks like booking flights or hotels. This is reflected in the low accuracy on GUI task oriented benchmarks, such as the [ScreenSpot benchmark](https://paperswithcode.com/dataset/screenspot), where GPT4V arrives to 16% accuracy.
+A key limitation, as I have observed in my own tests, is that feeding raw screenshots or HTML to a multimodal LLM (e.g., GPT4V) and granting it control over the mouse and keyboard results in poor performance on UI-driven tasks like booking flights or hotels. This is reflected in the low accuracy on GUI task oriented benchmarks, such as the [ScreenSpot benchmark](https://web.archive.org/web/20250317225153/https://paperswithcode.com/sota/natural-language-visual-grounding-on), where GPT4V arrives to 16% accuracy.
 
-However, if the model is supplemented with the input coming from Omniparser, accuracy jumps to 73% on the same dataset. This has been surpassed [by other models](https://paperswithcode.com/sota/natural-language-visual-grounding-on), which means that in less than one year, we will likely see AI operating seamlessly with the UI of our phones or computers as humans do.
+However, if the model is supplemented with the input coming from Omniparser, accuracy jumps to 73% on the same dataset. This has been surpassed [by other models](https://web.archive.org/web/20250317225153/https://paperswithcode.com/sota/natural-language-visual-grounding-on), which means that in less than one year, we will likely see AI operating seamlessly with the UI of our phones or computers as humans do.
 
 ## Other useful resources about Agents
 
@@ -130,7 +130,7 @@ One of the standout topics at NeurIPS this year was the process of building and 
 
 ## Are we running out of data?
 
-A recurring theme was data scarcity. Kyle Lo from AllenAI clarified that while data itself isn’t vanishing, open-access data is becoming increasingly limited. Ilya Sutskever, in his remarks upon receiving the “Test of Time Award” for his paper, described data as the “fossil fuel of AI,” noting that while compute continues to grow, data is not growing at the same pace. He suggested that we should be looking at “synthetic data,” inference time compute, and agents as potential solutions.
+A recurring theme was data scarcity. Kyle Lo from AllenAI clarified that while data itself isn't vanishing, open-access data is becoming increasingly limited. Ilya Sutskever, in his remarks upon receiving the "Test of Time Award" for his paper, described data as the "fossil fuel of AI," noting that while compute continues to grow, data is not growing at the same pace. He suggested that we should be looking at "synthetic data," inference time compute, and agents as potential solutions.
 
 This was challenged by Jason Weston, who pointed out that significant portion of the training of LLMs in frontier companies relies on "closed data," which they possess and are generating in substantial quantities. He expressed skepticism about the severity of the data scarcity issue, suggesting that Ilya's perspective might be influenced by his recent departure from OpenAI and the resulting loss of access to that data.
 
@@ -178,7 +178,7 @@ The definition of intelligence is ellusive, that is why those benchmarks that ar
     Example of an ARC puzzle. Source: https://lab42.global/arc/
 </div>
 
-The performance of humans in the ARC test is very high, around 90% accuracy according to the ARC team, while at the time of Neurips 2024 the best model was at 53%. Interestingly, less than a week after François Chollet presentation in NeurIPS, OpenAI announced that their [new o3 model](https://community.openai.com/t/day-12-of-shipmas-new-frontier-models-o3-and-o3-mini-announcement/1061818) is able to reach to 76% in ARC. A great example of how quickly the field moves!
+The performance of humans in the ARC test is very high, around 90% accuracy according to the ARC team, while at the time of Neurips 2024 the best model was at 53%. Interestingly, less than a week after François Chollet presentation in NeurIPS, OpenAI announced that their [new o3 model](https://web.archive.org/web/20250323011500/https://community.openai.com/t/day-12-of-shipmas-new-frontier-models-o3-and-o3-mini-announcement/1061818) is able to reach to 76% in ARC. A great example of how quickly the field moves!
 
 [Melanie Mitchell](https://melaniemitchell.me/), from the Santa Fe Institute, also showed during a workshop about [System-2 reasoning](https://neurips.cc/virtual/2024/workshop/84749) how current state of the art LLMs fail when some benchmarks are modified in trivial ways. She mentioned an example of the paper [Reasoning or Reciting?](https://arxiv.org/pdf/2307.02477) where in a Python code benchmark, where GPT4 can perform very well, just by introducing a simple change in the way the language works ("now lists index start with one and not zero) the model performance drops drastically. See the chart below.
 
@@ -253,7 +253,7 @@ One clear application of better understanding the inner workings of neural netwo
 
 # AI Safety: advocating for tools, not agents
 
-[Youshua Bengio](https://yoshuabengio.org/) and [Max Tegmark](https://physics.mit.edu/faculty/max-tegmark/) participated in a [relevant workshop on AI safety](https://neurips.cc/virtual/2024/workshop/84705). One of their main arguments was that AI’s benefits can be maximized while minimizing risks by developing specialized models rather than fully autonomous agents. A great example of this is the [AlphaFold](https://deepmind.com/research/case-studies/alphafold) model, which is a tool that helps scientists to predict the 3D structure of proteins; key for drug discovery and currently widely used.
+[Youshua Bengio](https://yoshuabengio.org/) and [Max Tegmark](https://physics.mit.edu/faculty/max-tegmark/) participated in a [relevant workshop on AI safety](https://neurips.cc/virtual/2024/workshop/84705). One of their main arguments was that AI's benefits can be maximized while minimizing risks by developing specialized models rather than fully autonomous agents. A great example of this is the [AlphaFold](https://deepmind.com/research/case-studies/alphafold) model, which is a tool that helps scientists to predict the 3D structure of proteins; key for drug discovery and currently widely used.
 
 # Foundation models for E-commerce
 
