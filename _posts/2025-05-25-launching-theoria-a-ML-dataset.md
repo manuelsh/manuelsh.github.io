@@ -95,4 +95,4 @@ We’re especially looking for:
 
 ## Final thoughts
 
-I hope that TheorIA will graduate from “neat GitHub repo” to a reference for physicists, educators and AI researchers alike. Join us in turning raw drafts into rock-solid derivations—and let’s build the data foundation that physics and AI have been waiting for.s
+I hope that TheorIA will graduate from “neat GitHub repo” to a reference for physicists, educators and AI researchers. Join us in turning raw drafts into high-quality derivations, and let’s build the data foundation that physics and AI have been waiting for.
