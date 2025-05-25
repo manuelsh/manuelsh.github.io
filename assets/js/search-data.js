@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-datasets-for-advancing-theoretical-physics-and-ai",
+        },{id: "post-",
+      
+        title: "",
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/2025-05-25-launching-theoria-a-ML-dataset/";
+        
+      },
+    },{id: "post-datasets-for-advancing-theoretical-physics-and-ai",
       
         title: "Datasets for advancing Theoretical Physics and AI",
       
