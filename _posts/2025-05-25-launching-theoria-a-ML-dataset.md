@@ -42,17 +42,17 @@ toc:
 
 <span style="color: grey; font-weight: 300; font-size: 0.9em;">25th May 2025</span>
 
-We are launching [TheorIA Dataset](https://theoria-dataset.github.io/theoria-dataset/index.html) (Theoretical Physics Intelligent Anthology) is a growing collection of physics equations, step-by-step derivations and plain-language explanations, fully written as self-contained JSON. It fills a gap identified in my earlier post [Datasets for advancing Theoretical Physics & AI](https://manuelsh.github.io/blog/2025/datasets-for-advancing-Theoretical-Physics/), namely, the absence of curated, machine-readable data that goes beyond raw PDFs.
+We are launching [TheorIA Dataset](https://theoria-dataset.github.io/theoria-dataset/index.html) (Theoretical Physics Intelligent Anthology), a growing collection of physics equations, step-by-step derivations and plain-language explanations, fully written as self-contained JSON. It fills a gap identified in my earlier post [Datasets for advancing Theoretical Physics & AI](https://manuelsh.github.io/blog/2025/datasets-for-advancing-Theoretical-Physics/), namely, the absence of curated, machine-readable data that goes beyond raw PDFs.
 
 We are trying to make something robust and with high-quality: built-in CI validation, explicit assumptions, programmatic proofs (SymPy), and arXiv-style domain tags to keep every entry reproducible and searchable.
 
-We currently have 15 entries, many written with AI, but some already curated by physicists (Lorentz transformations, …) — but we need hundreds. Your favourite derivation is probably still missing.
+We currently have 15 entries, many written with AI, but some already curated by physicists, but we need hundreds. Your favourite derivation is probably still missing.
 
 All code and content is open source under the CC-BY 4.0 license on [GitHub](https://github.com/TheorIA-org/TheorIA). Pull requests are welcome!
 
 ## Why bother?
 
-ImageNet rewired computer-vision research. In NLP, the Pile, C4 and friends did the same. Theoretical physics, on the other hand, still asks language models to learn Maxwell’s equations by skimming 100-year-old PDFs.
+ImageNet rewired computer-vision research. In NLP, the Pile, C4 and friends did the same. Theoretical physics, on the other hand, still asks language models to learn Maxwell’s equations by going through paper PDFs.
 
 TheorIA is an attempt to raise the bar:
 
@@ -64,11 +64,13 @@ TheorIA is an attempt to raise the bar:
 
 ## TheorIA is a work in progress
 
-Many of the entries you’ll find in TheorIA are currently in draft form, built with the help of AI tooling to bootstrap content at scale. Hence, they often contain typos, notation inconsistencies or even subtle mathematical errors. This is a feature, not a bug: by crowd-sourcing expert review and inviting physicists, mathematicians and educators to correct each derivation, we hope to rapidly turn these skeletal drafts into rock-solid reference materials. Your contributions will ensure that TheorIA remains both rigorous and reliable.
+Many of the entries you’ll find in TheorIA are currently in draft form, built with the help of AI tooling to bootstrap content at scale. Hence, they often contain typos, notation inconsistencies or even subtle mathematical errors. If they were perfect, this dataset would not be useful for training models.
+
+This is a feature, not a bug: by crowd-sourcing expert review and inviting physicists, mathematicians and educators to correct each derivation, we hope to rapidly turn these drafts into rock-solid reference materials. Your contributions will ensure that TheorIA remains both rigorous and reliable. We will very clearly mark the entries that are still not ready for use.
 
 ## A quick tour
 
-We have built a simple [web viewer to explore the dataset](https://theoria-dataset.github.io/theoria-dataset/index.html), including each entry, which makes it easy to spot typos.
+For now, we have built a simple [web viewer to explore the dataset](https://theoria-dataset.github.io/theoria-dataset/index.html), including each entry, which makes it easy to spot typos.
 
 The main repository is on [GitHub](https://github.com/TheorIA-org/TheorIA), and you can see an example of a raw here, the [Lorentz transformations](https://github.com/theoria-dataset/theoria-dataset/blob/main/entries/lorentz_transformations.json), and the contributing guide here, [CONTRIBUTING.md](https://github.com/theoria-dataset/theoria-dataset/blob/main/CONTRIBUTING.md).
 
