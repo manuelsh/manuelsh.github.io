@@ -23,15 +23,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-",
+        },{id: "post-launching-theoria-a-machine-readable-atlas-of-theoretical-physics",
       
-        title: "",
+        title: "Launching TheorIA: A Machine-Readable Atlas of Theoretical Physics",
       
-      description: "",
+      description: "If we want AI models to reason about physics, we first need to give them physics they can actually read.",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/2025-05-25-launching-theoria-a-ML-dataset/";
+          window.location.href = "/blog/2025/launching-theoria-a-ML-dataset/";
         
       },
     },{id: "post-datasets-for-advancing-theoretical-physics-and-ai",
