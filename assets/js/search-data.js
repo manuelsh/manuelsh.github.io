@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-launching-theoria-a-machine-readable-atlas-of-theoretical-physics",
+        },{id: "post-llms-from-the-context-window-point-of-view",
+      
+        title: "LLMs from the Context Window Point of View",
+      
+      description: "The functioning of Large Language Models can be better understood from the perspective of their context window",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/understanding-LLM-from-context-window-pov/";
+        
+      },
+    },{id: "post-launching-theoria-a-machine-readable-atlas-of-theoretical-physics",
       
         title: "Launching TheorIA: A Machine-Readable Atlas of Theoretical Physics",
       
