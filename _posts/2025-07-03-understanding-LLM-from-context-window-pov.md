@@ -147,7 +147,7 @@ What we write to the model is called a *prompt*, which gives rise to the term *p
 
 How does this work in practice? Let's examine some examples. The call to the LLM is typically formatted as JSON, though what actually enters the context window is just a string. Here's a simplified example of what this JSON looks like:
 
-```c++
+```json
 {
   "messages": [
     { "role": "system",  "content": "You are a playful assistant." },
@@ -228,7 +228,7 @@ where memories are incorporated as a special message type.
 
 ## Consciousness?
 
-When using very powerful models that can engage in seemingly fluent conversations, it's natural to believe the chatbot responds in an almost human-like way, as if it possesses some sort of consciousness. By examining the mechanics just explained, we can see that if any form of consciousness exists, it's fundamentally different from human consciousness.
+When using very powerful models that can engage in seemingly fluent conversations, it's natural to believe the it possesses some sort of consciousness, as the responses are almost human-like. By looking at the mechanics just explained, we can see that if any form of consciousness exists, it's fundamentally different from human consciousness.
 
 First, the LLM's neural network remains static: it doesn't change. Therefore, there's no evolution, no new memories are stored within it, and it doesn't remember previous conversations or experiences. The model only responds to what's in the current context window. It's purely a function of its input: a function in the strict mathematical sense.
 
