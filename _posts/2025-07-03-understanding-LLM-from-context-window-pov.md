@@ -4,21 +4,6 @@ title: "LLMs from the Context Window Point of View"
 date: 2025-07-01 09:00:00
 description: The functioning of Large Language Models can be better understood from the perspective of their context window
 categories: machine learning, LLM, generative AI, context window
-_styles: >
-  .fake-img {
-    background: #bbb;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 12px;
-  }
-  .fake-img p {
-    font-family: monospace;
-    color: white;
-    text-align: left;
-    margin: 12px 0;
-    text-align: center;
-    font-size: 16px;
-  }
 giscus_comments: true
 toc:
   - name: But what is a Large Language Model?
@@ -162,7 +147,7 @@ What we write to the model is called a *prompt*, which gives rise to the term *p
 
 How does this work in practice? Let's examine some examples. The call to the LLM is typically formatted as JSON, though what actually enters the context window is just a string. Here's a simplified example of what this JSON looks like:
 
-```json
+```c++
 {
   "messages": [
     { "role": "system",  "content": "You are a playful assistant." },
