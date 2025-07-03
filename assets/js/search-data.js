@@ -23,11 +23,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-llms-from-the-context-window-point-of-view",
+        },{id: "post-beyond-tokens-the-context-window-perspective-on-llms-memory-and-mind",
       
-        title: "LLMs from the Context Window Point of View",
+        title: "Beyond Tokens: The Context-Window Perspective on LLMs, Memory, and Mind",
       
-      description: "The functioning of Large Language Models can be better understood from the perspective of their context window",
+      description: "Exploring the bridge between next-word prediction, agent frameworks, and the limits of current LLMs consciousness",
       section: "Posts",
       handler: () => {
         
