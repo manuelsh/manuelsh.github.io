@@ -249,7 +249,10 @@ First, the system message instructs the agent about its capabilities and how to 
   "messages": [
     {
       "role": "system",
-      "content": "You are an agent that can call a calculator function. The function `call_calculator` expects a JSON object with a single field `expression` containing a valid math expression and returns a JSON object with a field `result`."
+      "content": "You are an agent that can call a calculator function. 
+      The function `call_calculator` expects a JSON object with a single 
+      field `expression` containing a valid math expression and returns 
+      a JSON object with a field `result`."
     },
     {
       "role": "user",
@@ -301,7 +304,10 @@ The complete conversation in the context window looks like this:
   "messages": [
     {
       "role": "system",
-      "content": "You are an agent that can call a calculator function. The function `call_calculator` expects a JSON object with a single field `expression` containing a valid math expression and returns a JSON object with a field `result`."
+      "content": "You are an agent that can call a calculator function. 
+      The function `call_calculator` expects a JSON object with a single 
+      field `expression` containing a valid math expression and returns 
+      a JSON object with a field `result`."
     },
     {
       "role": "user",
