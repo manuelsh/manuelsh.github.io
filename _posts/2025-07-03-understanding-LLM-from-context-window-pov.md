@@ -1,8 +1,8 @@
 ---
 layout: distill
-title: "LLMs from the Context Window Point of View"
+title: "Beyond Tokens: The Context-Window Perspective on LLMs, Memory, and Mind"
 date: 2025-07-01 09:00:00
-description: The functioning of Large Language Models can be better understood from the perspective of their context window
+description: Exploring the bridge between next-word prediction, agent frameworks, and the limits of current LLMs consciousness
 categories: machine learning, LLM, generative AI, context window
 giscus_comments: true
 toc:
@@ -123,7 +123,7 @@ The context window represents the input to the LLM, essentially the set of token
 
 </div>
 <div class="caption">
-    The LLM with the largest context window (Llama 4 Scout) has 10 million tokens, which can process the first 5 volumes of the Encyclopedia Britannica (~7.6M words) in one go.
+    The LLM with the largest context window (Llama 4 Scout) has 10 million tokens, which can process the first 5 volumes of the Encyclopedia Britannica (~7.6M words or 10kg of books) in one go.
 </div>
 
 Are models with larger context windows necessarily better? The trend over the past few years has been exponential growth, until recently. With the introduction of reasoning models in the last year, this trend has plateaued. This shift occurs partly because reasoning models iterate over input data in an "agentic mode", working with summaries and strategically manipulating the context window to reach final answers. More on memory and agents later.
