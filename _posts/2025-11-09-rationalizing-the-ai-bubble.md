@@ -140,7 +140,7 @@ Let's now look at the private frontier labs. There is not much public data, so w
 |    xAI    |         20 \- 25         |      1 \- 3       |        ?         |       5        |
 | **Total** |          37-47           |       18-24       |      \-15?       |     \>7.5?     |
 
-Unsurprisingly, none of them is unprofitable. However, they are significantly small compared with the Big Tech's, which by the way, have a lot of cash. So, a scenario of consolidation it's a potential outcome if some of the frontier labs struggle.
+Unsurprisingly, none of them is profitable. However, they are significantly small compared with the Big Tech's, which by the way, have a lot of cash. So, a scenario of consolidation it's a potential outcome if some of the frontier labs struggle.
 
 ### High pace of revenue growth
 
@@ -157,7 +157,7 @@ Another important angle we need to explore is the current growth of earnings due
 |            **Total**            | \~2.3 | \~7.0  |          30.8          |
 |         **YoY Growth**          |       | \+204% |         \+340%         |
 
-Known AI revenue, which omits much of Big Tech's data, is growing fast, at \+340% in the last year. Assuming that there is a total of $60 billion AI revenue (which is Ed Zitron [estimate](https://www.wheresyoured.at/the-case-against-generative-ai/#openai-needs-more-than-a-trillion-dollars-500bn-in-operational-expenses-and-at-least-another-625bn-800bn-for-data-centers-and-there-is-not-enough-private-and-venture-capital-to-pay-for-it)), assuming \+100% annual growth over the next few years (ambitious), the $600 billion question will be solved in 4.5 years, 2.5 years if we take the current \+200% rate.
+Known AI revenue, which omits much of Big Tech's data, is growing fast, at \+340% in the last year. Assuming that there is a total of $60 billion AI revenue (which is Ed Zitron [estimate](https://www.wheresyoured.at/the-case-against-generative-ai/#openai-needs-more-than-a-trillion-dollars-500bn-in-operational-expenses-and-at-least-another-625bn-800bn-for-data-centers-and-there-is-not-enough-private-and-venture-capital-to-pay-for-it)), assuming \+100% annual growth over the next few years (ambitious), the $600 billion question will be solved in 4.5 years, 2.5 years if we take the 2024 \+204% rate.
 
 In conclusion, the possibility of one of the Big Tech's collapsing because of their over investment in AI is small. And if one of the comparably smaller frontier labs does, it won't have an important effect in the Big Tech firms. The AI bubble seems more about potential price correction than a full-scale blow-up, like the subprime mortgage crisis.
 
@@ -167,13 +167,13 @@ In conclusion, the possibility of one of the Big Tech's collapsing because of th
 
 We can check different price ratios to understand if stocks are overvalued, and what current prices imply. We will use the following ratios:
 
-**P/E (Price-to-Earnings):** Market price divided by net earnings. Shows how much investors pay for each dollar of profit, a gauge of profit-based valuation.
+- **P/E (Price-to-Earnings):** Market price divided by net earnings. Shows how much investors pay for each dollar of profit, a gauge of profit-based valuation.
 
-**P/S (Price-to-Sales):** Market value divided by total revenue. Useful when profits are thin or negative; shows how expensive a company's sales are.
+- **P/S (Price-to-Sales):** Market value divided by total revenue. Useful when profits are thin or negative; shows how expensive a company's sales are.
 
-**P/B (Price-to-Book):** Market value divided by accounting net assets. Indicates how much investors value the company above its tangible book worth. Higher for asset-light, IP-driven firms.
+- **P/B (Price-to-Book):** Market value divided by accounting net assets. Indicates how much investors value the company above its tangible book worth. Higher for asset-light, IP-driven firms.
 
-**EV/EBITDA (Enterprise Value to EBITDA):** Compares total business value (equity \+ debt – cash) to operating cash earnings. Balances profitability with capital structure; key for assessing overall valuation.
+- **EV/EBITDA (Enterprise Value to EBITDA):** Compares total business value (equity \+ debt – cash) to operating cash earnings. Balances profitability with capital structure; key for assessing overall valuation.
 
 And this is how they look:
 
