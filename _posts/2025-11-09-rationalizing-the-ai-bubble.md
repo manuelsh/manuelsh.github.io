@@ -125,7 +125,7 @@ For the Big Tech companies, it looks like this (all data in <span>$</span> billi
 | Alphabet  |            85            |             40              |    371    |   116   |   27    |
 |  Amazon   |           101            |             59              |    670    |   71    |   51    |
 |   Meta    |            69            |             15              |    179    |   72    |   50    |
-| **Total** |         **352**          |           **149**           | **1,502** | **361** | **189** |
+| **Total** |         **352**          |           **148**           | **1,502** | **361** | **189** |
 
 It's obvious that the AI investment, that will add up to the depreciation in the coming years, is very high, but in all the Big Tech's it's straightforward to see that these expenses don't seem to generate an unrepairable damage: in most cases is below the yearly profit, and possibly can be absorbed by slightly increasing the debt. Hence, in case these companies do not find a way of generating profit with generative AI, they will not collapse, though their share price will suffer a price correction.
 
@@ -155,9 +155,9 @@ Another important angle we need to explore is the current growth of earnings due
 |    **Amazon – AWS Bedrock**     |  N/D  |  N/D   |          N/D           |
 | **Google – Gemini / Vertex AI** |  N/D  |  N/D   |          N/D           |
 |            **Total**            | \~2.3 | \~7.0  |          20.0          |
-|         **YoY Growth**          |       | \+204% |         \+285%         |
+|         **YoY Growth**          |       | \+204% |         \+185%         |
 
-Known AI revenue, which omits much of Big Tech's data, is growing fast, at \+285% in the last year. Assuming that there is a total of <span>$</span>60 billion AI revenue (which is Ed Zitron [estimate](https://www.wheresyoured.at/the-case-against-generative-ai/#openai-needs-more-than-a-trillion-dollars-500bn-in-operational-expenses-and-at-least-another-625bn-800bn-for-data-centers-and-there-is-not-enough-private-and-venture-capital-to-pay-for-it)), assuming \+100% annual growth over the next few years (ambitious), the <span>$</span>600 billion question will be solved in 4.5 years, 2.5 years if we take the 2024 \+204% rate.
+Known AI revenue, which omits much of Big Tech's data, is growing fast, at \+185% in the last year. Assuming that there is a total of <span>$</span>60 billion AI revenue (which is Ed Zitron [estimate](https://www.wheresyoured.at/the-case-against-generative-ai/#openai-needs-more-than-a-trillion-dollars-500bn-in-operational-expenses-and-at-least-another-625bn-800bn-for-data-centers-and-there-is-not-enough-private-and-venture-capital-to-pay-for-it)), assuming \+100% annual growth over the next few years (ambitious), the <span>$</span>600 billion question will be solved in 3.5 years, 2.5 years if we take the 2025 \+185% rate.
 
 In conclusion, the possibility of one of the Big Tech's collapsing because of their over investment in AI is small. And if one of the comparably smaller frontier labs does, it won't have an important effect in the Big Tech firms. The AI bubble seems more about potential price correction than a full-scale blow-up, like the subprime mortgage crisis.
 
