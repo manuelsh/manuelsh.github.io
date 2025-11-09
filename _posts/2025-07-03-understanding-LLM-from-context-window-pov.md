@@ -8,10 +8,10 @@ giscus_comments: true
 toc:
   - name: But what is a Large Language Model?
     subsections:
-    - name: From LLM to Chatbot
-    - name: The Context Window
-    - name: Examples of Calls to LLMs
-    - name: Past memories
+      - name: From LLM to Chatbot
+      - name: The Context Window
+      - name: Examples of Calls to LLMs
+      - name: Past memories
   - name: Consciousness?
   - name: Agents
   - name: The Journey Continues
@@ -19,9 +19,9 @@ toc:
 
 <span style="color: grey; font-weight: 300; font-size: 0.9em;">3rd July 2025</span>
 
->This article expands on ideas I first presented during a keynote at an AI Hackathon organized by [Fotocasa](https://www.fotocasa.es/en). I am grateful to the organizers for inviting me.
+> This article expands on ideas I first presented during a keynote at an AI Hackathon organized by [Fotocasa](https://www.fotocasa.es/en). I am grateful to the organizers for inviting me.
 
-Large Language Models don't work the way most people think they do. They are massive neural networks with billions of parameters (neuronal connections), but when they're generating responses (making an *inference*), they remain static: their internal state doesn't change.
+Large Language Models don't work the way most people think they do. They are massive neural networks with billions of parameters (neuronal connections), but when they're generating responses (making an _inference_), they remain static: their internal state doesn't change.
 
 The goal of this article is to demystify some of the inner workings of Large Language Models and explain how agentic behavior can be achieved. All from the perspective of the model's input, which makes it very intuitive.
 
@@ -40,9 +40,9 @@ You might not realize it, but your phone has had a language model for over 10 ye
 The keyboard of phone devices have had language models for over 10 years.
 </div>
 
-Language models do exactly that: from a limited vocabulary —usually tens of thousands of the most common words— they choose the most likely next word given the previous context. They accomplish this based on the vast amounts of data they were trained on.
+Language models do exactly that: from a limited vocabulary (usually tens of thousands of the most common words) they choose the most likely next word given the previous context. They accomplish this based on the vast amounts of data they were trained on.
 
-Something fascinating happens when you scale up these models. By increasing both the number of parameters and the training data, the model suddenly becomes dramatically more powerful. Think of a parameter as a neural connection between two neurons —current largest models reach into the trillions of parameters (e.g., [Llama 4 Behemoth](https://ai.meta.com/blog/llama-4-multimodal-intelligence/)).
+Something fascinating happens when you scale up these models. By increasing both the number of parameters and the training data, the model suddenly becomes dramatically more powerful. Think of a parameter as a neural connection between two neurons, current largest models reach into the trillions of parameters (e.g., [Llama 4 Behemoth](https://ai.meta.com/blog/llama-4-multimodal-intelligence/)).
 
 This performance change occurs almost like a phase transition: suddenly, when the model reaches a certain size and training duration (with sufficient data), it acquires entirely new abilities. This phenomenon was thoroughly documented in the paper [Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682?utm_source=chatgpt.com), and the scaling laws are also summarized in [Opening the LLM pipeline](https://manuelsh.github.io/blog/2025/NIPS-building-llm-workshop/).
 
@@ -58,8 +58,7 @@ This performance change occurs almost like a phase transition: suddenly, when th
     *Source: Emergent Abilities of Large Language Models, Oct 2022*
 </div>
 
-
-In reality, LLMs don't predict the next word —they predict the next token, which represents an optimal compromise between predicting individual characters and entire words. On average, a token corresponds to about 0.8 words. For simplicity, I'll use "words" and "tokens" interchangeably throughout this article.
+In reality, LLMs don't predict the next word, they predict the next token, which represents an optimal compromise between predicting individual characters and entire words. On average, a token corresponds to about 0.8 words. For simplicity, I'll use "words" and "tokens" interchangeably throughout this article.
 
 The task of predicting the next word is surprisingly profound. Consider this prompt:
 
@@ -77,7 +76,7 @@ Or consider this more complex example:
 
 ```
 You are a Grandmaster chess player. Predict the next move:
-1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. 
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6.
 ```
 
 Here, the model needs to understand chess strategy to suggest a good move.
@@ -97,7 +96,7 @@ Therefore, predicting the next word requires learning to translate, play chess, 
 
 ### From LLM to Chatbot
 
-While LLMs are powerful on their own, creating a chatbot like ChatGPT requires additional steps. Chatbots need to maintain coherent conversations, which demands more than just next-token prediction. This is where *reinforcement learning* comes into play. In simplified terms, the process to go from an LLM to a chatbot with certain characteristics looks like this:
+While LLMs are powerful on their own, creating a chatbot like ChatGPT requires additional steps. Chatbots need to maintain coherent conversations, which demands more than just next-token prediction. This is where _reinforcement learning_ comes into play. In simplified terms, the process to go from an LLM to a chatbot with certain characteristics looks like this:
 
 <div class="row mt-3">
 
@@ -115,6 +114,7 @@ Starting with a raw LLM, we ask it to produce several answers to the same questi
 ### The Context Window
 
 The context window represents the input to the LLM, essentially the set of tokens the model uses to predict the next one. Each LLM has a different context window size, as most architectures require quadratic scaling with size (though there are exceptions). The LLM with the largest context window (Llama 4 Scout) can process 10 million tokens, which is roughly equivalent to the first 5 volumes of the Encyclopedia Britannica.
+
 <div class="row mt-3">
 
     <div class="col-sm mt-3 mt-md-0">
@@ -141,31 +141,30 @@ Are models with larger context windows necessarily better? The trend over the pa
 
 ### Examples of Calls to LLMs
 
-When we write somethingto an LLM, we're actually sending a request to the trained neural network. This process of reading from the context window and generating predictions is called *inference*. 
+When we write somethingto an LLM, we're actually sending a request to the trained neural network. This process of reading from the context window and generating predictions is called _inference_.
 
-What we write to the model is called a *prompt*, which gives rise to the term *prompt engineering*: the art of crafting prompts that produce desired outputs. As some have noted, a more accurate term would be *context engineering*.
+What we write to the model is called a _prompt_, which gives rise to the term _prompt engineering_: the art of crafting prompts that produce desired outputs. As some have noted, a more accurate term would be _context engineering_.
 
 How does this work in practice? Let's examine some examples. The call to the LLM is typically formatted as JSON, though what actually enters the context window is just a string. Here's a simplified example of what this JSON looks like:
 
 ```json
 {
   "messages": [
-    { "role": "system",  "content": "You are a playful assistant." },
-    { "role": "user",    "content": "Hi!" }
+    { "role": "system", "content": "You are a playful assistant." },
+    { "role": "user", "content": "Hi!" }
   ]
 }
 ```
+
 The first message of the request above is the system message, which instructs the model on how to behave and can contain custom instructions. We'll see more applications of this later.
 
 The second message is the user message: what the user has written. Together, these elements form the prompt. The model then generates a response. Technically, the model doesn't produce a complete response at once, but generates one token at a time in a loop, reading the entire context window plus the newly generated token each time, until it produces a token that signals the end of the response. While this isn't shown in the JSON format, it's important to understand this mechanism.
 
-The response of the model can look like this: 
+The response of the model can look like this:
 
 ```json
 {
-  "messages": [
-    { "role": "assistant", "content": "Hey there!" }
-  ]
+  "messages": [{ "role": "assistant", "content": "Hey there!" }]
 }
 ```
 
@@ -174,10 +173,10 @@ When the user asks another question, the entire conversation history is sent to 
 ```json
 {
   "messages": [
-    { "role": "system",    "content": "You are a playful assistant." },
-    { "role": "user",      "content": "Hi!" },
+    { "role": "system", "content": "You are a playful assistant." },
+    { "role": "user", "content": "Hi!" },
     { "role": "assistant", "content": "Hey there!" },
-    { "role": "user",      "content": "Can you tell me a joke?" }
+    { "role": "user", "content": "Can you tell me a joke?" }
   ]
 }
 ```
@@ -201,25 +200,26 @@ Can you tell me a joke?
 <|im_end|>
 
 ```
+
 where the `<|im_start|>` and `<|im_end|>` are actually tokens that mark the start and end of the message.
 
 ### Past memories
 
-Many current LLM providers, such as OpenAI, have memories. So, if the neural network is static, how is this done? 
+Many current LLM providers, such as OpenAI, have memories. So, if the neural network is static, how is this done?
 
-Again, through the context window. The model will store selected parts of the conversation (one can imagine an LLM runnning in the background that does that), and then adds them to the context window. 
+Again, through the context window. The model will store selected parts of the conversation (one can imagine an LLM runnning in the background that does that), and then adds them to the context window.
 
 The call to the model can look like this:
 
 ```json
 {
   "messages": [
-    { "role": "system",    "content": "You are a playful assistant." },
-    { "role": "memory",    "content": "User name is Manuel." },
-    { "role": "memory",    "content": "User is from Spain." },
-    { "role": "user",      "content": "Hi!" },
+    { "role": "system", "content": "You are a playful assistant." },
+    { "role": "memory", "content": "User name is Manuel." },
+    { "role": "memory", "content": "User is from Spain." },
+    { "role": "user", "content": "Hi!" },
     { "role": "assistant", "content": "Hey there!" },
-    { "role": "user",      "content": "Can you tell me a joke?" }
+    { "role": "user", "content": "Can you tell me a joke?" }
   ]
 }
 ```
@@ -249,9 +249,9 @@ First, the system message instructs the agent about its capabilities and how to 
   "messages": [
     {
       "role": "system",
-      "content": "You are an agent that can call a calculator function. 
-      The function `call_calculator` expects a JSON object with a single 
-      field `expression` containing a valid math expression and returns 
+      "content": "You are an agent that can call a calculator function.
+      The function `call_calculator` expects a JSON object with a single
+      field `expression` containing a valid math expression and returns
       a JSON object with a field `result`."
     },
     {
@@ -290,7 +290,6 @@ An external system parses this response, calls the calculator function, and adds
 Finally, the LLM sees this result and provides the final answer:
 
 ```json
-
 {
   "role": "assistant",
   "content": "Observation: The calculator says 84. Final Answer: 12 × 7 = 84."
@@ -304,9 +303,9 @@ The complete conversation in the context window looks like this:
   "messages": [
     {
       "role": "system",
-      "content": "You are an agent that can call a calculator function. 
-      The function `call_calculator` expects a JSON object with a single 
-      field `expression` containing a valid math expression and returns 
+      "content": "You are an agent that can call a calculator function.
+      The function `call_calculator` expects a JSON object with a single
+      field `expression` containing a valid math expression and returns
       a JSON object with a field `result`."
     },
     {
@@ -325,7 +324,7 @@ The complete conversation in the context window looks like this:
     },
     {
       "role": "function",
-      "name": "call_calculator", 
+      "name": "call_calculator",
       "content": "{\"result\": 84}"
     },
     {
