@@ -47,9 +47,9 @@ Let's take them in turn.
 
 ### The revenue gap: AIs 600 billion dollar question
 
-In June 2024 Sequoia Capital published [an article](https://sequoiacap.com/article/ais-600b-question/) where they argue that the AI bubble was reaching a tipping point. Their claim, which is still valid today, was that AI builders are spending on NVIDIA GPU cards an estimated $150 billion per year. This is generating an enormous gap with the realized AI revenue, which is still at the "few tens of billions" level, and should be at $600 billion to justify such an investment.
+In June 2024 Sequoia Capital published [an article](https://sequoiacap.com/article/ais-600b-question/) where they argue that the AI bubble was reaching a tipping point. Their claim, which is still valid today, was that AI builders are spending on NVIDIA GPU cards an estimated <span>$</span>150 billion per year. This is generating an enormous gap with the realized AI revenue, which is still at the "few tens of billions" level, and should be at <span>$</span>600 billion to justify such an investment.
 
-A similar view comes from Edward Zitron, who in [The Case Against Generative AI](https://www.wheresyoured.at/the-case-against-generative-ai/), claims that everybody (OpenAI, Anthropic, Microsoft, Meta…) is losing money on AI, and this is creating a deeply unstable situation. Not only is there a large gap between AI revenues (which he estimates at a total of $60 billion) and investment, but the promise of AI replacing workers is a fudge. It is not happening because models are not good enough.
+A similar view comes from Edward Zitron, who in [The Case Against Generative AI](https://www.wheresyoured.at/the-case-against-generative-ai/), claims that everybody (OpenAI, Anthropic, Microsoft, Meta…) is losing money on AI, and this is creating a deeply unstable situation. Not only is there a large gap between AI revenues (which he estimates at a total of <span>$</span>60 billion) and investment, but the promise of AI replacing workers is a fudge. It is not happening because models are not good enough.
 
 Additionally, as all companies are investing heavily in AI, this is just increasing their costs for them without much in return. He cites a very relevant [study from MIT](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf) which shows that 95% of companies investing in AI are not getting any value out of it. He even compares this situation to [the subprime crisis](https://www.wheresyoured.at/subprimeai/): the whole tech industry is integrating generative AI technology to either increase their efficiency or to wrap it and sell it (see for example Cursor). This technology is offered at a steep discount to its true cost and is heavily concentrated with two providers that are not sustainable: OpenAI and Anthropic.
 
@@ -70,7 +70,7 @@ The following diagram, from Bloomberg, explains it well:
 Network diagram showing circular investment and purchasing deals between NVIDIA, OpenAI, and the broader AI ecosystem. Source: Bloomberg.
 </div>
 
-We can also interpret this chart as NVIDIA investing in the companies that will fuel the AI revolution. And this would not be worrisome if we didn't have the $600 billion question. But as it is not happening so far, this is viewed by some as an artificial way for NVIDIA to keep the growth promises high, or to buy time to find a way to get this revenue.
+We can also interpret this chart as NVIDIA investing in the companies that will fuel the AI revolution. And this would not be worrisome if we didn't have the <span>$</span>600 billion question. But as it is not happening so far, this is viewed by some as an artificial way for NVIDIA to keep the growth promises high, or to buy time to find a way to get this revenue.
 
 ### Are we hitting an AI ceiling?
 
@@ -99,7 +99,7 @@ This is well represented in the following chart. The _y_ axis represents the dur
 Timeline showing how AI models' ability to complete software engineering tasks has evolved over time. The pattern shows task duration doubling every 7 months. Source: METR.
 </div>
 
-They find a consistent pattern: **every 7 months the human task duration doubles.** So if the best models are now automating tasks that take humans an average of 2 hours, in 14 months we expect that the human task duration that will be completed by a model with 50% success is 8 hours. Now, this is at 50%, which is admittedly very low success. If set the limit at 80% success, then the largest human time automated task is of only 26 minutes. Although small, doubling every 7 months will put us in 8 hours in roughly 28 months.
+They find a consistent pattern: **every 7 months the human task duration doubles.** So if the best models are now automating tasks that take humans an average of 2 hours, in 14 months we expect that the human task duration that will be completed by a model with 50% success is 8 hours. Now, this is at 50%, which is a very low success rate. If the limit is set at 80% success, then the largest human time automated task is of only 26 minutes. Although small, doubling every 7 months will put us in 8 hours in roughly 28 months.
 
 The work of METR is relevant not only because it establishes a predictive rule, but also because it shows that, so far, there is no evidence of an AI ceiling. The exponential growth hasn't flattened.
 
@@ -117,7 +117,7 @@ It is true that there is a large gap between the revenue generated with AI and t
 
 We can easily find financial data of the Big Tech firms and compare the AI investments during 2025 and current depreciation figures, with the revenue, profits, and debt. We will focus on the companies that are building LLMs, as they are the ones in large need of revenues, and ignore other relevant companies in the ecosystem, such as NVIDIA, Oracle, SoftBank, etc.
 
-For the Big Tech companies, it looks like this (all data in $ billions, 12 month trailing, sources in the annex):
+For the Big Tech companies, it looks like this (all data in <span>$</span> billions, 12 month trailing, sources in the annex):
 
 |  Company  | AI investment estimation | Depreciation & amortization |  Revenue  | Profit  |  Debt   |
 | :-------: | :----------------------: | :-------------------------: | :-------: | :-----: | :-----: |
@@ -131,7 +131,7 @@ It's obvious that the AI investment, that will add up to the depreciation in the
 
 ### Frontier labs have more risks, but they are comparably small
 
-Let's now look at the private frontier labs. There is not much public data, so we will build the table based on estimations (all data in $ billions, 12 month trailing, sources in Annex 1):
+Let's now look at the private frontier labs. There is not much public data, so we will build the table based on estimations (all data in <span>$</span> billions, 12 month trailing, sources in Annex 1):
 
 |  Company  | AI investment estimation | Estimated revenue | Estimated profit | Estimated debt |
 | :-------: | :----------------------: | :---------------: | :--------------: | :------------: |
@@ -157,7 +157,7 @@ Another important angle we need to explore is the current growth of earnings due
 |            **Total**            | \~2.3 | \~7.0  |          20.0          |
 |         **YoY Growth**          |       | \+204% |         \+285%         |
 
-Known AI revenue, which omits much of Big Tech's data, is growing fast, at \+285% in the last year. Assuming that there is a total of $60 billion AI revenue (which is Ed Zitron [estimate](https://www.wheresyoured.at/the-case-against-generative-ai/#openai-needs-more-than-a-trillion-dollars-500bn-in-operational-expenses-and-at-least-another-625bn-800bn-for-data-centers-and-there-is-not-enough-private-and-venture-capital-to-pay-for-it)), assuming \+100% annual growth over the next few years (ambitious), the $600 billion question will be solved in 4.5 years, 2.5 years if we take the 2024 \+204% rate.
+Known AI revenue, which omits much of Big Tech's data, is growing fast, at \+285% in the last year. Assuming that there is a total of <span>$</span>60 billion AI revenue (which is Ed Zitron [estimate](https://www.wheresyoured.at/the-case-against-generative-ai/#openai-needs-more-than-a-trillion-dollars-500bn-in-operational-expenses-and-at-least-another-625bn-800bn-for-data-centers-and-there-is-not-enough-private-and-venture-capital-to-pay-for-it)), assuming \+100% annual growth over the next few years (ambitious), the <span>$</span>600 billion question will be solved in 4.5 years, 2.5 years if we take the 2024 \+204% rate.
 
 In conclusion, the possibility of one of the Big Tech's collapsing because of their over investment in AI is small. And if one of the comparably smaller frontier labs does, it won't have an important effect in the Big Tech firms. The AI bubble seems more about potential price correction than a full-scale blow-up, like the subprime mortgage crisis.
 
@@ -272,4 +272,4 @@ StockAnalysis — [TTM revenue & profit (example: AMZN)](https://stockanalysis.c
 
 CompaniesMarketCap — [Companies ranked by P/E](https://companiesmarketcap.com/top-companies-by-pe-ratio/)
 
-Reuters (AI capex & revenues) — [Microsoft boosts FY25 AI/data-center spend](https://www.reuters.com/technology/microsoft-boots-capital-spending-80-billion-ai-2025-07-23/) • [Alphabet reaffirms \~$75B 2025 capex](https://www.reuters.com/technology/alphabet-ceo-reaffirms-planned-75-billion-capital-spending-2025-2025-04-09/) • [Anthropic hits $3B ARR run-rate](https://www.reuters.com/business/anthropic-hits-3-billion-annualized-revenue-business-demand-ai-2025-05-30/)
+Reuters (AI capex & revenues) — [Microsoft boosts FY25 AI/data-center spend](https://www.reuters.com/technology/microsoft-boots-capital-spending-80-billion-ai-2025-07-23/) • [Alphabet reaffirms \~$75B 2025 capex](https://www.reuters.com/technology/alphabet-ceo-reaffirms-planned-75-billion-capital-spending-2025-2025-04-09/) • [Anthropic hits <span>$</span>3B ARR run-rate](https://www.reuters.com/business/anthropic-hits-3-billion-annualized-revenue-business-demand-ai-2025-05-30/)
