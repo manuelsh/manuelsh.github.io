@@ -148,16 +148,16 @@ Another important angle we need to explore is the current growth of earnings due
 
 |             Company             | 2023  |  2024  | 2025 (latest run-rate) |
 | :-----------------------------: | :---: | :----: | :--------------------: |
-|           **OpenAI**            | \~2.0 | \~5.5  |         **12**         |
-|          **Anthropic**          | \~0.2 | \~1.0  |          5-9           |
-|             **xAI**             |  \~0  | \~0.1  |        **\~1**         |
-| **Microsoft – AI coding tools** | \~0.1 | \~0.4  |        **N/D**         |
-|    **Amazon – AWS Bedrock**     |  N/D  |  N/D   |        **N/D**         |
-| **Google – Gemini / Vertex AI** |  N/D  |  N/D   |        **N/D**         |
-|            **Total**            | \~2.3 | \~7.0  |          30.8          |
-|         **YoY Growth**          |       | \+204% |         \+340%         |
+|           **OpenAI**            | \~2.0 | \~5.5  |          12.0          |
+|          **Anthropic**          | \~0.2 | \~1.0  |        5.0-9.0         |
+|             **xAI**             |  \~0  | \~0.1  |         \~1.0          |
+| **Microsoft – AI coding tools** | \~0.1 | \~0.4  |          N/D           |
+|    **Amazon – AWS Bedrock**     |  N/D  |  N/D   |          N/D           |
+| **Google – Gemini / Vertex AI** |  N/D  |  N/D   |          N/D           |
+|            **Total**            | \~2.3 | \~7.0  |          20.0          |
+|         **YoY Growth**          |       | \+204% |         \+285%         |
 
-Known AI revenue, which omits much of Big Tech's data, is growing fast, at \+340% in the last year. Assuming that there is a total of $60 billion AI revenue (which is Ed Zitron [estimate](https://www.wheresyoured.at/the-case-against-generative-ai/#openai-needs-more-than-a-trillion-dollars-500bn-in-operational-expenses-and-at-least-another-625bn-800bn-for-data-centers-and-there-is-not-enough-private-and-venture-capital-to-pay-for-it)), assuming \+100% annual growth over the next few years (ambitious), the $600 billion question will be solved in 4.5 years, 2.5 years if we take the 2024 \+204% rate.
+Known AI revenue, which omits much of Big Tech's data, is growing fast, at \+285% in the last year. Assuming that there is a total of $60 billion AI revenue (which is Ed Zitron [estimate](https://www.wheresyoured.at/the-case-against-generative-ai/#openai-needs-more-than-a-trillion-dollars-500bn-in-operational-expenses-and-at-least-another-625bn-800bn-for-data-centers-and-there-is-not-enough-private-and-venture-capital-to-pay-for-it)), assuming \+100% annual growth over the next few years (ambitious), the $600 billion question will be solved in 4.5 years, 2.5 years if we take the 2024 \+204% rate.
 
 In conclusion, the possibility of one of the Big Tech's collapsing because of their over investment in AI is small. And if one of the comparably smaller frontier labs does, it won't have an important effect in the Big Tech firms. The AI bubble seems more about potential price correction than a full-scale blow-up, like the subprime mortgage crisis.
 
