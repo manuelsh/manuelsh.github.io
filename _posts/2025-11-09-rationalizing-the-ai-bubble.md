@@ -248,11 +248,7 @@ Microsoft FY25 Form 10-K — [SEC filing](https://www.sec.gov/ixviewer/doc?actio
 
 Alphabet Q2 2025 Earnings — [Investor relations release](https://abc.xyz/investor/news/2025/q2-2025-earnings/)
 
-Amazon 2025 Capex Plan — [TechCrunch (Feb 2025)](https://techcrunch.com/2025/02/01/amazon-plans-massive-2025-capex-as-ai-arms-race-heats-up/)
-
 Meta FY2024 Results — [Investor relations release](https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Reports-Fourth-Quarter-and-Full-Year-2024-Results/default.aspx)
-
-Meta Q2 2025 Results — [Investor relations release](https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Reports-Second-Quarter-2025-Results/default.aspx)
 
 Meta 2025 Capex Range ($64–72B) — [Investor relations (Q1 2025)](https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Reports-First-Quarter-2025-Results/default.aspx) • [TechCrunch coverage](https://techcrunch.com/2025/07/30/meta-to-spend-up-to-72b-on-ai-infrastructure-in-2025-as-compute-arms-race-escalates/)
 
@@ -261,8 +257,6 @@ S\&P Dow Jones Indices — [S\&P 500 EPS / Index Earnings (xlsx)](https://www.sp
 Yardeni Research — [S\&P 500 & Sector Valuation (Forward P/E, P/S)](https://www.yardeni.com/pub/sp500pe.pdf)
 
 Damodaran Online — [Industry Multiples](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/pedata.html)
-
-Robert Shiller (Yale) — [CAPE / Long-run valuation data](http://www.econ.yale.edu/~shiller/data.htm)
 
 Multpl — [S\&P 500 Price-to-Sales](https://www.multpl.com/s-p-500-price-to-sales)
 
@@ -279,19 +273,3 @@ StockAnalysis — [TTM revenue & profit (example: AMZN)](https://stockanalysis.c
 CompaniesMarketCap — [Companies ranked by P/E](https://companiesmarketcap.com/top-companies-by-pe-ratio/)
 
 Reuters (AI capex & revenues) — [Microsoft boosts FY25 AI/data-center spend](https://www.reuters.com/technology/microsoft-boots-capital-spending-80-billion-ai-2025-07-23/) • [Alphabet reaffirms \~$75B 2025 capex](https://www.reuters.com/technology/alphabet-ceo-reaffirms-planned-75-billion-capital-spending-2025-2025-04-09/) • [Anthropic hits $3B ARR run-rate](https://www.reuters.com/business/anthropic-hits-3-billion-annualized-revenue-business-demand-ai-2025-05-30/)
-
-Financial Times — [OpenAI revenues & financing coverage (2025)](https://www.ft.com/content/593cca08-78b8-4b7c-80d7-147a913a7b08)
-
-Epoch — [AI Companies Data Hub](https://epoch.ai/data/ai-companies) • [AI company revenue insight](https://epoch.ai/data-insights/ai-companies-revenue)
-
-METR — ["Measuring AI's Ability to Complete Long Tasks"](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/)
-
-Stanford HAI — [2025 AI Index (landing)](https://hai.stanford.edu/ai-index/2025-ai-index-report)
-
-S\&P Global Indexology / Research — [COVID drawdown & volatility context](https://www.spglobal.com/en/research-insights/market-insights/sp-500-dividend-futures-divining-time-to-recovery)
-
-ScienceDirect — ["The 'COVID' crash of the 2020 U.S. stock market"](https://www.sciencedirect.com/science/article/pii/S1062940821001170)
-
-Visual Capitalist — [S\&P 500 concentration (Sep 2025)](https://www.visualcapitalist.com/sp-500-concentration-reaches-new-highs/)
-
-Wall Street Journal — [What Investors Learned From Tech Earnings (Mag-7 weight)](https://www.wsj.com/finance/stocks/what-investors-learned-from-tech-earnings-906fd1b5)
