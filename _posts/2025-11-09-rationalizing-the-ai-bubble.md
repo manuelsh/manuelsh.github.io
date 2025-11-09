@@ -37,27 +37,27 @@ In these times of inflated expectations for AI, what is different? Are we on the
 
 The three main claims on the AI bubble are:
 
-(1) the large gap between the infrastructure spend (CAPEX) and realized AI revenue will not close,
+(1) there is a gigantic gap between the infrastructure spend and AI revenue, which will not close,
 
 (2) there is a web of circular deals between NVIDIA and the rest of the AI ecosystem that artificially inflates the prices and
 
 (3) there is a ceiling on how much AI models can improve and we are reaching it, which implies a hard limit in the performance of many practical systems built using AI.
 
-Let's take them in turn.
+Let's take them one by one.
 
 ### The revenue gap: AIs 600 billion dollar question
 
 In June 2024 Sequoia Capital published [an article](https://sequoiacap.com/article/ais-600b-question/) where they argue that the AI bubble was reaching a tipping point. Their claim, which is still valid today, was that AI builders are spending on NVIDIA GPU cards an estimated <span>$</span>150 billion per year. This is generating an enormous gap with the realized AI revenue, which is still at the "few tens of billions" level, and should be at <span>$</span>600 billion to justify such an investment.
 
-A similar view comes from Edward Zitron, who in [The Case Against Generative AI](https://www.wheresyoured.at/the-case-against-generative-ai/), claims that everybody (OpenAI, Anthropic, Microsoft, Meta…) is losing money on AI, and this is creating a deeply unstable situation. Not only is there a large gap between AI revenues (which he estimates at a total of <span>$</span>60 billion) and investment, but the promise of AI replacing workers is a fudge. It is not happening because models are not good enough.
+A similar view comes from Edward Zitron, who in [The Case Against Generative AI](https://www.wheresyoured.at/the-case-against-generative-ai/), claims that everybody (OpenAI, Anthropic, Microsoft, Meta…) is losing money on AI, and this is creating a deeply unstable situation. Not only is there a large gap, but the promise of AI replacing workers is a fudge. It is not happening because models are not good enough.
 
-Additionally, as all companies are investing heavily in AI, this is just increasing their costs for them without much in return. He cites a very relevant [study from MIT](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf) which shows that 95% of companies investing in AI are not getting any value out of it. He even compares this situation to [the subprime crisis](https://www.wheresyoured.at/subprimeai/): the whole tech industry is integrating generative AI technology to either increase their efficiency or to wrap it and sell it (see for example Cursor). This technology is offered at a steep discount to its true cost and is heavily concentrated with two providers that are not sustainable: OpenAI and Anthropic.
+Additionally, as all companies are investing heavily in AI, their costs are increasing without much in return, neither productivity, nor additional revenue. He cites a relevant [study from MIT](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf) which shows that 95% of companies investing in AI are not getting any value out of it. He even compares this situation to the [subprime crisis](https://www.wheresyoured.at/subprimeai/): the whole tech industry is integrating generative AI technology to either increase their efficiency or to wrap it and sell it (see for example Cursor). This technology is offered at a steep discount to its true cost and is heavily concentrated with two providers that are not sustainable: OpenAI and Anthropic.
 
 In essence, the whole system is currently very unstable, built on promises of a very large amount of profit. And it seems that these profits are not coming yet.
 
 ### A web of circular deals
 
-If the previous wasn't large enough, add to that [a web of circular deals](http://bloomberg.com/news/features/2025-10-07/openai-s-nvidia-amd-deals-boost-1-trillion-ai-boom-with-circular-deals) where the main GPU maker, NVIDIA, invests in the LLM providers, mostly OpenAI and xAI, which then spend more buying NVIDIA cards, sometimes through intermediate companies such as Oracle. This not only inflates NVIDIA's revenue but also adds more systemic risk.
+If the previous wasn't large enough, add to that [a web of circular deals](http://bloomberg.com/news/features/2025-10-07/openai-s-nvidia-amd-deals-boost-1-trillion-ai-boom-with-circular-deals) where the main GPU maker, NVIDIA, invests in the LLM providers, mostly OpenAI and xAI, which then sped in buying NVIDIA cards, sometimes through intermediate companies such as Oracle. This not only inflates NVIDIA's revenue but also adds more systemic risk.
 
 The following diagram, from Bloomberg, explains it well:
 
@@ -70,15 +70,15 @@ The following diagram, from Bloomberg, explains it well:
 Network diagram showing circular investment and purchasing deals between NVIDIA, OpenAI, and the broader AI ecosystem. Source: Bloomberg.
 </div>
 
-We can also interpret this chart as NVIDIA investing in the companies that will fuel the AI revolution. And this would not be worrisome if we didn't have the <span>$</span>600 billion question. But as it is not happening so far, this is viewed by some as an artificial way for NVIDIA to keep the growth promises high, or to buy time to find a way to get this revenue.
+We can also interpret this chart as NVIDIA investing in the companies that will fuel the AI revolution. And this would not be worrisome if we didn't have the <span>$</span>600 billion question.
 
 ### Are we hitting an AI ceiling?
 
-Many sources say that although AI has made rapid progress, there may be a "ceiling" in the performance: scaling the size of the model, or data quality/quantity, or architectural innovation may not be enough to make models better. Hence, there could be a limit in the upside as many companies are betting on exponential AI improvement, and everything relies on future value.
+Many sources say that although AI has made rapid progress, there may be a "ceiling" in the performance: scaling the size of the model, or data quality/quantity, or architectural innovation may not be enough to make models better. Hence, there could be a limit in the upside as many companies are betting on exponential AI improvement.
 
-However, models are not reliable enough to substitute humans on many tasks yet. Can AI agents be as good as workers? Can a company substitute people by paying a smaller, but still significant amount to the LLM producers? That should be enough for these companies to be sustainable.
+However, models are not reliable enough to substitute humans on many tasks yet. Can AI agents be as good as workers? Can a company substitute people by paying a smaller, but still significant amount to the LLM producers?
 
-Although there seems to be instances of this occurring, it's not happening at a large scale. For example, in the case of coding, where AI is being deployed everywhere to automate parts of the process, we haven't seen programmers leaving companies en masse. Moreover, we see some papers with evidence to the contrary: [AI slows coders down](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/).
+Although there seems to be instances of this occurring, it's not happening at a large scale. For example, in the case of coding, where AI is being deployed everywhere to automate parts of the process, programmers are not leaving companies en masse. Moreover, we see some papers with evidence to the contrary: [AI slows coders down](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/).
 
 ## A bit of rationality: what is the data saying?
 
@@ -238,7 +238,7 @@ And current prices are telling us that the expectations are high. In fact, this 
 
 On average, the market is expecting a \+97% profit growth, which is undeniably high. This profit, which is of the order of a few hundred billions, needs to come from either consumers or companies paying more.
 
-Companies outside the Big Tech's are already adopting AI en masse, increasing their costs, as we have seen, without getting much profit yet. For such a large amount of money to move hands, we need to see that profit, we need to see the increase of productivity or the revenues. But also we need to see that the AI ceiling is not far. The game is in the application layer as much as in the model layer.
+Companies outside the Big Tech's are all already adopting AI, increasing their costs, as we have seen, without getting much profit yet. For such a large amount of money to move hands, we need to see that profit, we need to see the increase of productivity or the revenues. But also we need to see that the AI ceiling is not far. The game is in the application layer as much as in the model layer.
 
 ## Annex: Data sources
 
