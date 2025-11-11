@@ -39,7 +39,7 @@ toc:
 </ul>
 </div>
 
-The history of AI is a history of disappointments, with at least two cycles that started with promising results, large investment pouring in, followed by underdelivery, significant losses and another AI winter. In these times of inflated expectations for AI, what is different? Are we on the verge of a financial meltdown similar to the subprime crisis or the dot-com bubble? 
+The history of AI is a history of disappointments, with at least two cycles that started with promising results, large investment pouring in, followed by underdelivery, significant losses and another AI winter. In these times of inflated expectations for AI, what is different? Are we on the verge of a financial meltdown similar to the subprime crisis or the dot-com bubble?
 
 As someone deeply involved in AI, I wanted to take a closer look, so I put on my financial hat and looked closely at the data. What I found was interesting: I don't think that we are close to a massive collapse of the economy or the technology sector. We may encounter a price correction soon, though.
 
@@ -128,12 +128,12 @@ We can easily find financial data of the Big Tech firms and compare the AI inves
 For the Big Tech companies (all data in <span>$</span> billions, 12 month trailing, sources in the annex):
 
 |  Company  | AI investment estimated | Depreciation & amortization |  Revenue  | Profit  |  Debt   |
-| :-------: | :----------------------: | :-------------------------: | :-------: | :-----: | :-----: |
-| Microsoft |            97            |             34              |    282    |   102   |   61    |
-| Alphabet  |            85            |             40              |    371    |   116   |   27    |
-|  Amazon   |           101            |             59              |    670    |   71    |   51    |
-|   Meta    |            69            |             15              |    179    |   72    |   50    |
-| **Total** |         **352**          |           **148**           | **1,502** | **361** | **189** |
+| :-------: | :---------------------: | :-------------------------: | :-------: | :-----: | :-----: |
+| Microsoft |           97            |             34              |    282    |   102   |   61    |
+| Alphabet  |           85            |             40              |    371    |   116   |   27    |
+|  Amazon   |           101           |             59              |    670    |   71    |   51    |
+|   Meta    |           69            |             15              |    179    |   72    |   50    |
+| **Total** |         **352**         |           **148**           | **1,502** | **361** | **189** |
 
 It's obvious that AI investments, which will translate into depreciation over the coming years potentially reducing profits, are substantial. However, for Big Tech firms, it's evident that these expenditures won't cause irreparable damage. In most cases, the investment remains below annual profits, and possibly can be absorbed by a modest increase in debt. Therefore, even in these companies do not find a way of generating significant return from generative AI, they are unlikely to collapse, though their share price may face a correction.
 
@@ -154,14 +154,14 @@ Unsurprisingly, none of them is profitable. However, they are significantly smal
 
 Another important angle we need to explore is the current growth of earnings due to AI. It's not easy to estimate, as most companies do not report that separately, but still, we can get some data for some of the companies (except Google and Amazon):
 
-|             Company             | 2023  |  2024  | 2025 (latest run-rate) |
-| :-----------------------------: | :---: | :----: | :--------------------: |
-|           **OpenAI**            | \~2.0 | \~5.5  |          12.0          |
-|          **Anthropic**          | \~0.2 | \~1.0  |        \~7.0           |
-|             **xAI**             |  \~0  | \~0.1  |         \~1.0          |
-|          **Microsoft**          | \~1.5 |   10   |            13          |
-|            **Total**            | \~3.7 | \~16.6 |        \~33.0         |
-|         **YoY Growth**          |       | \+349% |          \+98%         |
+|    Company     | 2023  |  2024  | 2025 (latest run-rate) |
+| :------------: | :---: | :----: | :--------------------: |
+|   **OpenAI**   | \~2.0 | \~5.5  |          12.0          |
+| **Anthropic**  | \~0.2 | \~1.0  |         \~7.0          |
+|    **xAI**     |  \~0  | \~0.1  |         \~1.0          |
+| **Microsoft**  | \~1.5 |   10   |           13           |
+|   **Total**    | \~3.7 | \~16.6 |         \~33.0         |
+| **YoY Growth** |       | \+349% |         \+98%          |
 
 Known AI revenue, which omits much of Big Tech data, is growing fast, at \+98% in the last year. Assuming that there is a total of <span>$</span>60 billion AI revenue (which is Ed Zitron [estimate](https://www.wheresyoured.at/the-case-against-generative-ai/#openai-needs-more-than-a-trillion-dollars-500bn-in-operational-expenses-and-at-least-another-625bn-800bn-for-data-centers-and-there-is-not-enough-private-and-venture-capital-to-pay-for-it)), assuming \+100% annual growth over the next few years (ambitious), the <span>$</span>600 billion question will be solved in 3.5 years.
 
