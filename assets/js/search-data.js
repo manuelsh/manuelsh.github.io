@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-beyond-tokens-the-context-window-perspective-on-llms-memory-and-mind",
+        },{id: "post-rationalizing-the-ai-bubble",
+      
+        title: "Rationalizing the AI bubble",
+      
+      description: "An analysis of AI bubble through financial data: examining revenue gaps, circular deals, and whether we&#39;re heading for a meltdown or just a price correction",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/rationalizing-the-ai-bubble/";
+        
+      },
+    },{id: "post-beyond-tokens-the-context-window-perspective-on-llms-memory-and-mind",
       
         title: "Beyond Tokens: The Context-Window Perspective on LLMs, Memory, and Mind",
       
