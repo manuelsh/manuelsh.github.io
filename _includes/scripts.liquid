@@ -215,15 +215,22 @@
 {% if site.enable_google_analytics %}
   <!-- Analytics -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+    // Only load Google Analytics if not on localhost
+    if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+      // Dynamically load the gtag script
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}';
+      document.head.appendChild(script);
 
-    gtag('config', '{{ site.google_analytics }}');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}');
+    }
   </script>
 {% endif %}
 
