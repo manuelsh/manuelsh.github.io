@@ -8,7 +8,7 @@ giscus_comments: true
 toc:
   - name: What is being said on the AI bubble
     subsections:
-      - name: "The revenue gap: \n AIs 600 billion dollar question"
+      - name: "The revenue gap: AIs 600 billion dollar question"
       - name: A web of circular deals
       - name: Are we hitting an AI ceiling?
   - name: "A bit of rationality: what is the data saying?"
