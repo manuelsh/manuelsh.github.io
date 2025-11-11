@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: "Rationalizing the AI bubble"
-date: 2025-11-09 09:00:00
+date: 2025-11-11 09:00:00
 description: "An analysis of AI bubble through financial data: examining revenue gaps, circular deals, and whether we're heading for a meltdown or just a price correction"
 categories: AI, finance, technology, bubble, economics
 giscus_comments: true
@@ -27,7 +27,7 @@ toc:
   - name: "Annex: data sources"
 ---
 
-<span style="color: grey; font-weight: 300; font-size: 0.9em;">9th November 2025</span>
+<span style="color: grey; font-weight: 300; font-size: 0.9em;">11th November 2025</span>
 
 <div style="background-color: #3a3a3a; padding: 20px; border-radius: 8px; margin: 25px 0; color: #e8e8e8;">
 <strong style="font-size: 1.1em; display: block; margin-bottom: 12px;">Key Points</strong>
