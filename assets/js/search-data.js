@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-rationalizing-the-ai-bubble",
+        },{id: "post-a-pragmatic-evaluation-of-software-engineering-ai-tooling",
+      
+        title: "A Pragmatic Evaluation of Software Engineering AI Tooling",
+      
+      description: "How we evaluated Claude Code, Cursor, and GitHub Copilot across 77 engineers and 165 real tasks to determine productivity impact",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2026/pragmatic-evaluation-ai-tooling/";
+        
+      },
+    },{id: "post-rationalizing-the-ai-bubble",
       
         title: "Rationalizing the AI bubble",
       
