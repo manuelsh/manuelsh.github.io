@@ -16,9 +16,16 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "A collection of selected AI, ML, and technical projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
         },{id: "nav-cv",
           title: "cv",
-          description: "Exported from my [LinkedIn profile](https://www.linkedin.com/in/manuelsh/)",
+          description: "My public professional profile now lives on LinkedIn.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -254,51 +261,36 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-ai-tooling-evaluation",
+          title: 'AI Tooling Evaluation',
+          description: "Evaluation of software-engineering AI tools",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+              window.location.href = "/projects/ai-tooling-evaluation/";
+            },},{id: "projects-hugging-face-transformers-contribution",
+          title: 'Hugging Face Transformers Contribution',
+          description: "Dynamic image-resolution support for vision-language models",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+              window.location.href = "/projects/hugging-face-transformers/";
+            },},{id: "projects-kaggle-competition-quora-insincere-questions",
+          title: 'Kaggle Competition: Quora Insincere Questions',
+          description: "NLP competition under strict Kaggle kernel constraints, which finished with a Gold Medal",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+              window.location.href = "/projects/kaggle-quora-insincere-questions/";
+            },},{id: "projects-building-the-data-and-ml-backbone-at-adevinta",
+          title: 'Building the Data and ML backbone at Adevinta',
+          description: "A project that transformed AI and Data capabilities in Adevinta",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+              window.location.href = "/projects/orchard-data-foundations/";
+            },},{id: "projects-platic-transcription-webapp",
+          title: 'Platic Transcription Webapp',
+          description: "Full-stack transcription product built around OpenAI Whisper",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+              window.location.href = "/projects/platic-transcription-webapp/";
+            },},{id: "projects-theoria-dataset",
+          title: 'TheorIA Dataset',
+          description: "Open dataset of theoretical physics results for language-model reasoning",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/theoria-dataset/";
             },},{
         id: 'social-email',
         title: 'email',
@@ -319,6 +311,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.kaggle.com/manuelsh", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/manuelsh", "_blank");
         },
       },{
         id: 'social-rss',
