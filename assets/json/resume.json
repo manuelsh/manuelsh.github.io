@@ -1,344 +1,314 @@
 {
-    "$schema":  "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
-    "basics":  {
-                   "name":  "Manuel Sánchez Hernández",
-                   "label":  "AI and Machine Learning Leader",
-                   "image":  "",
-                   "email":  "mansanher@gmail.com",
-                   "phone":  "",
-                   "url":  "https://manuelsh.github.io/",
-                   "summary":  "AI and machine learning leader focused on turning complex technology into measurable business outcomes. Most recently Engineering Director of Machine Learning at Adevinta, where I led central ML capabilities and worked across AI strategy, platforms, computer vision, generative AI, and organizational enablement. Earlier experience spans Schibsted, Morgan Stanley, and Procter \u0026 Gamble, plus teaching and facilitation for executive and technical audiences.",
-                   "location":  {
-                                    "countryCode":  "ES",
-                                    "address":  "Barcelona, Spain"
-                                },
-                   "profiles":  [
-                                    {
-                                        "network":  "LinkedIn",
-                                        "username":  "manuelsh",
-                                        "url":  "https://www.linkedin.com/in/manuelsh/"
-                                    }
-                                ]
-               },
-    "work":  [
-                 {
-                     "name":  "Adevinta",
-                     "position":  "Engineering Director of Machine Learning",
-                     "startDate":  "2024-01-31",
-                     "endDate":  "2026-03-31",
-                     "highlights":  [
-
-                                    ],
-                     "summary":  "Most recently led Adevinta central machine learning capabilities, combining engineering leadership, AI strategy, platform thinking, and organizational change across European marketplaces.",
-                     "url":  "https://www.linkedin.com/company/adevinta/",
-                     "location":  "Barcelona, Catalonia, Spain"
-                 },
-                 {
-                     "name":  "Adevinta",
-                     "position":  "Head of Product of Machine Learning Services Area",
-                     "startDate":  "2019-12-31",
-                     "endDate":  "2024-01-31",
-                     "highlights":  [
-
-                                    ],
-                     "summary":  "Co-led Adevinta Machine Learning Services, defining product vision, strategy, stakeholder alignment, and execution for global ML teams serving the company marketplaces. The area built shared capabilities that helped product teams adopt machine learning more easily, including ML platforms, computer vision services, internal education, and community programs.",
-                     "url":  "https://www.linkedin.com/company/adevinta/",
-                     "location":  "Barcelona Area, Spain"
-                 },
-                 {
-                     "name":  "Different universities",
-                     "position":  "Invited teacher / learning facilitator on machine learning",
-                     "startDate":  "2020-11-30",
-                     "endDate":  "2023-12-31",
-                     "highlights":  [
-
-                                    ],
-                     "summary":  "Teach and facilitate applied machine learning and AI sessions for executive and technical audiences, including programs connected to MIT, University of Chicago, ESADE, and Universitat Pompeu Fabra. The focus is helping leaders and practitioners understand how ML is built, scaled, and translated into business value.",
-                     "url":  ""
-                 },
-                 {
-                     "name":  "Schibsted Media Group",
-                     "position":  "Engineering Manager / Staff Data Scientist, ML Enablement",
-                     "startDate":  "2016-09-30",
-                     "endDate":  "2019-12-31",
-                     "highlights":  [
-
-                                    ],
-                     "summary":  "Built and scaled machine learning adoption across Schibsted marketplaces, working with product and engineering teams on applied ML use cases in search, acquisition, user experience, and trust. Started as a hands-on data scientist and evolved toward enablement leadership, creating workshops, reusable practices, and a team model that helped more teams use ML effectively.",
-                     "url":  "https://www.linkedin.com/company/schibsted-asa/",
-                     "location":  "Barcelona Area, Spain"
-                 },
-                 {
-                     "name":  "IE Business School",
-                     "position":  "Co-writer of textbook - Machine Learning and Big Data",
-                     "startDate":  "2017-12-31",
-                     "endDate":  "2018-07-31",
-                     "highlights":  [
-
-                                    ],
-                     "summary":  "Co-authored the Machine Learning and Big Data section of an academic textbook used in economic intelligence programs at several Spanish universities. The work translated applied ML concepts for business, strategy, and decision-making audiences.",
-                     "url":  "https://www.linkedin.com/school/ie-business-school/"
-                 },
-                 {
-                     "name":  "Self-Employed",
-                     "position":  "Machine learning business and technical consultant",
-                     "startDate":  "2014-03-31",
-                     "endDate":  "2016-09-30",
-                     "highlights":  [
-
-                                    ],
-                     "summary":  "Independent consultant helping financial and technology companies apply quantitative research, machine learning, and business analytics to strategic decisions. Work included quantitative strategy development, sales analytics, and interim leadership during a post-acquisition business transition.",
-                     "url":  "",
-                     "location":  "London, United Kingdom"
-                 },
-                 {
-                     "name":  "Morgan Stanley",
-                     "position":  "Senior Data Scientist, Quantitative Analyst",
-                     "startDate":  "2011-03-31",
-                     "endDate":  "2014-02-28",
-                     "highlights":  [
-
-                                    ],
-                     "summary":  "Worked in the front-office equity derivatives team developing quantitative investment strategies, portfolio construction tools, and analytics for trading desks and clients. The role combined statistical modeling, financial product thinking, and client-facing support for systematic investment solutions.",
-                     "url":  "https://www.linkedin.com/company/morgan-stanley/",
-                     "location":  "London"
-                 },
-                 {
-                     "name":  "Arbora \u0026 Ausonia (Procter \u0026 Gamble JV)",
-                     "position":  "Product Manager and Production Planning Manager",
-                     "startDate":  "2003-02-28",
-                     "endDate":  "2009-07-31",
-                     "highlights":  [
-
-                                    ],
-                     "summary":  "Started in production planning and later moved into product management in P\u0026G Iberian joint venture, Arbora \u0026 Ausonia. Led cross-functional and international work across supply, marketing, finance, and commercial teams, including product launches, operational planning, and brand-profit improvement.",
-                     "url":  "https://www.linkedin.com/company/arbora-\u0026-ausonia/",
-                     "location":  "Barcelona, Catalonia, Spain"
-                 }
-             ],
-    "volunteer":  [
-                      {
-                          "organization":  "Harris Academy Bermondsay",
-                          "position":  "Mentoring",
-                          "startDate":  "2012-09-30",
-                          "endDate":  "",
-                          "summary":  "Mentoring of students. I look to inspire and help them by communicating positive values and speak about the implications of their own career decisions.",
-                          "highlights":  [
-
-                                         ],
-                          "url":  ""
-                      }
-                  ],
-    "education":  [
-                      {
-                          "institution":  "Universitat Pompeu Fabra",
-                          "area":  "Marketing",
-                          "studyType":  "Postgrade",
-                          "startDate":  "2006-12-31",
-                          "endDate":  "2006-12-31",
-                          "score":  "",
-                          "courses":  [
-
-                                      ]
-                      },
-                      {
-                          "institution":  "Imperial College London",
-                          "area":  "Theoretical Physics",
-                          "studyType":  "MSc",
-                          "startDate":  "2001-12-31",
-                          "endDate":  "2002-12-31",
-                          "score":  "",
-                          "courses":  [
-
-                                      ]
-                      },
-                      {
-                          "institution":  "Universidad de La Laguna",
-                          "area":  "Physics",
-                          "studyType":  "MSc",
-                          "startDate":  "1997-12-31",
-                          "endDate":  "2001-12-31",
-                          "score":  "",
-                          "courses":  [
-
-                                      ]
-                      },
-                      {
-                          "institution":  "Imperial College London",
-                          "area":  "Mathematics and Finance",
-                          "studyType":  "MSc",
-                          "startDate":  "2009-12-31",
-                          "endDate":  "2010-12-31",
-                          "score":  "",
-                          "courses":  [
-
-                                      ]
-                      }
-                  ],
-    "awards":  [
-                   {
-                       "title":  "Gold medal in Kaggle Data Science competition (position 11 out of  4,037)",
-                       "date":  "2019-02-28",
-                       "awarder":  "Kaggle",
-                       "summary":  "I used a Deep Learning NLP model implemented with PyTorch and torchtext, in the Quora Insincere Questions Classification (detect toxic content to improve online conversations).\n\nhttps://www.kaggle.com/manuelsh"
-                   },
-                   {
-                       "title":  "Best UK Structured Products House, Best Equity Derivatives House",
-                       "date":  "2013-12-31",
-                       "awarder":  "Structured Products magazine, International Financing Review",
-                       "summary":  "Several awards won by Morgan Stanley highlight quantitative strategies under my development.\n\nhttp://goo.gl/SEkDKf\nhttp://goo.gl/2oASZi\nhttp://goo.gl/ehndQI"
-                   },
-                   {
-                       "title":  "Communication Awards",
-                       "date":  "2010-12-31",
-                       "awarder":  null,
-                       "summary":  "As product manager in P\u0026G, awarded best spot in international advertisement festival (2010), Best Social Campaign 2008 (internal P\u0026G prize), Best Press Campaign given by national magazine (2008), Best Advertisement of P\u0026G Marketing Communication Seminar (2007)."
-                   },
-                   {
-                       "title":  "Scholarship Caja Madrid",
-                       "date":  "2009-04-30",
-                       "awarder":  "Caja Madrid",
-                       "summary":  "Awarded with a scholarship from Caja Madrid which fully sponsored the MSc in Mathematics and Finance, including living expenses "
-                   },
-                   {
-                       "title":  "Collaboration Scholarship",
-                       "date":  "2001-12-31",
-                       "awarder":  "Spanish Ministry of Education",
-                       "summary":  "Awarded with a scholarship which allowed me to collaborate with the Fundamental Physics Department on a research which culminated later on a publication on Physics Review."
-                   },
-                   {
-                       "title":  "National Physics Olympics",
-                       "date":  "1997-12-31",
-                       "awarder":  null,
-                       "summary":  "Fourth prize in the Spanish National Physics Olympics."
-                   }
-               ],
-    "certificates":  [
-                         {
-                             "name":  "Deep Reinforcement Learning Nanodegree",
-                             "issuer":  "Udacity",
-                             "startDate":  "2019-05-31",
-                             "url":  "https://graduation.udacity.com/confirm/J67HAUUU"
-                         },
-                         {
-                             "name":  "Data Science for Business Leaders",
-                             "issuer":  "Udacity",
-                             "startDate":  "2021-01-31",
-                             "url":  "https://confirm.udacity.com/WLACGWKE"
-                         },
-                         {
-                             "name":  "Data Leadership Learning Plan",
-                             "issuer":  "DATAVERSITY",
-                             "startDate":  "2021-04-30",
-                             "url":  "https://ti-user-certificates.s3.amazonaws.com/ea5ddd3b-bc2d-4dba-a10e-306c6f3bc1b9/efb26b32-f55e-4825-be7f-4461fe321c6d-manuel-snchez-hernndez-dl0-data-leadership-learning-plan-certificate.pdf"
-                         }
-                     ],
-    "publications":  [
-                         {
-                             "name":  "Escape of photons from two fixed extreme Reissner-Nordström black holes",
-                             "publisher":  "Physics Review",
-                             "releaseDate":  "2008-11-30",
-                             "summary":  "We study the scattering of light (null geodesics) by two fixed extreme Reissner-Nordstr\\\"om black holes, in which the gravitational attraction of their masses is exactly balanced with the electrostatic repulsion of their charges, allowing a static spacetime. We identify the set of unstable periodic orbits that constitute the fractal repeller that completely describes the chaotic escape dynamics of photons. In the framework of periodic orbit theory, the analysis of the linear stability of the unstable periodic orbits is used to obtain the main quantities of chaos that characterize the escape dynamics of the photons scattered by the black holes. In particular, the escape rate which is compared with the result obtained from numerical simulations that consider statistical ensembles of photons. We also analyze the dynamics of photons in the proximity of a perturbed black hole and give an analytical estimation for the escape rate in this system.",
-                             "url":  "http://arxiv.org/abs/gr-qc/0701052"
-                         }
-                     ],
-    "languages":  [
-                      {
-                          "language":  "Spanish",
-                          "fluency":  "Native"
-                      },
-                      {
-                          "language":  "English",
-                          "fluency":  "Full professional proficiency"
-                      },
-                      {
-                          "language":  "Catalan",
-                          "fluency":  "Limited working proficiency"
-                      },
-                      {
-                          "language":  "German",
-                          "fluency":  "Limited working proficiency"
-                      }
-                  ],
-    "interests":  [
-
-                  ],
-    "references":  [
-
-                   ],
-    "projects":  [
-                     {
-                         "name":  "TheorIA Dataset",
-                         "startDate":  "2025-04-01",
-                         "summary":  "Open dataset of theoretical physics results and derivations designed to support evaluation, fine-tuning, and benchmarking of language models on physics reasoning tasks.",
-                         "url":  "https://manuelsh.github.io/projects/theoria-dataset/"
-                     },
-                     {
-                         "name":  "Pragmatic Evaluation of Software Engineering AI Tooling",
-                         "startDate":  "2025-05-01",
-                         "endDate":  "2026-03-09",
-                         "summary":  "Enterprise AI-coding-tool evaluation across 77 engineers, 14 teams, and 165 real tasks, comparing GitHub Copilot, Cursor, and Claude Code.",
-                         "url":  "https://manuelsh.github.io/projects/ai-tooling-evaluation/"
-                     },
-                     {
-                         "name":  "Adevinta Generative AI Strategy",
-                         "startDate":  "2023-01-01",
-                         "endDate":  "2026-03-31",
-                         "summary":  "Board-facing GenAI strategy, governance, budget, workshops, and adoption work across Adevinta product and platform teams.",
-                         "url":  "https://manuelsh.github.io/projects/adevinta-genai-strategy/"
-                     },
-                     {
-                         "name":  "DeLorean Platform Localization",
-                         "startDate":  "2024-10-01",
-                         "endDate":  "2026-03-31",
-                         "summary":  "Marketplace-autonomy transformation across ML Platform, Big Data Platform, Computer Vision, and experimentation capabilities.",
-                         "url":  "https://manuelsh.github.io/projects/delorean-platform-localization/"
-                     },
-                     {
-                         "name":  "Adevinta ML Platform and Computer Vision",
-                         "startDate":  "2019-12-01",
-                         "endDate":  "2024-12-31",
-                         "summary":  "Shared ML, computer-vision, and experimentation capabilities for marketplace teams, including platform adoption and production-scale CV services.",
-                         "url":  "https://manuelsh.github.io/projects/adevinta-ml-platform-computer-vision/"
-                     },
-                     {
-                         "name":  "Orchard Data Foundations and ML Synergies",
-                         "startDate":  "2022-01-01",
-                         "endDate":  "2024-03-31",
-                         "summary":  "ML and data-foundations work tied to Adevinta integration synergies, including source-reported overdelivery versus EUR 9M targets.",
-                         "url":  "https://manuelsh.github.io/projects/orchard-data-foundations/"
-                     },
-                     {
-                         "name":  "Hugging Face Transformers Contribution",
-                         "startDate":  "2024-08-01",
-                         "endDate":  "2024-09-30",
-                         "summary":  "Open-source contribution to Hugging Face Transformers around dynamic image-resolution and positional-encoder support for vision-language models.",
-                         "url":  "https://manuelsh.github.io/projects/hugging-face-transformers/"
-                     },
-                     {
-                         "name":  "ML Academy and ML Enablement",
-                         "startDate":  "2020-03-01",
-                         "endDate":  "2024-12-31",
-                         "summary":  "Internal machine-learning education and enablement programs helping product, engineering, and leadership teams adopt ML more effectively at scale.",
-                         "url":  "https://manuelsh.github.io/projects/ml-academy-enablement/"
-                     },
-                     {
-                         "name":  "Morgan Stanley Quantitative Investment Strategies",
-                         "startDate":  "2011-03-01",
-                         "endDate":  "2014-02-28",
-                         "summary":  "Front-office quantitative strategy, portfolio-construction, and client-facing analytics work connected to systematic investment products with $1.5B+ source-reported AUM/client investment.",
-                         "url":  "https://manuelsh.github.io/projects/morgan-stanley-quant-strategies/"
-                     },
-                     {
-                         "name":  "AltVista, Amundi, Ion, and Automated Trader",
-                         "startDate":  "2014-03-01",
-                         "endDate":  "2016-09-30",
-                         "summary":  "Independent consulting across quantitative finance, sales analytics, hedge-fund research, and interim business operations.",
-                         "url":  "https://manuelsh.github.io/projects/altvista-consulting-quant-business/"
-                     }
-                 ],
-    "meta":  {
-                 "version":  "v1.0.0",
-                 "canonical":  "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
-             }
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Manuel Sánchez Hernández",
+    "label": "AI and Machine Learning Leader",
+    "image": "",
+    "email": "mansanher@gmail.com",
+    "phone": "",
+    "url": "https://manuelsh.github.io/",
+    "summary": "AI and machine learning leader focused on turning complex technology into measurable business outcomes. Most recently Engineering Director of Machine Learning at Adevinta, where I led central ML capabilities and worked across AI strategy, platforms, computer vision, generative AI, and organizational enablement. Earlier experience spans Schibsted, Morgan Stanley, and Procter \u0026 Gamble, plus teaching and facilitation for executive and technical audiences.",
+    "location": {
+      "countryCode": "ES",
+      "address": "Barcelona, Spain"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "manuelsh",
+        "url": "https://www.linkedin.com/in/manuelsh/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Adevinta",
+      "position": "Engineering Director of Machine Learning",
+      "startDate": "2024-01-31",
+      "endDate": "2026-03-31",
+      "highlights": [],
+      "summary": "Most recently led Adevinta central machine learning capabilities, combining engineering leadership, AI strategy, platform thinking, and organizational change across European marketplaces.",
+      "url": "https://www.linkedin.com/company/adevinta/",
+      "location": "Barcelona, Catalonia, Spain"
+    },
+    {
+      "name": "Adevinta",
+      "position": "Head of Product of Machine Learning Services Area",
+      "startDate": "2019-12-31",
+      "endDate": "2024-01-31",
+      "highlights": [],
+      "summary": "Co-led Adevinta Machine Learning Services, defining product vision, strategy, stakeholder alignment, and execution for global ML teams serving the company marketplaces. The area built shared capabilities that helped product teams adopt machine learning more easily, including ML platforms, computer vision services, internal education, and community programs.",
+      "url": "https://www.linkedin.com/company/adevinta/",
+      "location": "Barcelona Area, Spain"
+    },
+    {
+      "name": "Different universities",
+      "position": "Invited teacher / learning facilitator on machine learning",
+      "startDate": "2020-11-30",
+      "endDate": "2023-12-31",
+      "highlights": [],
+      "summary": "Teach and facilitate applied machine learning and AI sessions for executive and technical audiences, including programs connected to MIT, University of Chicago, ESADE, and Universitat Pompeu Fabra. The focus is helping leaders and practitioners understand how ML is built, scaled, and translated into business value.",
+      "url": ""
+    },
+    {
+      "name": "Schibsted Media Group",
+      "position": "Engineering Manager / Staff Data Scientist, ML Enablement",
+      "startDate": "2016-09-30",
+      "endDate": "2019-12-31",
+      "highlights": [],
+      "summary": "Built and scaled machine learning adoption across Schibsted marketplaces, working with product and engineering teams on applied ML use cases in search, acquisition, user experience, and trust. Started as a hands-on data scientist and evolved toward enablement leadership, creating workshops, reusable practices, and a team model that helped more teams use ML effectively.",
+      "url": "https://www.linkedin.com/company/schibsted-asa/",
+      "location": "Barcelona Area, Spain"
+    },
+    {
+      "name": "IE Business School",
+      "position": "Co-writer of textbook - Machine Learning and Big Data",
+      "startDate": "2017-12-31",
+      "endDate": "2018-07-31",
+      "highlights": [],
+      "summary": "Co-authored the Machine Learning and Big Data section of an academic textbook used in economic intelligence programs at several Spanish universities. The work translated applied ML concepts for business, strategy, and decision-making audiences.",
+      "url": "https://www.linkedin.com/school/ie-business-school/"
+    },
+    {
+      "name": "Self-Employed",
+      "position": "Machine learning business and technical consultant",
+      "startDate": "2014-03-31",
+      "endDate": "2016-09-30",
+      "highlights": [],
+      "summary": "Independent consultant helping financial and technology companies apply quantitative research, machine learning, and business analytics to strategic decisions. Work included quantitative strategy development, sales analytics, and interim leadership during a post-acquisition business transition.",
+      "url": "",
+      "location": "London, United Kingdom"
+    },
+    {
+      "name": "Morgan Stanley",
+      "position": "Senior Data Scientist, Quantitative Analyst",
+      "startDate": "2011-03-31",
+      "endDate": "2014-02-28",
+      "highlights": [],
+      "summary": "Worked in the front-office equity derivatives team developing quantitative investment strategies, portfolio construction tools, and analytics for trading desks and clients. The role combined statistical modeling, financial product thinking, and client-facing support for systematic investment solutions.",
+      "url": "https://www.linkedin.com/company/morgan-stanley/",
+      "location": "London"
+    },
+    {
+      "name": "Arbora \u0026 Ausonia (Procter \u0026 Gamble JV)",
+      "position": "Product Manager and Production Planning Manager",
+      "startDate": "2003-02-28",
+      "endDate": "2009-07-31",
+      "highlights": [],
+      "summary": "Started in production planning and later moved into product management in P\u0026G Iberian joint venture, Arbora \u0026 Ausonia. Led cross-functional and international work across supply, marketing, finance, and commercial teams, including product launches, operational planning, and brand-profit improvement.",
+      "url": "https://www.linkedin.com/company/arbora-\u0026-ausonia/",
+      "location": "Barcelona, Catalonia, Spain"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Harris Academy Bermondsay",
+      "position": "Mentoring",
+      "startDate": "2012-09-30",
+      "endDate": "",
+      "summary": "Mentoring of students. I look to inspire and help them by communicating positive values and speak about the implications of their own career decisions.",
+      "highlights": [],
+      "url": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universitat Pompeu Fabra",
+      "area": "Marketing",
+      "studyType": "Postgrade",
+      "startDate": "2006-12-31",
+      "endDate": "2006-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Imperial College London",
+      "area": "Theoretical Physics",
+      "studyType": "MSc",
+      "startDate": "2001-12-31",
+      "endDate": "2002-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Universidad de La Laguna",
+      "area": "Physics",
+      "studyType": "MSc",
+      "startDate": "1997-12-31",
+      "endDate": "2001-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Imperial College London",
+      "area": "Mathematics and Finance",
+      "studyType": "MSc",
+      "startDate": "2009-12-31",
+      "endDate": "2010-12-31",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Gold medal in Kaggle Data Science competition (position 11 out of  4,037)",
+      "date": "2019-02-28",
+      "awarder": "Kaggle",
+      "summary": "I used a Deep Learning NLP model implemented with PyTorch and torchtext, in the Quora Insincere Questions Classification (detect toxic content to improve online conversations).\n\nhttps://www.kaggle.com/manuelsh"
+    },
+    {
+      "title": "Best UK Structured Products House, Best Equity Derivatives House",
+      "date": "2013-12-31",
+      "awarder": "Structured Products magazine, International Financing Review",
+      "summary": "Several awards won by Morgan Stanley highlight quantitative strategies under my development.\n\nhttp://goo.gl/SEkDKf\nhttp://goo.gl/2oASZi\nhttp://goo.gl/ehndQI"
+    },
+    {
+      "title": "Communication Awards",
+      "date": "2010-12-31",
+      "awarder": null,
+      "summary": "As product manager in P\u0026G, awarded best spot in international advertisement festival (2010), Best Social Campaign 2008 (internal P\u0026G prize), Best Press Campaign given by national magazine (2008), Best Advertisement of P\u0026G Marketing Communication Seminar (2007)."
+    },
+    {
+      "title": "Scholarship Caja Madrid",
+      "date": "2009-04-30",
+      "awarder": "Caja Madrid",
+      "summary": "Awarded with a scholarship from Caja Madrid which fully sponsored the MSc in Mathematics and Finance, including living expenses "
+    },
+    {
+      "title": "Collaboration Scholarship",
+      "date": "2001-12-31",
+      "awarder": "Spanish Ministry of Education",
+      "summary": "Awarded with a scholarship which allowed me to collaborate with the Fundamental Physics Department on a research which culminated later on a publication on Physics Review."
+    },
+    {
+      "title": "National Physics Olympics",
+      "date": "1997-12-31",
+      "awarder": null,
+      "summary": "Fourth prize in the Spanish National Physics Olympics."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Deep Reinforcement Learning Nanodegree",
+      "issuer": "Udacity",
+      "startDate": "2019-05-31",
+      "url": "https://graduation.udacity.com/confirm/J67HAUUU"
+    },
+    {
+      "name": "Data Science for Business Leaders",
+      "issuer": "Udacity",
+      "startDate": "2021-01-31",
+      "url": "https://confirm.udacity.com/WLACGWKE"
+    },
+    {
+      "name": "Data Leadership Learning Plan",
+      "issuer": "DATAVERSITY",
+      "startDate": "2021-04-30",
+      "url": "https://ti-user-certificates.s3.amazonaws.com/ea5ddd3b-bc2d-4dba-a10e-306c6f3bc1b9/efb26b32-f55e-4825-be7f-4461fe321c6d-manuel-snchez-hernndez-dl0-data-leadership-learning-plan-certificate.pdf"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Escape of photons from two fixed extreme Reissner-Nordström black holes",
+      "publisher": "Physics Review",
+      "releaseDate": "2008-11-30",
+      "summary": "We study the scattering of light (null geodesics) by two fixed extreme Reissner-Nordstr\\\"om black holes, in which the gravitational attraction of their masses is exactly balanced with the electrostatic repulsion of their charges, allowing a static spacetime. We identify the set of unstable periodic orbits that constitute the fractal repeller that completely describes the chaotic escape dynamics of photons. In the framework of periodic orbit theory, the analysis of the linear stability of the unstable periodic orbits is used to obtain the main quantities of chaos that characterize the escape dynamics of the photons scattered by the black holes. In particular, the escape rate which is compared with the result obtained from numerical simulations that consider statistical ensembles of photons. We also analyze the dynamics of photons in the proximity of a perturbed black hole and give an analytical estimation for the escape rate in this system.",
+      "url": "http://arxiv.org/abs/gr-qc/0701052"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Full professional proficiency"
+    },
+    {
+      "language": "Catalan",
+      "fluency": "Limited working proficiency"
+    },
+    {
+      "language": "German",
+      "fluency": "Limited working proficiency"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "TheorIA Dataset",
+      "startDate": "2025-04-01",
+      "summary": "Open dataset of theoretical physics results and derivations designed to support evaluation, fine-tuning, and benchmarking of language models on physics reasoning tasks.",
+      "url": "https://manuelsh.github.io/projects/theoria-dataset/"
+    },
+    {
+      "name": "Pragmatic Evaluation of Software Engineering AI Tooling",
+      "startDate": "2025-05-01",
+      "endDate": "2026-03-09",
+      "summary": "Enterprise AI-coding-tool evaluation across 77 engineers, 14 teams, and 165 real tasks, comparing GitHub Copilot, Cursor, and Claude Code.",
+      "url": "https://manuelsh.github.io/projects/ai-tooling-evaluation/"
+    },
+    {
+      "name": "Adevinta Generative AI Strategy",
+      "startDate": "2023-01-01",
+      "endDate": "2026-03-31",
+      "summary": "Board-facing GenAI strategy, governance, budget, workshops, and adoption work across Adevinta product and platform teams.",
+      "url": "https://manuelsh.github.io/projects/adevinta-genai-strategy/"
+    },
+    {
+      "name": "DeLorean Platform Localization",
+      "startDate": "2024-10-01",
+      "endDate": "2026-03-31",
+      "summary": "Marketplace-autonomy transformation across ML Platform, Big Data Platform, Computer Vision, and experimentation capabilities.",
+      "url": "https://manuelsh.github.io/projects/delorean-platform-localization/"
+    },
+    {
+      "name": "Adevinta ML Platform and Computer Vision",
+      "startDate": "2019-12-01",
+      "endDate": "2024-12-31",
+      "summary": "Shared ML, computer-vision, and experimentation capabilities for marketplace teams, including platform adoption and production-scale CV services.",
+      "url": "https://manuelsh.github.io/projects/adevinta-ml-platform-computer-vision/"
+    },
+    {
+      "name": "Orchard Data Foundations and ML Synergies",
+      "startDate": "2022-01-01",
+      "endDate": "2024-03-31",
+      "summary": "ML and data-foundations work tied to Adevinta integration synergies, including source-reported overdelivery versus EUR 9M targets.",
+      "url": "https://manuelsh.github.io/projects/orchard-data-foundations/"
+    },
+    {
+      "name": "Hugging Face Transformers Contribution",
+      "startDate": "2024-08-01",
+      "endDate": "2024-09-30",
+      "summary": "Open-source contribution to Hugging Face Transformers around dynamic image-resolution and positional-encoder support for vision-language models.",
+      "url": "https://manuelsh.github.io/projects/hugging-face-transformers/"
+    },
+    {
+      "name": "ML Academy and ML Enablement",
+      "startDate": "2020-03-01",
+      "endDate": "2024-12-31",
+      "summary": "Internal machine-learning education and enablement programs helping product, engineering, and leadership teams adopt ML more effectively at scale.",
+      "url": "https://manuelsh.github.io/projects/ml-academy-enablement/"
+    },
+    {
+      "name": "Morgan Stanley Quantitative Investment Strategies",
+      "startDate": "2011-03-01",
+      "endDate": "2014-02-28",
+      "summary": "Front-office quantitative strategy, portfolio-construction, and client-facing analytics work connected to systematic investment products with $1.5B+ source-reported AUM/client investment.",
+      "url": "https://manuelsh.github.io/projects/morgan-stanley-quant-strategies/"
+    },
+    {
+      "name": "AltVista, Amundi, Ion, and Automated Trader",
+      "startDate": "2014-03-01",
+      "endDate": "2016-09-30",
+      "summary": "Independent consulting across quantitative finance, sales analytics, hedge-fund research, and interim business operations.",
+      "url": "https://manuelsh.github.io/projects/altvista-consulting-quant-business/"
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
 }

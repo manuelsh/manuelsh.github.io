@@ -45,6 +45,7 @@ _Originally published on [Adevinta Tech Blog](https://adevinta.com/techblog/a-pr
 
 **Personal note:** This article reflects the outcome of a pilot that we ran in Adevinta in June 2025 to evaluate various AI software engineering tools. The findings, previously unpublished, were somewhat unexpected, as Claude Code was not widely favored by engineers at the time.
 **Contributors to the pilot:** Albert Puigsech Galicia, Mario Viñas Ruiz, Francesca Lorenzoni, Diego Duchowney, Ferran Grau
+
 > # How to interpret the results
 >
 > This was a pragmatic, decision-oriented pilot, done with real work across our teams. Results are directional and internally valid to Adevinta codebases and workflows. Limitations and Design Trade-offs: Our results are based on assessment of experienced software engineers on how long a task should last, which can be subjective. Tools were assigned to teams to minimize disruption, so results reflect real adoption contexts rather than randomized trials. Our sample size is limited, we add confidence intervals in our data. The study lasted only 1 month, hence long term effects are not measured. Pilot was done in May-June 2025, with the state of tools at that point in time. All tools have evolved since then.
