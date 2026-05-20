@@ -1,11 +1,12 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
 title: cv
 nav: true
 nav_order: 5
-cv_pdf: Manuel_Sanchez.pdf # you can also use external links here
-description: Exported from my [LinkedIn profile](https://www.linkedin.com/in/manuelsh/)
-toc:
-  sidebar: left
+nav_url: https://www.linkedin.com/in/manuelsh/
+redirect: https://www.linkedin.com/in/manuelsh/
+description: My public professional profile now lives on LinkedIn.
 ---
+
+You will be redirected to my [LinkedIn profile](https://www.linkedin.com/in/manuelsh/).

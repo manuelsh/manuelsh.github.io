@@ -13,6 +13,13 @@
       {% endif %}
       <div class="card-body">
         <h2 class="card-title">{{ project.title }}</h2>
+        {% if project.timeframe or project.role %}
+          <p class="card-text text-muted mb-2">
+            {% if project.timeframe %}{{ project.timeframe }}{% endif %}
+            {% if project.timeframe and project.role %} &middot; {% endif %}
+            {% if project.role %}{{ project.role }}{% endif %}
+          </p>
+        {% endif %}
         <p class="card-text">{{ project.description }}</p>
         <div class="row ml-1 mr-1 p-0">
           {% if project.github %}

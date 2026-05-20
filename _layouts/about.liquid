@@ -56,6 +56,23 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    <!-- Selected projects -->
+    {% assign selected_projects = site.projects | where: 'selected', true | sort: 'order' %}
+    {% if selected_projects.size > 0 %}
+      <h2>
+        <a href="{{ '/projects/' | relative_url }}" style="color: inherit">selected projects</a>
+      </h2>
+      <div class="projects selected-projects">
+        <div class="row row-cols-1 row-cols-md-2">
+          {% for project in selected_projects %}
+            {% if project.order %}
+              {% include selected_project_card.liquid %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>

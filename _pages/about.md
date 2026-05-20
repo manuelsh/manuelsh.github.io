@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: A collection of my projects and writtings.
+subtitle: I explore the frontiers of knowledge and technology to help people and organizations.
 profile:
   align: right
   image: prof_pic.jpg
@@ -15,23 +15,12 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I currently work as Engineering Director of Machine Learning at [Adevinta](https://www.adevinta.com) in Barcelona, with the mission of accelerating the AI transformation of our marketplaces.
+I am interested in how science, software, and AI can be turned into systems, teams, and products. For more than 15 years, that has been the focus of my work in machine learning and AI.
 
-I have also worked at [Morgan Stanley](https://www.morganstanley.com/) in London and at [Procter & Gamble](https://us.pg.com/) in Barcelona.
+Most recently at [Adevinta](https://www.adevinta.com), I led the central machine learning organization and co-led generative AI strategy across European marketplaces. My work combined strategy, [platform building](/projects/orchard-data-foundations/), production systems, and large-scale AI adoption, improving both customer experience and [internal productivity](http://localhost:8080/blog/2026/pragmatic-evaluation-ai-tooling/).
 
-I studied Theoretical Physics at [Imperial College London](https://www.imperial.ac.uk/theoretical-physics/) and in the [Universidad de La Laguna](https://www.ull.es/departamentos/fisica/).
+Earlier in my career, I built machine learning capabilities at Schibsted, developed automatic investment strategies at [Morgan Stanley](https://www.morganstanley.com/) in London, and led product and supply initiatives in a Procter & Gamble joint venture in Barcelona.
 
-I occasionally teach machine learning in a few places, do some [coding](https://github.com/manuelsh), a bit of [Kaggle](https://www.kaggle.com/manuelsh), [writing](/blog), reading, etc. I am also lucky to be father of three kids.
+I also teach and facilitate AI and machine learning for executive and technical audiences. Feel free to [contact me](mailto:mansanher@gmail.com) if you are interested.
 
-I hope you find something interesting here. Was tempted to add a picture of my cat, but I don't have one.
-
-<!-- ## selected projects
-
-{% assign selected_projects = site.projects | where: "selected", true | sort: "order" %}
-{% for project in selected_projects %}
-{% if project.order %}
-
-- **[{{ project.title }}]({{ project.link }})**
-   {{ project.description }}
-  {% endif %}
-  {% endfor %} -->
+This site collects my writing and selected public [projects](/projects/) on AI, LLMs, machine learning systems, software engineering productivity, and evaluation.
