@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Kaggle logo</title>
+  <desc id="desc">Kaggle wordmark in blue on a white background.</desc>
+  <rect width="1200" height="520" rx="28" fill="#ffffff"/>
+  <g fill="#20beff">
+    <text
+      x="600"
+      y="292"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="168"
+      font-weight="700"
+      letter-spacing="0"
+    >kaggle</text>
+  </g>
+</svg>

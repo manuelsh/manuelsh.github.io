@@ -1,0 +1,35 @@
+{% if project.redirect %}
+  {% assign project_url = project.redirect %}
+{% else %}
+  {% assign project_url = project.url | relative_url %}
+{% endif %}
+
+<div class="col mb-3">
+  <div class="card selected-project-card hoverable">
+    <div class="selected-project-card-inner">
+      {% if project.img %}
+        <a class="selected-project-card-media" href="{{ project_url }}" aria-label="{{ project.title | escape }}">
+          {% include figure.liquid loading="eager" path=project.img sizes="96px" alt="project thumbnail" class="selected-project-card-img" %}
+        </a>
+      {% endif %}
+      <div class="selected-project-card-body">
+        <h3 class="selected-project-card-title">
+          <a href="{{ project_url }}">{{ project.title }}</a>
+        </h3>
+        {% if project.timeframe or project.role %}
+          <p class="selected-project-card-meta">
+            {% if project.timeframe %}{{ project.timeframe }}{% endif %}
+            {% if project.timeframe and project.role %} &middot; {% endif %}
+            {% if project.role %}{{ project.role }}{% endif %}
+          </p>
+        {% endif %}
+        <p class="selected-project-card-description">{{ project.description }}</p>
+        {% if project.github %}
+          <a class="selected-project-card-github" href="{{ project.github }}" aria-label="{{ project.title | escape }} code repository">
+            <i class="fa-brands fa-github gh-icon"></i>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

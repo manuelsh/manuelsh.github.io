@@ -4,6 +4,8 @@ permalink: /blog/
 title: blog
 nav: true
 nav_order: 1
+blog_title: The Double Prism
+blog_subtitle: When digression becomes the path
 pagination:
   enabled: true
   collection: posts
@@ -18,14 +20,21 @@ pagination:
 
 <div class="post">
 
-{% assign blog_name_size = site.blog_name | size %}
-{% assign blog_description_size = site.blog_description | size %}
+{% assign blog_title = page.blog_title | default: site.blog_name %}
+{% assign blog_subtitle = page.blog_subtitle | default: site.blog_description %}
+{% assign blog_name_size = blog_title | size %}
+{% assign blog_description_size = blog_subtitle | size %}
 
 {% if blog_name_size > 0 or blog_description_size > 0 %}
 
   <div class="header-bar">
-    <h1>{{ site.blog_name }}</h1>
-    <h2>{{ site.blog_description }}</h2>
+    <h1>{{ blog_title }}</h1>
+    <img
+      class="blog-header-image"
+      src="{{ '/assets/img/double-prism-blog.png' | relative_url }}"
+      alt="The Double Prism"
+    >
+    <h2>{{ blog_subtitle }}</h2>
   </div>
   {% endif %}
 
