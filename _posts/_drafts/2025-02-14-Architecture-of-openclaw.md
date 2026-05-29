@@ -26,7 +26,7 @@ toc:
 
 <span style="color: grey; font-weight: 300; font-size: 0.9em;">14th February 2026</span>
 
-OpenClaw (https://github.com/manuelsh/openclaw) is a useful specimen: it’s not “just a chatbot”, but a small _agent platform_ that lives close to the real world—messages, sessions, tools, memory, background loops, and delivery constraints.
+OpenClaw (https://github.com/manuelsh/openclaw) is a useful specimen: it’s not “just a chatbot”, but a small _agent platform_ that lives close to real product constraints: messages, sessions, tools, memory, background loops, and delivery limits.
 
 It is also very much a proof of concept. But the direction is hard to miss: frontier labs are steadily moving from “a model that answers” to “a system that acts”.
 
@@ -158,7 +158,7 @@ The runtime takes:
 - a final reply (sometimes multiple messages, sometimes media)
 - optional intermediate events (tool updates, streaming blocks)
 
-Why it matters: the runtime is where you bake in the operational reality—timeouts, retries, fallbacks, and “what do we do when the model misbehaves?”
+Why it matters: the runtime is where you bake in the operational reality: timeouts, retries, fallbacks, and “what do we do when the model misbehaves?”
 
 ### 6) Tools + workspace (how agents touch the world)
 
@@ -249,4 +249,4 @@ OpenClaw is a proof of concept, but it’s pointing at a stable future shape. A 
      - where outputs go
      - how actions are approved
 
-In short: OpenClaw is interesting not because it is perfect, but because it looks like the kind of scaffolding that will surround frontier models in practice. The model will keep improving—but the product moat will increasingly live in everything around it: routing, memory, tools, scheduling, and reliability.
+In short: OpenClaw is interesting not because it is perfect, but because it looks like the kind of scaffolding that will surround frontier models in practice. The model will keep improving, but the product moat will increasingly live in everything around it: routing, memory, tools, scheduling, and reliability.

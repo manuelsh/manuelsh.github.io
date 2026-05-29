@@ -109,7 +109,7 @@ While LLMs are powerful on their own, creating a chatbot like ChatGPT requires a
     Reinforcement learning with human feedback (RLHF)simplified.
 </div>
 
-Starting with a raw LLM, we ask it to produce several answers to the same question. These answers are then rated by humans based on various criteria (usefulness, truthfulness, helpfulness, etc.). The ranked responses are used—through a process that may involve another model to retrain the LLM by readjusting its parameters. This process repeats iteratively until the model reaches a satisfactory state.
+Starting with a raw LLM, we ask it to produce several answers to the same question. These answers are then rated by humans based on various criteria (usefulness, truthfulness, helpfulness, etc.). The ranked responses are used through a process that may involve another model, which retrains the LLM by readjusting its parameters. This process repeats iteratively until the model reaches a satisfactory state.
 
 ### The Context Window
 

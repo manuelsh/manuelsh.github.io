@@ -181,7 +181,7 @@ We can check different price ratios to understand if stocks are overvalued, and 
 
 - **P/B (Price-to-Book):** Market value divided by accounting net assets. Indicates how much investors value the company above its tangible book worth. Higher for asset-light, IP-driven firms.
 
-- **EV/EBITDA (Enterprise Value to EBITDA):** Compares total business value (equity \+ debt – cash) to operating cash earnings. Balances profitability with capital structure; key for assessing overall valuation.
+- **EV/EBITDA (Enterprise Value to EBITDA):** Compares total business value (equity \+ debt - cash) to operating cash earnings. Balances profitability with capital structure; key for assessing overall valuation.
 
 And this is how they look:
 
@@ -198,8 +198,8 @@ We can have an idea if these values are high by looking to their typical values 
 
 |                                 |   P/E   |  P/S   |  P/B   | EV/EBITDA |
 | :-----------------------------: | :-----: | :----: | :----: | :-------: |
-|      **Technology Sector**      | 25 – 35 | 5 – 10 | 5 – 10 |  15 – 25  |
-| **All Companies (S&P 500 avg)** | 15 – 18 | 1 – 3  | 2 – 3  |  8 – 12   |
+|      **Technology Sector**      | 25-35 | 5-10 | 5-10 |  15-25  |
+| **All Companies (S&P 500 avg)** | 15-18 | 1-3  | 2-3  |  8-12   |
 
 With these it's easy to see that the major risks are in NVIDIA and Oracle. If we look at the average P/E for the Technology Sector, which is currently at 40, we see that we are getting closer to 2000 levels. See chart below ([source](https://worldperatio.com/sector/sp-500-information-technology/?utm_source=chatgpt.com)).
 
@@ -224,7 +224,7 @@ Let's imagine what could happen if markets become more rational, and they keep c
 | Meta      | 2.6                | 22.0        | \-9.1                 | \-0.2                    | \-27.3                | \-0.7                    |
 | Nvidia    | 7.6                | 56.1        | \-64.3                | \-4.9                    | \-71.5                | \-5.4                    |
 | Oracle    | 1.1                | 54.9        | \-63.6                | \-0.7                    | \-70.9                | \-0.8                    |
-| **Total** | **26.9**           | —           | —                     | **\-12.4**               | —                     | **\-15.4**               |
+| **Total** | **26.9**           | N/A         | N/A                   | **\-12.4**               | N/A                   | **\-15.4**               |
 
 In both scenarios, the correction of the S&P 500 index, although significant, won't be a disaster: \-12% for the 20x and \-15% for the x16. For context, during Covid the index had a drawdown of \-34% during one month.
 
@@ -252,34 +252,34 @@ Companies outside Big Tech are already adopting AI, raising their costs without 
 
 ## Annex: Data sources
 
-Microsoft FY25 Q4 Earnings Call / Investor Relations — [Press release & webcast](https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q4/press-release-webcast)
+Microsoft FY25 Q4 Earnings Call / Investor Relations: [Press release & webcast](https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q4/press-release-webcast)
 
-Microsoft FY25 Form 10-K — [SEC filing](https://www.sec.gov/ixviewer/doc?action=display&source=content&source_url=/Archives/edgar/data/789019/000156459025000001/msft-20250630.htm)
+Microsoft FY25 Form 10-K: [SEC filing](https://www.sec.gov/ixviewer/doc?action=display&source=content&source_url=/Archives/edgar/data/789019/000156459025000001/msft-20250630.htm)
 
-Alphabet Q2 2025 Earnings — [Investor relations release](https://abc.xyz/investor/news/2025/q2-2025-earnings/)
+Alphabet Q2 2025 Earnings: [Investor relations release](https://abc.xyz/investor/news/2025/q2-2025-earnings/)
 
-Meta FY2024 Results — [Investor relations release](https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Reports-Fourth-Quarter-and-Full-Year-2024-Results/default.aspx)
+Meta FY2024 Results: [Investor relations release](https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Reports-Fourth-Quarter-and-Full-Year-2024-Results/default.aspx)
 
-Meta 2025 Capex Range ($64–72B) — [Investor relations (Q1 2025)](https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Reports-First-Quarter-2025-Results/default.aspx) • [TechCrunch coverage](https://techcrunch.com/2025/07/30/meta-to-spend-up-to-72b-on-ai-infrastructure-in-2025-as-compute-arms-race-escalates/)
+Meta 2025 Capex Range ($64B-$72B): [Investor relations (Q1 2025)](https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Reports-First-Quarter-2025-Results/default.aspx) • [TechCrunch coverage](https://techcrunch.com/2025/07/30/meta-to-spend-up-to-72b-on-ai-infrastructure-in-2025-as-compute-arms-race-escalates/)
 
-S\&P Dow Jones Indices — [S&P 500 EPS / Index Earnings (xlsx)](https://www.spglobal.com/spdji/en/documents/additional-material/sp-500-eps-est.xlsx)
+S\&P Dow Jones Indices: [S&P 500 EPS / Index Earnings (xlsx)](https://www.spglobal.com/spdji/en/documents/additional-material/sp-500-eps-est.xlsx)
 
-Yardeni Research — [S&P 500 & Sector Valuation (Forward P/E, P/S)](https://www.yardeni.com/pub/sp500pe.pdf)
+Yardeni Research: [S&P 500 & Sector Valuation (Forward P/E, P/S)](https://www.yardeni.com/pub/sp500pe.pdf)
 
-Damodaran Online — [Industry Multiples](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/pedata.html)
+Damodaran Online: [Industry Multiples](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/pedata.html)
 
-Multpl — [S&P 500 Price-to-Sales](https://www.multpl.com/s-p-500-price-to-sales)
+Multpl: [S&P 500 Price-to-Sales](https://www.multpl.com/s-p-500-price-to-sales)
 
-YCharts — [S&P 500 Price-to-Sales chart](https://ycharts.com/indicators/sp_500_price_to_sales_ratio)
+YCharts: [S&P 500 Price-to-Sales chart](https://ycharts.com/indicators/sp_500_price_to_sales_ratio)
 
-FinanceCharts — [Homepage / tools & TTM data](https://www.financecharts.com/)
+FinanceCharts: [Homepage / tools & TTM data](https://www.financecharts.com/)
 
-Macrotrends — [Depreciation & Amortization (example: AMZN)](https://www.macrotrends.net/stocks/charts/AMZN/amazon/total-depreciation-amortization-cash-flow)
+Macrotrends: [Depreciation & Amortization (example: AMZN)](https://www.macrotrends.net/stocks/charts/AMZN/amazon/total-depreciation-amortization-cash-flow)
 
-GuruFocus — [D\&A TTM (example: AMZN)](https://www.gurufocus.com/term/cash-flow-depreciation-depletion-amortization/AMZN)
+GuruFocus: [D\&A TTM (example: AMZN)](https://www.gurufocus.com/term/cash-flow-depreciation-depletion-amortization/AMZN)
 
-StockAnalysis — [TTM revenue & profit (example: AMZN)](https://stockanalysis.com/stocks/amzn/revenue/)
+StockAnalysis: [TTM revenue & profit (example: AMZN)](https://stockanalysis.com/stocks/amzn/revenue/)
 
-CompaniesMarketCap — [Companies ranked by P/E](https://companiesmarketcap.com/top-companies-by-pe-ratio/)
+CompaniesMarketCap: [Companies ranked by P/E](https://companiesmarketcap.com/top-companies-by-pe-ratio/)
 
-Reuters (AI capex & revenues) — [Microsoft boosts FY25 AI/data-center spend](https://www.reuters.com/technology/microsoft-boots-capital-spending-80-billion-ai-2025-07-23/) • [Alphabet reaffirms \~$75B 2025 capex](https://www.reuters.com/technology/alphabet-ceo-reaffirms-planned-75-billion-capital-spending-2025-2025-04-09/) • [Anthropic hits <span>$</span>3B ARR run-rate](https://www.reuters.com/business/anthropic-hits-3-billion-annualized-revenue-business-demand-ai-2025-05-30/)
+Reuters (AI capex & revenues): [Microsoft boosts FY25 AI/data-center spend](https://www.reuters.com/technology/microsoft-boots-capital-spending-80-billion-ai-2025-07-23/) • [Alphabet reaffirms \~$75B 2025 capex](https://www.reuters.com/technology/alphabet-ceo-reaffirms-planned-75-billion-capital-spending-2025-2025-04-09/) • [Anthropic hits <span>$</span>3B ARR run-rate](https://www.reuters.com/business/anthropic-hits-3-billion-annualized-revenue-business-demand-ai-2025-05-30/)
