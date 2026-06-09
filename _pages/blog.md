@@ -5,7 +5,7 @@ title: blog
 nav: true
 nav_order: 1
 blog_title: The Double Prism
-blog_subtitle: When digression becomes the path
+blog_subtitle: Ideas at the edge of AI, science, and software
 pagination:
   enabled: true
   collection: posts
