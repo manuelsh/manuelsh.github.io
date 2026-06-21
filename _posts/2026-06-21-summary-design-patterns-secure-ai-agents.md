@@ -8,7 +8,6 @@ categories: AI, security, software engineering
 giscus_comments: true
 toc:
   - name: The lethal trifecta
-  - name: Why prompting is not enough
   - name: The design patterns
     subsections:
       - name: 1. Action-selector
@@ -17,9 +16,7 @@ toc:
       - name: 4. Dual LLM
       - name: 5. Code-then-execute
       - name: 6. Context minimization
-  - name: How I would map the patterns to real systems
   - name: Best practices around the patterns
-  - name: Conclusion
 ---
 
 <span style="color: grey; font-weight: 300; font-size: 0.9em;">21st June 2026</span>
