@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-a-pragmatic-evaluation-of-software-engineering-ai-tooling",
+        },{id: "post-a-summary-of-design-patterns-to-secure-ai-agents",
+      
+        title: "A summary of design patterns to secure AI agents",
+      
+      description: "A practical summary of design patterns from the paper &#39;Design Patterns for Securing LLM Agents against Prompt Injections&#39;",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2026/summary-design-patterns-secure-ai-agents/";
+        
+      },
+    },{id: "post-a-pragmatic-evaluation-of-software-engineering-ai-tooling",
       
         title: "A Pragmatic Evaluation of Software Engineering AI Tooling",
       
