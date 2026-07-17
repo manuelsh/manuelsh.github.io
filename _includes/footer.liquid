@@ -15,7 +15,8 @@
   </footer>
 {% else %}
   <footer class="sticky-bottom mt-5" role="contentinfo">
-    {% if site.newsletter.enabled %}
+    {% assign newsletter_endpoint = site.newsletter.endpoint | default: '' | strip %}
+    {% if site.newsletter.enabled and newsletter_endpoint != '' and site.newsletter.show_in_footer %}
       {% include newsletter.liquid %}
     {% endif %}
 

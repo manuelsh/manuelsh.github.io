@@ -15,7 +15,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am interested in how science, software, and AI can be turned into systems, teams, and products. For more than 15 years, that has been the focus of my work in machine learning and AI.
+For over 15 years, I have helped organizations get more value from AI by building systems, teams, and products, and shaping strategy. I’ve worked with owners, executives, and technical teams at organizations of all sizes, from startups to companies with multibillion-euro revenues.
 
 Most recently at [Adevinta](https://www.adevinta.com), I co-built and led the central machine learning organization and co-led generative AI strategy across European marketplaces. My work combined strategy, [platform building](/projects/orchard-data-foundations/), production systems, and large-scale AI adoption, improving both customer experience and [internal productivity](/blog/2026/pragmatic-evaluation-ai-tooling/).
 

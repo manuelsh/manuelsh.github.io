@@ -84,16 +84,18 @@ layout: default
     </div>
   {% endif %}
 
+  {% if site.newsletter.enabled and url_beginning == '/blog/' %}
+    {% include newsletter.liquid compact=true %}
+  {% endif %}
+
+  {% if site.newsletter.enabled and url_beginning == '/blog/' %}
+    {% include newsletter_modal.liquid %}
+  {% endif %}
+
   {% if site.related_blog_posts.enabled %}
     {% if page.related_posts == null or page.related_posts %}
       {% include related_posts.liquid %}
     {% endif %}
   {% endif %}
 
-  {% if site.disqus_shortname and page.disqus_comments %}
-    {% include disqus.liquid %}
-  {% endif %}
-  {% if site.giscus and page.giscus_comments %}
-    {% include giscus.liquid %}
-  {% endif %}
 </div>

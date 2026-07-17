@@ -3,8 +3,7 @@ layout: distill
 title: "A Pragmatic Evaluation of Software Engineering AI Tooling"
 date: 2026-03-09 09:00:00
 description: How we evaluated Claude Code, Cursor, and GitHub Copilot across 77 engineers and 165 real tasks to determine productivity impact
-tags: AI, software-engineering, productivity, evaluation
-categories: AI, machine learning, software development
+categories: AI, software engineering
 giscus_comments: true
 authors:
   - name: Manuel Sánchez Hernández

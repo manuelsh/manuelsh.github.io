@@ -1,0 +1,4 @@
+[     253ms] ReferenceError: $ is not defined
+    at http://localhost:8080/assets/js/distillpub/overrides.js:1:1
+[   51444ms] ReferenceError: $ is not defined
+    at http://localhost:8080/assets/js/distillpub/overrides.js:1:1

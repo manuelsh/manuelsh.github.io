@@ -3,7 +3,6 @@ layout: distill
 title: "A summary of design patterns to secure AI agents"
 date: 2026-06-21 09:00:00
 description: "A practical summary of design patterns from the paper 'Design Patterns for Securing LLM Agents against Prompt Injections'"
-tags: AI, security, agents, prompt-injection, systems-design
 categories: AI, security, software engineering
 giscus_comments: true
 toc:

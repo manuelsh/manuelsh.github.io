@@ -3,7 +3,7 @@ layout: distill
 title: "Rationalizing the AI bubble"
 date: 2025-11-11 09:00:00
 description: "An analysis of AI bubble through financial data: examining revenue gaps, circular deals, and whether we're heading for a meltdown or just a price correction"
-categories: AI, finance, technology, bubble, economics
+categories: AI, economics
 giscus_comments: true
 toc:
   - name: What is being said on the AI bubble
@@ -196,10 +196,10 @@ And this is how they look:
 
 We can have an idea if these values are high by looking to their typical values historically, for both the technology sector and for all companies:
 
-|                                 |   P/E   |  P/S   |  P/B   | EV/EBITDA |
-| :-----------------------------: | :-----: | :----: | :----: | :-------: |
-|      **Technology Sector**      | 25-35 | 5-10 | 5-10 |  15-25  |
-| **All Companies (S&P 500 avg)** | 15-18 | 1-3  | 2-3  |  8-12   |
+|                                 |  P/E  | P/S  | P/B  | EV/EBITDA |
+| :-----------------------------: | :---: | :--: | :--: | :-------: |
+|      **Technology Sector**      | 25-35 | 5-10 | 5-10 |   15-25   |
+| **All Companies (S&P 500 avg)** | 15-18 | 1-3  | 2-3  |   8-12    |
 
 With these it's easy to see that the major risks are in NVIDIA and Oracle. If we look at the average P/E for the Technology Sector, which is currently at 40, we see that we are getting closer to 2000 levels. See chart below ([source](https://worldperatio.com/sector/sp-500-information-technology/?utm_source=chatgpt.com)).
 

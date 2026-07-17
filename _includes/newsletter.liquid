@@ -1,68 +1,189 @@
-<div
-  class="newsletter-form-container"
-  {% if include.center %}
-    style="margin: 20px"
+{% assign newsletter_provider = site.newsletter.provider | default: '' | strip %}
+{% assign newsletter_endpoint = site.newsletter.endpoint | default: '' | strip %}
+{% assign newsletter_subscribe_url = site.newsletter.subscribe_url | default: '' | strip %}
+{% assign newsletter_subscribe_button_text = site.newsletter.subscribe_button_text | default: 'Subscribe' %}
+{% assign newsletter_placeholder = site.newsletter.placeholder | default: 'you@example.com' %}
+{% assign newsletter_fallback_email = site.newsletter.fallback_email | default: site.data.socials.email | default: '' | strip %}
+{% assign newsletter_title = include.title | default: site.newsletter.title | default: 'Get new articles by email' %}
+{% assign newsletter_description = include.description | default: site.newsletter.description %}
+{% assign newsletter_rss_text = site.newsletter.rss_text | default: 'Prefer RSS?' %}
+{% assign newsletter_rss_link_text = site.newsletter.rss_link_text | default: 'Use feed.xml' %}
+{% assign newsletter_feed_url = site.newsletter.feed_url | default: '' | strip %}
+{% assign newsletter_justify = 'center' %}
+{% if include.left %}
+  {% assign newsletter_justify = 'flex-start' %}
+{% elsif include.right %}
+  {% assign newsletter_justify = 'flex-end' %}
+{% endif %}
+{% if newsletter_endpoint contains '://' %}
+  {% assign newsletter_action = newsletter_endpoint %}
+{% elsif newsletter_endpoint != '' and newsletter_provider != 'followit' %}
+  {% assign newsletter_action = newsletter_endpoint | prepend: 'https://app.loops.so/api/newsletter-form/' %}
+{% endif %}
+{% if newsletter_feed_url == '' %}
+  {% assign site_baseurl = site.baseurl | default: '' %}
+  {% assign newsletter_feed_href = '/feed.xml' | relative_url %}
+  {% assign newsletter_feed_label = site.url | append: site_baseurl | append: '/feed.xml' %}
+{% elsif newsletter_feed_url contains '://' %}
+  {% assign newsletter_feed_href = newsletter_feed_url %}
+  {% assign newsletter_feed_label = newsletter_feed_url %}
+{% else %}
+  {% assign site_baseurl = site.baseurl | default: '' %}
+  {% assign newsletter_feed_href = newsletter_feed_url | relative_url %}
+  {% assign newsletter_feed_label = site.url | append: site_baseurl | append: newsletter_feed_url %}
+{% endif %}
+
+{% if newsletter_action or newsletter_subscribe_url != '' or newsletter_fallback_email != '' %}
+  <div class="newsletter-form-container newsletter-cta{% if include.compact %} newsletter-cta-compact{% endif %}{% if include.context == 'blog' %} newsletter-blog-cta{% endif %}{% if include.modal %} newsletter-modal-cta{% endif %}">
+    <div class="newsletter-copy" style="text-align: {% if include.left %}left{% elsif include.right %}right{% else %}center{% endif %}">
+      <p
+        class="newsletter-title"
+        {% if include.modal %}
+          id="newsletter-modal-title"
+        {% endif %}
+      >
+        {{ newsletter_title }}
+      </p>
+      {% if newsletter_description %}
+        <p class="newsletter-description">{{ newsletter_description }}</p>
+      {% endif %}
+    </div>
+
+    {% if newsletter_provider == 'followit' and newsletter_action %}
+      <form
+        class="newsletter-form newsletter-followit-form"
+        action="{{ newsletter_action }}"
+        method="post"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="justify-content: {{ newsletter_justify }}"
+      >
+        <input
+          class="newsletter-form-input newsletter-followit-input"
+          name="email"
+          type="email"
+          placeholder="{{ newsletter_placeholder }}"
+          aria-label="Email address"
+          spellcheck="false"
+          required
+        >
+        <button type="submit" class="newsletter-form-button newsletter-followit-button">{{ newsletter_subscribe_button_text }}</button>
+      </form>
+      <p class="newsletter-powered-by" style="text-align: {% if include.left %}left{% elsif include.right %}right{% else %}center{% endif %}">
+        Powered by
+        <a href="https://follow.it" target="_blank" rel="noopener noreferrer">follow.it</a>
+      </p>
+
+    {% elsif newsletter_subscribe_url != '' %}
+      <div class="newsletter-form" style="justify-content: {{ newsletter_justify }}">
+        <a
+          class="newsletter-form-button newsletter-external-button"
+          href="{{ newsletter_subscribe_url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="{{ newsletter_subscribe_button_text }}"
+        >
+          {{ newsletter_subscribe_button_text }}
+        </a>
+      </div>
+    {% elsif newsletter_action %}
+      <form class="newsletter-form" action="{{ newsletter_action }}" method="POST" style="justify-content: {{ newsletter_justify }}">
+        <input
+          class="newsletter-form-input"
+          name="email"
+          type="email"
+          placeholder="{{ newsletter_placeholder }}"
+          aria-label="Email address"
+          required
+        >
+        <input type="hidden" name="source" value="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+
+        <button type="submit" class="newsletter-form-button" style="justify-content: {{ newsletter_justify }}">
+          {{ newsletter_subscribe_button_text }}
+        </button>
+
+        <button type="button" class="newsletter-loading-button" style="justify-content: {{ newsletter_justify }}">Please wait...</button>
+      </form>
+    {% else %}
+      <div class="newsletter-form" style="justify-content: {{ newsletter_justify }}">
+        <a
+          class="newsletter-form-button newsletter-mailto-button"
+          href="mailto:{{ newsletter_fallback_email }}?subject=Subscribe%20to%20The%20Double%20Prism&body=Please%20add%20me%20to%20the%20email%20list%20for%20new%20articles."
+        >
+          Subscribe by email
+        </a>
+      </div>
+    {% endif %}
+
+    {% if newsletter_action and newsletter_provider != 'followit' %}
+      <div class="newsletter-success" style="justify-content: {{ newsletter_justify }}">
+        <p class="newsletter-success-message">You're subscribed!</p>
+      </div>
+
+      <div class="newsletter-error" style="justify-content: {{ newsletter_justify }}">
+        <p class="newsletter-error-message">Oops! Something went wrong, please try again</p>
+      </div>
+
+      <button
+        class="newsletter-back-button"
+        type="button"
+        onmouseout='this.style.textDecoration="none"'
+        onmouseover='this.style.textDecoration="underline"'
+      >
+        &larr; Back
+      </button>
+    {% endif %}
+
+    {% if include.compact %}
+      <div class="newsletter-social">
+        <p class="newsletter-social-title"><strong>Any comment? Use my email or social networks.</strong></p>
+        <div class="newsletter-social-links" aria-label="Social networks">
+          {% if site.data.socials.email %}
+            <a href="mailto:{{ site.data.socials.email | encode_email }}" title="Email" aria-label="Email">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
+          {% endif %}
+          {% if site.data.socials.linkedin_username %}
+            <a
+              href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}"
+              title="LinkedIn"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+          {% endif %}
+          {% if site.data.socials.x_username %}
+            <a href="https://twitter.com/{{ site.data.socials.x_username }}" title="X" aria-label="X">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+
+    <p class="newsletter-rss" style="text-align: {% if include.left %}left{% elsif include.right %}right{% else %}center{% endif %}">
+      {{ newsletter_rss_text }}
+      <a href="{{ '/feed.xml' | relative_url }}">{{ newsletter_rss_link_text }}</a>.
+    </p>
+
+    {% if newsletter_action and newsletter_provider != 'followit' %}
+      <p class="newsletter-noscript-message">
+        JavaScript is required for email signup.
+        <a href="{{ '/feed.xml' | relative_url }}">Use feed.xml</a> instead.
+      </p>
+    {% endif %}
+  </div>
+
+  {% if newsletter_action and newsletter_provider != 'followit' %}
+    <noscript>
+      <style>
+        .newsletter-form-container .newsletter-form {
+          display: none;
+        }
+        .newsletter-form-container .newsletter-noscript-message {
+          display: block;
+        }
+      </style>
+    </noscript>
   {% endif %}
->
-  <form
-    class="newsletter-form"
-    action="https://app.loops.so/api/newsletter-form/{{ site.newsletter.endpoint }}"
-    method="POST"
-    style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
-  >
-    <input
-      class="newsletter-form-input"
-      name="newsletter-form-input"
-      type="email"
-      placeholder="user@example.com"
-      required=""
-    >
-
-    <button
-      type="submit"
-      class="newsletter-form-button"
-      style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
-    >
-      subscribe
-    </button>
-
-    <button
-      type="button"
-      class="newsletter-loading-button"
-      style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
-    >
-      Please wait...
-    </button>
-  </form>
-
-  <div
-    class="newsletter-success"
-    style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
-  >
-    <p class="newsletter-success-message">You're subscribed!</p>
-  </div>
-
-  <div
-    class="newsletter-error"
-    style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
-  >
-    <p class="newsletter-error-message">Oops! Something went wrong, please try again</p>
-  </div>
-
-  <button
-    class="newsletter-back-button"
-    type="button"
-    onmouseout='this.style.textDecoration="none"'
-    onmouseover='this.style.textDecoration="underline"'
-  >
-    &larr; Back
-  </button>
-</div>
-
-<noscript>
-  <style>
-    .newsletter-form-container {
-      display: none;
-    }
-  </style>
-</noscript>
+{% endif %}
