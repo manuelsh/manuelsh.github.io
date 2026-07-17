@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-a-summary-of-design-patterns-to-secure-ai-agents",
+        },{id: "post-design-principles-of-an-ai-native-business",
+      
+        title: "Design principles of an AI-native business",
+      
+      description: "A practical framework for designing coherent agentic systems, aimed to increase their effectiveness, governance and security",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2026/design-principles-of-an-ai-native-business/";
+        
+      },
+    },{id: "post-a-summary-of-design-patterns-to-secure-ai-agents",
       
         title: "A summary of design patterns to secure AI agents",
       
