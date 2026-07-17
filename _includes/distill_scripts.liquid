@@ -294,6 +294,12 @@
   <script src="{{ '/assets/js/shortcut-key.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
 
-{% if site.newsletter.enabled %}
+{% assign newsletter_endpoint = site.newsletter.endpoint | default: '' | strip %}
+{% assign newsletter_provider = site.newsletter.provider | default: '' | strip %}
+{% if site.newsletter.enabled and newsletter_endpoint != '' and newsletter_provider != 'followit' %}
   <script defer src="{{ '/assets/js/newsletter.js' | relative_url | bust_file_cache }}"></script>
+{% endif %}
+
+{% if site.newsletter.enabled %}
+  <script defer src="{{ '/assets/js/newsletter_modal.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}

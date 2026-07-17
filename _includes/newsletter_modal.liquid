@@ -1,0 +1,9 @@
+<div class="newsletter-modal" id="newsletter-modal" role="dialog" aria-modal="true" aria-labelledby="newsletter-modal-title" hidden>
+  <div class="newsletter-modal-backdrop" data-newsletter-modal-close></div>
+  <div class="newsletter-modal-panel" role="document">
+    <button class="newsletter-modal-close" type="button" aria-label="Close newsletter signup" data-newsletter-modal-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+    {% include newsletter.liquid modal=true %}
+  </div>
+</div>

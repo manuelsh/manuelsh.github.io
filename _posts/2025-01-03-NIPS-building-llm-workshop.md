@@ -3,7 +3,6 @@ layout: distill
 title: Opening the LLM pipeline
 date: 2025-01-03 12:00:00
 description: My notes on a great tutorial at NeurIPS 2024 on how to build a Large Language Model, with many practical tips.
-tags: LLM, NeurIPS
 categories: NeurIPS
 # thumbnail: assets/img/9.jpg
 # giscus_comments: false

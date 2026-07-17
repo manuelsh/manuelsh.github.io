@@ -81,6 +81,7 @@ openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: # your google-site-verification ID (Google Search Console)
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
+followit_verification_code: T1ts2x7jE9qqjN58glnh # follow.it website verification
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -137,9 +138,22 @@ external_sources:
 # -----------------------------------------------------------------------------
 
 newsletter:
-  enabled: false
-  endpoint: # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
-  # https://loops.so/docs/forms/custom-form
+  enabled: true
+  provider: followit
+  endpoint: https://api.follow.it/subscription-form/SlJ1SG1Sa05NZExkL0dhVkllUkpzYUtpTGUyTHdjT0VtWVlCbUVGY2Joc1Z2MXZFUXh3RUM2cCsvRk1rcTdkd0hraXlXWkJ0RHhaakZ3aUJCSllzY3VQL1RjZmcwZmtaVUpRNTBFY1d3NExwQnE0Y2xiVlRpTHh5V05mbldUQm18dTRyQlNKeVFtWU1wUXJJU1FCbi9xMDZldFJKcHFVQkdXZCtBOEtTWWxnWT0=/8
+  subscribe_url:
+  subscribe_button_text: Subscribe
+  placeholder: you@example.com
+  feed_url: https://manuelsh.github.io/feed.xml
+  title: Get new articles by email
+  description:
+  rss_text: Prefer RSS?
+  rss_link_text: Use feed.xml
+  fallback_email: mansanher@gmail.com
+  show_on_about: false
+  show_in_footer: false
+  show_in_related_posts: false
+  # https://follow.it/
 
 # -----------------------------------------------------------------------------
 # Collections

@@ -46,6 +46,19 @@
             {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
           {% endfor %}
 
+          {% if site.newsletter.enabled and page.collection == 'posts' and page.url contains '/blog/' %}
+            <li class="nav-item nav-newsletter-item">
+              <button
+                class="nav-link nav-newsletter-button"
+                type="button"
+                data-newsletter-modal-open
+                aria-haspopup="dialog"
+                aria-controls="newsletter-modal"
+              >
+                Subscribe
+              </button>
+            </li>
+          {% endif %}
           <!-- About -->
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">

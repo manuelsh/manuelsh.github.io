@@ -3,8 +3,7 @@ layout: distill
 title: Selected ideas from NeurIPS 2024
 date: 2025-02-01 12:00:00
 description: NeurIPS 2024, the largest AI research conference, provides a glimpse into the next frontiers. Here are some of the most exciting ideas presented.
-tags: LLM, NeurIPS
-categories: NeurIPS, LLM, Generative AI, Machine Learning
+categories: LLM, generative AI
 # thumbnail: assets/img/9.jpg
 # giscus_comments: false
 # authors:

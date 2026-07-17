@@ -3,7 +3,7 @@ layout: distill
 title: "Beyond Tokens: The Context-Window Perspective on LLMs, Memory, and Mind"
 date: 2025-07-01 09:00:00
 description: Exploring the bridge between next-word prediction, agent frameworks, and the limits of current LLMs consciousness
-categories: machine learning, LLM, generative AI, context window
+categories: AI, generative AI
 giscus_comments: true
 toc:
   - name: But what is a Large Language Model?

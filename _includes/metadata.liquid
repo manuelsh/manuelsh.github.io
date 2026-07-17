@@ -1,10 +1,14 @@
-{% if site.enable_google_verification or site.enable_bing_verification %}
+{% assign followit_verification_code = site.followit_verification_code | default: '' | strip %}
+{% if site.enable_google_verification or site.enable_bing_verification or followit_verification_code != '' %}
   <!-- Website verification -->
   {% if site.enable_google_verification %}
     <meta name="google-site-verification" content="{{ site.google_site_verification }}">
   {% endif %}
   {% if site.enable_bing_verification %}
     <meta name="msvalidate.01" content="{{ site.bing_site_verification }}">
+  {% endif %}
+  {% if followit_verification_code != '' %}
+    <meta name="follow.it-verification-code" content="{{ followit_verification_code }}">
   {% endif %}
   <!--
     Avoid warning on Google Chrome Error with Permissions-Policy header:

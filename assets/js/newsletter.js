@@ -34,7 +34,7 @@ function submitHandler(event) {
   submitButton.style.display = "none";
   loadingButton.style.display = "flex";
 
-  var formBody = "userGroup=&email=" + encodeURIComponent(formInput.value);
+  var formBody = new URLSearchParams(new FormData(form)).toString();
   fetch(event.target.action, {
     method: "POST",
     body: formBody,
@@ -99,7 +99,10 @@ for (var i = 0; i < formContainers.length; i++) {
   var formContainer = formContainers[i];
   var handlersAdded = formContainer.classList.contains("newsletter-handlers-added");
   if (handlersAdded) continue;
-  formContainer.querySelector(".newsletter-form").addEventListener("submit", submitHandler);
-  formContainer.querySelector(".newsletter-back-button").addEventListener("click", resetFormHandler);
+  var form = formContainer.querySelector("form.newsletter-form");
+  var backButton = formContainer.querySelector(".newsletter-back-button");
+  if (!form || !backButton) continue;
+  form.addEventListener("submit", submitHandler);
+  backButton.addEventListener("click", resetFormHandler);
   formContainer.classList.add("newsletter-handlers-added");
 }

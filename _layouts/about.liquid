@@ -90,7 +90,8 @@ layout: default
       </div>
     {% endif %}
 
-    {% if site.newsletter.enabled and site.footer_fixed %}
+    {% assign newsletter_endpoint = site.newsletter.endpoint | default: '' | strip %}
+    {% if site.newsletter.enabled and newsletter_endpoint != '' and site.newsletter.show_on_about and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
     {% endif %}
   </article>

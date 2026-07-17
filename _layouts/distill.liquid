@@ -90,6 +90,10 @@
           </d-contents>
         {% endif %}
         {{ content }}
+        {% assign url_beginning = page.url | slice: 0, 6 %}
+        {% if site.newsletter.enabled and url_beginning == '/blog/' %}
+          {% include newsletter.liquid compact=true %}
+        {% endif %}
       </d-article>
 
       <d-appendix>
@@ -98,12 +102,11 @@
       </d-appendix>
 
       <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}"></d-bibliography>
-
-      {% if site.disqus_shortname and page.disqus_comments %}{% include disqus.liquid %}{% endif %}
-      {% if site.giscus.repo and page.giscus_comments %}
-        {% include giscus.liquid %}
-      {% endif %}
     </div>
+
+    {% if site.newsletter.enabled and url_beginning == '/blog/' %}
+      {% include newsletter_modal.liquid %}
+    {% endif %}
 
     <!-- Footer -->
     {% include footer.liquid %}
