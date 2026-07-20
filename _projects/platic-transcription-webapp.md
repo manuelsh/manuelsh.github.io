@@ -7,7 +7,7 @@ role: Founder and full-stack builder
 img: assets/img/projects/platic_main.jpg
 importance: 4
 category: personal
-selected: true
+selected: false
 order: 4
 github: https://github.com/manuelsh/transcription-webapp
 ---

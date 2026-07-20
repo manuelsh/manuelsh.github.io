@@ -7,7 +7,7 @@ role: Open-source contributor
 img: assets/img/projects/hugging-face-logo.svg
 importance: 7
 category: work
-selected: true
+selected: false
 order: 5
 github: https://github.com/huggingface/transformers
 ---

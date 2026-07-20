@@ -138,6 +138,67 @@ _styles: |
     color: inherit !important;
   }
 
+  d-article .principles-table {
+    clear: both;
+    margin: 0.85rem 0 2.25rem;
+  }
+
+  d-article .principles-table table {
+    margin: 0;
+  }
+
+  @media (max-width: 640px) {
+    d-article .principles-table table,
+    d-article .principles-table tbody,
+    d-article .principles-table tr,
+    d-article .principles-table td {
+      display: block;
+      width: 100%;
+    }
+
+    d-article .principles-table thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    d-article .principles-table tr {
+      padding: 0.9rem 0 1rem;
+      border-top: 1px solid var(--global-divider-color);
+    }
+
+    d-article .principles-table tbody tr:last-child {
+      border-bottom: 1px solid var(--global-divider-color);
+    }
+
+    d-article .principles-table td {
+      padding: 0.15rem 0;
+      border: 0;
+    }
+
+    d-article .principles-table td:first-child {
+      color: var(--global-text-color-light);
+      font-size: 0.76rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    d-article .principles-table td:nth-child(2) {
+      margin: 0.15rem 0 0.3rem;
+      font-size: 1.02rem;
+      line-height: 1.4;
+    }
+
+    d-article .principles-table td:nth-child(3) {
+      line-height: 1.55;
+    }
+  }
   d-article #references + ul {
     padding-left: 1.2rem;
   }
@@ -185,7 +246,7 @@ _styles: |
 
 <section class="article-abstract" aria-label="Abstract">
   <span class="article-abstract-label">Abstract</span>
-  <p>Becoming AI-native is not simply a matter of giving employees access to copilots or adding agents to existing workflows. It requires redesigning business processes, technology, governance, and organizational roles around what AI can execute reliably. Drawing on a real transformation project, this article proposes a practical set of principles for designing that operating model. These include establishing reliable context and ownership before deploying agents, making systems queryable, building continuous-improvement loops, measuring quality baselines, and earning autonomy through evals, human oversight, and production monitoring. The article also addresses security, the boundary between deterministic and agentic logic, and the need for canonical sources of truth. Together, these principles provide a starting point for building coherent AI-native systems while managing the organizational transformation required to make them useful, safe, and durable.</p>
+  <p>Becoming AI-native requires redesigning business processes, technology, governance, and organizational roles around what AI can execute reliably. Drawing on a real transformation project, this article proposes a practical set of principles for designing that operating model. These include establishing reliable context and ownership before deploying agents, making systems queryable, building continuous-improvement loops, measuring quality baselines, and earning autonomy through evals, human oversight, and production monitoring. The article also addresses security, the boundary between deterministic and agentic logic, and the need for canonical sources of truth. Together, these principles provide a starting point for building coherent AI-native systems while managing the organizational transformation required to make them useful, safe, and durable.</p>
 </section>
 
 # The problem
@@ -256,6 +317,23 @@ All of this requires architectural and process decisions that will not emerge si
 # A set of principles for AI-native companies
 
 The principles below fall into two groups. The first are operating-model principles: establish context and ownership before agents, make the company queryable, and build a continuous-improvement loop. The second are reliability principles: measure a baseline, earn autonomy, secure the system, prefer deterministic logic where possible, and establish clear sources of truth.
+
+**Principles at a glance**
+
+<div class="principles-table" markdown="1">
+
+| Group           | Principle                                                                   | Summary                                                                                                                                     |
+| --------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Operating model | **Establish context and ownership before agents**                           | Start each workflow with reliable context, explicit owners, quality expectations, and appropriate access controls.                          |
+| Operating model | **The whole system should be queryable**                                    | Enable people and agents to ask questions across organizational boundaries, with clear provenance, freshness, permissions, and uncertainty. |
+| Operating model | **Build a continuous-improvement loop**                                     | Capture eval results, human feedback, and production outcomes, then turn them into governed and reviewable system improvements.             |
+| Reliability     | **Measure a quality baseline before automating a process**                  | Establish outcome, cost, speed, and safety metrics for the current process so automation can be evaluated against real performance.         |
+| Reliability     | **Evals, human-in-the-loop and continuous monitoring come before autonomy** | Grant autonomy gradually and per action, based on evidence, and reduce it when quality degrades or incidents occur.                         |
+| Reliability     | **Security: avoid the lethal trifecta**                                     | Use least privilege, isolate untrusted content, constrain external actions, and require approval for critical operations.                   |
+| Reliability     | **Prioritize deterministic logic versus agentic judgement**                 | Use conventional code for predictable rules and reserve agents for tasks that genuinely require interpretation or judgement.                |
+| Reliability     | **Enforce a single source of truth for each type of information**           | Define a canonical, owned, and maintained source for each important type of information to prevent duplication and contradictions.          |
+
+</div>
 
 ## Operating-model principles
 
