@@ -7,7 +7,8 @@ role: ML/Data Foundations owner
 img:
 importance: 2
 category: work
-selected: false
+selected: true
+order: 1
 ---
 
 Orchard was Adevinta’s post-eBay integration and synergy program. My work was focused on the Data Foundations and ML workstream: consolidating fragmented capabilities and building new platforms to accelerate ML, data and software engineering teams while delivering measurable synergies.

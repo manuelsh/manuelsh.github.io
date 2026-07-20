@@ -8,7 +8,7 @@ img: assets/img/projects/kaggle-logo.svg
 importance: 6
 category: contributions
 selected: true
-order: 6
+order: 4
 ---
 
 In February 2019 I participated in Kaggle's [Quora Insincere Questions Classification](https://www.kaggle.com/competitions/quora-insincere-questions-classification/overview) competition, earning a gold medal on the private leaderboard and finishing **11th out of 4,037 teams**.
