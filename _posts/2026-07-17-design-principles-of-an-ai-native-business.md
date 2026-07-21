@@ -322,16 +322,16 @@ The principles below fall into two groups. The first are operating-model princip
 
 <div class="principles-table" markdown="1">
 
-| Group           | Principle                                                                   | Summary                                                                                                                                     |
-| --------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| Operating model | **Establish context and ownership before agents**                           | Start each workflow with reliable context, explicit owners, quality expectations, and appropriate access controls.                          |
-| Operating model | **The whole system should be queryable**                                    | Enable people and agents to ask questions across organizational boundaries, with clear provenance, freshness, permissions, and uncertainty. |
-| Operating model | **Build a continuous-improvement loop**                                     | Capture eval results, human feedback, and production outcomes, then turn them into governed and reviewable system improvements.             |
-| Reliability     | **Measure a quality baseline before automating a process**                  | Establish outcome, cost, speed, and safety metrics for the current process so automation can be evaluated against real performance.         |
-| Reliability     | **Evals, human-in-the-loop and continuous monitoring come before autonomy** | Grant autonomy gradually and per action, based on evidence, and reduce it when quality degrades or incidents occur.                         |
-| Reliability     | **Security: avoid the lethal trifecta**                                     | Use least privilege, isolate untrusted content, constrain external actions, and require approval for critical operations.                   |
-| Reliability     | **Prioritize deterministic logic versus agentic judgement**                 | Use conventional code for predictable rules and reserve agents for tasks that genuinely require interpretation or judgement.                |
-| Reliability     | **Enforce a single source of truth for each type of information**           | Define a canonical, owned, and maintained source for each important type of information to prevent duplication and contradictions.          |
+| Principle                                                                   | Summary                                                                                                                              |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Establish context and ownership before agents**                           | Start each workflow with reliable context, explicit owners, quality expectations, and appropriate access controls.                   |
+| **The whole system should be queryable**                                    | Enable people and agents to ask questions across organizational boundaries, with clear permissions.                                  |
+| **Build a continuous-improvement loop**                                     | Capture eval results, human feedback, and production outcomes, then turn them into reviewable system improvements.                   |
+| **Measure a quality baseline before automating a process**                  | Establish outcome, cost, speed, and quality metrics for the current process so automation can be evaluated against real performance. |
+| **Evals, human-in-the-loop and continuous monitoring come before autonomy** | Grant autonomy gradually, based on evidence, and reduce it when quality degrades or incidents occur.                                 |
+| **Security: avoid the lethal trifecta**                                     | Use least privilege, isolate untrusted content, constrain external actions, and require approval for critical operations.            |
+| **Prioritize deterministic logic versus agentic judgement**                 | Use conventional code for predictable rules and reserve agents for tasks that genuinely require interpretation or judgement.         |
+| **Enforce a single source of truth for each type of information**           | Define a canonical, owned, and maintained source for each important type of information to prevent duplication and contradictions.   |
 
 </div>
 
