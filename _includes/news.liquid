@@ -20,8 +20,10 @@
             <td>
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-              {% else %}
+              {% elsif site.collections.news.output %}
                 <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% else %}
+                {{ item.title }}
               {% endif %}
             </td>
           </tr>
