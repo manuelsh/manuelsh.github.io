@@ -185,7 +185,7 @@ The performance of humans in the ARC test is very high, around 90% accuracy acco
 <div class="row mt-3">
 
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/blog_images/reasoning-or-reciting-benchmark-paper-neurips-post.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/blog_images/reasoning-or-reciting-benchmark-paper-neurips-post.PNG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 
 </div>
@@ -227,7 +227,7 @@ We have substantial evidence that different neural networks, including artificia
 <div class="row mt-3">
 
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/blog_images/alignment_unified_representations_neurips_2024.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/blog_images/alignment_unified_representations_neurips_2024.PNG" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 
 </div>
