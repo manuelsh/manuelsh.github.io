@@ -361,6 +361,10 @@ These are especially important when AI agents can access critical company system
 
 The company’s AI agents will be as good as the context they have. A sophisticated agentic system built on incoherent context will produce incorrect answers. Garbage in, garbage out. The context layer must therefore be prioritized.
 
+<blockquote class="pull-quote pull-left">
+  <p>The company’s AI agents will be as good as the context they have.</p>
+</blockquote>
+
 #### What it implies in practice
 
 The first step is to design appropriate ways of capturing, storing, and retrieving context, such as the content of meetings, decisions, customer data, etc. This requires governance about where these assets live, for example, where company-wide decisions are stored. Many software companies use architecture decision records (ADRs), which document a decision, the context in which it was made, and its consequences.
@@ -403,6 +407,10 @@ One key feature of an AI-native company is the ability to ask questions across o
 
 To make the answers trustworthy, the system should indicate where the information came from, when it was last updated, and where there is uncertainty or where sources conflict.
 
+<blockquote class="pull-quote pull-right">
+  <p>One key feature of an AI-native company is the ability to ask questions across organizational boundaries through agents.</p>
+</blockquote>
+
 #### What it implies in practice
 
 The foundation is the first principle: the quality of the context and the data foundations.
@@ -429,6 +437,10 @@ Agentic queryability is therefore the result of having reliable context, interop
 
 The objective of an AI-first approach is to automate while improving or maintaining the process performance. We don’t want it to deteriorate. Hence, we need to measure a baseline before automating.
 
+<blockquote class="pull-quote pull-right">
+  <p>The objective of an AI-first approach is to automate while improving or maintaining the process performance.</p>
+</blockquote>
+
 #### What it implies in practice
 
 By performance levels, in practice, we mean a scorecard containing the main dimensions of the workflow: outcome, cost, speed, quality… It should also show how performance varies across important customers and segments, because a single average can hide failures.
@@ -451,6 +463,10 @@ Autonomy should be earned gradually. A system should not be allowed to perform i
 
 The system should also lose autonomy when quality deteriorates or an incident occurs.
 
+<blockquote class="pull-quote pull-left">
+  <p>Autonomy should be earned gradually.</p>
+</blockquote>
+
 There are three main mechanisms: evals, human-in-the-loop, and production monitoring.
 
 Some aspects can be evaluated deterministically, such as whether a document follows a required format or contains mandatory fields. Other aspects can be evaluated with AI, for example whether the content covers the required topics or follows a defined style.
@@ -458,6 +474,10 @@ Some aspects can be evaluated deterministically, such as whether a document foll
 Human-in-the-loop is a common agentic pattern in which a person must provide input or approval before the system continues. It is useful when the consequences are material, when quality is difficult to measure systematically, or when there is not yet enough evidence to trust the system.
 
 An agent that writes messages to customers, for example, may initially require the employee responsible for the relationship to review each message. The system should record whether the proposal was accepted. If it was modified, it should capture both the original output and the final human version and, where possible, a short explanation of what was wrong, to be used by the continuous-improvement workflow.
+
+<blockquote class="pull-quote pull-right">
+  <p>Quality should be continuously observed and improved during the life of the system.</p>
+</blockquote>
 
 Production monitoring (observability) complements evals and human review once the system is operating. Some failures appear only in real usage: unexpected inputs, changes in user behaviour, tool failures. Hence, when the system is built, production metrics should be made available, together with an incident management system when there is an issue.
 
@@ -492,6 +512,10 @@ If the agent also has access to confidential information and a mechanism for ext
 #### What it implies in practice
 
 Security must be part of the architecture from the beginning. Some of its architectural implications are:
+
+<blockquote class="pull-quote pull-left">
+  <p>Security must be part of the architecture from the beginning.</p>
+</blockquote>
 
 - Agents should have the minimum access required for their task.
 
@@ -535,6 +559,10 @@ Generative AI makes producing documentation and other content very easy. If not 
 
 Over time, duplicated information may become inconsistent, hence incorrect context for both people and agents.
 
+<blockquote class="pull-quote pull-right">
+  <p>Over time, duplicated information may become inconsistent, hence incorrect context for both people and agents.</p>
+</blockquote>
+
 #### What it implies in practice
 
 Governance becomes paramount. Every important type of information should have a defined canonical location and owner.
@@ -577,9 +605,17 @@ Many companies follow an automation pattern based on where the bottleneck is. Fo
 
 In all of these automations, autonomy should be provided gradually, once the systems have demonstrated reliable performance and quality.
 
+<blockquote class="pull-quote pull-right">
+  <p>These changes require deliberate decisions, experimentation and coordination across the company.</p>
+</blockquote>
+
 The role of employees would also change. Product managers could actually build a prototype earlier, doing vibe coding, while engineers could supervise several agents and work on improving the whole workflow. Planning meetings could be prepared by AI. These changes require deliberate decisions, experimentation and coordination across the company.
 
 # Conclusion
+
+<blockquote class="pull-quote pull-left">
+  <p>Both workstreams need to progress together to succeed in the transformation.</p>
+</blockquote>
 
 The four capabilities work together: reliable data and organizational knowledge provide context; agents and workflows perform business activities; query interfaces make information accessible across appropriate boundaries; and continuous improvement turns evidence into better systems.
 
