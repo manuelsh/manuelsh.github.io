@@ -312,6 +312,10 @@ If building is the best option, there are many open-source tools available, free
 
 Becoming AI-native has significant implications for a business. In practice, it implies three changes:
 
+<blockquote class="pull-quote pull-right">
+  <p>Becoming AI-native requires deliberate process redesign, experimentation and coordination across the company.</p>
+</blockquote>
+
 First, the company needs to identify which parts of its key processes can be performed reliably by AI. The frontier of what AI can do is expanding fast, but it is [jagged](https://www.hbs.edu/ris/Publication%20Files/dell-acqua-et-al-2026-navigating-the-jagged-technological-frontier_5c589c8c-fbb5-458f-b285-c944746cd717.pdf): a model may perform a complex task well and fail at another that appears very similar or even simpler. Hence, leaders cannot trust external generic benchmarks and should perform tests first-hand.
 
 Second, the company needs a technology foundation that provides the data, access to tools and evaluations required by the redesigned processes.
@@ -605,16 +609,12 @@ Many companies follow an automation pattern based on where the bottleneck is. Fo
 
 In all of these automations, autonomy should be provided gradually, once the systems have demonstrated reliable performance and quality.
 
-<blockquote class="pull-quote pull-right">
-  <p>These changes require deliberate decisions, experimentation and coordination across the company.</p>
-</blockquote>
-
 The role of employees would also change. Product managers could actually build a prototype earlier, doing vibe coding, while engineers could supervise several agents and work on improving the whole workflow. Planning meetings could be prepared by AI. These changes require deliberate decisions, experimentation and coordination across the company.
 
 # Conclusion
 
 <blockquote class="pull-quote pull-left">
-  <p>Both workstreams need to progress together to succeed in the transformation.</p>
+  <p>Technical system design and organizational transformation must progress together to build an AI-native company.</p>
 </blockquote>
 
 The four capabilities work together: reliable data and organizational knowledge provide context; agents and workflows perform business activities; query interfaces make information accessible across appropriate boundaries; and continuous improvement turns evidence into better systems.
