@@ -7,17 +7,17 @@ categories: AI, generative AI, agents
 giscus_comments: true
 toc:
   - name: "The problem"
-  - name: "Our circumstances: what AI-native really means"
+  - name: "What AI-native means"
     subsections:
-      - name: "What changes in practice"
-      - name: "Example: A software company"
+      - name: "Buying or building a harness"
+      - name: "A playbook for change"
   - name: "A set of principles for AI-native companies"
     subsections:
       - name: "Operating-model principles"
       - name: "Reliability principles"
   - name: "Other principles"
+  - name: "Case study: a software company"
   - name: "Conclusion"
-  - name: "References"
 _styles: |
   d-article .post-date {
     display: block;
@@ -269,54 +269,72 @@ Principles presented here should be considered a starting point, I don’t inten
 
 Finally, while this article focuses on system design, there is a second major workstream needed: organizational transformation. This includes change management, training, operating model, culture, leadership alignment… Both the engineering track and the organizational transformation track should be managed as one coordinated effort: neither succeeds alone. I hope to share some of my learnings about organizational transformation in AI in a future article.
 
-# Our circumstances: what AI-native really means
+# What AI-native means
 
-The purpose of the project I am working on is to help transform a traditional business into an AI-native one. There are many definitions and interpretations of AI-native, but the one we will use is:
+How do we transform an organization to be AI-native?
+
+There are many interpretations of AI-native. The definition we will use is:
 
 <div class="working-definition" role="note" aria-label="Working definition">
   <span class="working-definition-label">Working definition</span>
-  <p>An <strong>AI-native company</strong> is a human-led, AI-operated organization in which every key business process is designed so that AI performs the greatest feasible share of its end-to-end execution.</p>
+  <p>An <strong>AI-native company</strong> is an organization in which every key business process is designed so that AI performs the greatest feasible share of its end-to-end execution, while maintaining or improving the process’ performance.</p>
 </div>
 
-This usually implies the redesign of many processes that will now go through an AI layer. AI stops being only a tool (a copilot) and **gradually** becomes part of the company's operating model (an autopilot).
+This usually implies redesigning processes that will now operate through AI, which becomes more than a tool or a copilot; AI is an integral part of the operating model, an autopilot.
 
-Why would a service business want to become AI-native? If done well, the AI agentic layers should drive measurable improvements in cost, quality or speed, or ideally, in all three (see [The AI-Native Services Playbook](https://www.emcap.com/thoughts/the-ai-native-services-playbook)). If these gains persist at scale, a service business may improve margins by reducing the human effort required per unit of output.
+If done properly, its agentic layers should improve quality, cost and speed. If done at scale, a business may improve margins by becoming more productive ([Saper et al.](https://www.emcap.com/thoughts/the-ai-native-services-playbook)).
 
-## What changes in practice
+The idea is to automate with AI where it increases the value of the company, not everywhere for its own sake.
 
-AI-native has significant implications for a business. Three things change in practice. First, the company needs to **identify which parts of its key processes AI can perform reliably** (navigate the [jagged frontier](https://www.oneusefulthing.org/p/the-shape-of-ai-jaggedness-bottlenecks)), and test the uncertain parts through feasibility [experiments](https://manuelsh.github.io/blog/2026/pragmatic-evaluation-ai-tooling/). Second, it needs a **technology stack** that provides the right context, tools, evaluation, and controls for those redesigned processes, addressed in this article. Third, it needs to **transform the organization** around them: bring employees in, train them, establish ownership and access controls, and measure both adoption and business outcomes.
+The organization remains human-led: people establish objectives, manage exceptions, and decide which actions can be performed autonomously. As discussed later, autonomy should be granted to AI gradually.
 
-Regarding the tech stack, AI-native implies building the following interacting components:
+This transformation relies on reliable data (context) for each use case, and requires two connected workstreams:
 
-**(1) Context management layer:** mechanisms for capturing, governing and retrieving the information (structured and unstructured) that the agents need, including documents, meeting records, decisions, objectives, operational data…
+1. The design of business processes and the technical system around them.
 
-**(2) Agentic system(s) that perform the company’s core work:** The company’s main processes will be redesigned around AI, drawing on the context layer. This will likely require distinct sets of systems for sales, marketing, customer service, production, and other functions, which need to be interconnected.
+2. The organizational transformation, which affects employees and is required to align the whole company in ways of working.
 
-Additionally, there are two other components that can enhance the speed of the system transformation and of the company itself:
+Both workstreams need to progress together to succeed in the transformation.
 
-**(3) Feedback loop**: mechanisms for collecting evidence from evals, human review, and production outcomes, then using it to propose, test and approve improvements.
+This article focuses on the first workstream: what should be built and how, using design principles applied in practice. Organizational transformation also requires a combination of bottom-up and top-down actions.
 
-**(4) Ability to query**: The whole company should become more queryable, inside and across teams. This requires interfaces and access management for both agents and users.
+## Buying or building a harness
 
-Y Combinator also offers [useful guides](https://www.ycombinator.com/library/OX-the-playbook-for-building-an-ai-native-company) on becoming AI-native. I agree with its emphasis on rapid experimentation, although I would treat token consumption as an activity metric rather than evidence of business value.
+An agent harness is the application that runs an agent, using an LLM as the “intelligence engine”. Becoming AI-native does not necessarily mean building an agent harness from scratch. For a small company, an existing one such as Claude Cowork or ChatGPT Work may be enough, provided it can access the right context and tools the company needs in a secure way. The starting point should be the business process.
 
-## Example: A software company
+Buying or building is not always a binary decision. A company can adapt an existing harness to its own processes. For example, Claude Cowork can be [customized with skills, connectors and plugins](https://academy.claude.com/tutorials/how-to-customize-plugins-in-cowork) that capture a team's workflows. This extends the existing product rather than requiring the company to build its own application.
 
-Let’s imagine a company that produces and maintains software. “AI as a tool” would simply provide all developers with access to AI agents while leaving the development process unchanged. But AI as an operating system (an AI-native company) means redesigning the whole development process so that AI agents perform as much of the work as possible, with the level of human supervision depending on the risk involved and the proven reliability of the AI system.
+A dedicated harness becomes useful when the process requires more control. For example, an agent approving a customer refund requires tighter controls than an agent researching an internal question. Building the harness requires specialized knowledge and more maintenance but allows better control over the verification of task completion, performance, cost and security, including the possibility of having self-improvement loops, which third-party harnesses usually do not include.
 
-For this to work, all relevant information needs to become useful context for the agents: the objectives of each team, roadmap, codebase and architecture, engineering principles, previous decisions, what has and has not worked… Based on this context, agents could suggest what to build next, prepare plans, create prototypes, implement approved changes, monitor the results, and feed what they learn back into the system. Anyone with the appropriate permissions should also be able to ask what a team is building, why a decision was made, what risks exist, or what is preventing a release.
+If building is the best option, there are many open-source tools available, free to use. For example, the [Claude Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview) provides the tools, agent loop and context management used by Claude Code. OpenAI, Google ADK or LangGraph are other examples.
 
-The role of the employees would change. Product managers and engineers set objectives, make important trade-offs, approve high-risk decisions, and handle exceptions. A Product Manager could build and validate a prototype without waiting for an engineering team. Engineers could supervise several agents, review their architectural and implementation decisions, and improve the context, tools, and evaluations that determine the quality of their work. Some team rituals may also change: planning meetings, for example, could be prepared by AI. The whole development process with AI would be organized around one question: how do we reduce the distance between an identified need and a solution in production?
+## A playbook for change
 
-<blockquote class="pull-quote pull-right">
-  <p>The transformation requires deliberate design, an experimentation mindset, and coordination across the company.</p>
-</blockquote>
+Becoming AI-native has significant implications for a business. In practice, it implies three changes:
 
-All of this requires architectural and process decisions that will not emerge simply from bottom-up adoption of AI tools. The transformation requires deliberate design, an experimentation mindset, and coordination across the company. Leadership needs to understand what is possible with AI, decide where AI can act autonomously and where human approval remains necessary, and transform the company so that it can execute this change. The principles in the next section make the main design decisions of that operating model explicit.
+First, the company needs to identify which parts of its key processes can be performed reliably by AI. The frontier of what AI can do is expanding fast, but it is [jagged](https://doi.org/10.1287/orsc.2025.21838): a model may perform a complex task well and fail at another that appears very similar or even simpler. Hence, leaders cannot trust external generic benchmarks and should perform tests first-hand.
+
+Second, the company needs a technology foundation that provides the data, access to tools and evaluations required by the redesigned processes.
+
+Third, it needs to transform the organization around those processes: involve employees, develop or find the required talent, establish ownership, and measure both adoption and business outcomes.
+
+From a system perspective, the proposed framework requires four capabilities:
+
+1. Context management system. This includes mechanisms for capturing, governing, and retrieving the information that agents need: operational data, documents, meeting records, decisions…
+
+2. Core Agentic System for performing the company’s main work. The main processes are redesigned with AI using the context layer. A company will probably need different but interconnected systems for every domain (sales, marketing, customer service…) rather than one universal agent.
+
+3. A feedback system. The system collects data from evaluations, human reviews and business outcomes, and uses this data to propose improvements to the core agentic system described above.
+
+4. Query system. AI agents provide the ability to query the organization across teams. This system allows senior management to directly monitor the whole organization. This requires interfaces and access management for both people and agents.
+
+Data platforms, [Data Mesh](https://martinfowler.com/articles/data-mesh-principles.html) and enablement teams can accelerate this transformation, especially for large and complex organizations.
 
 # A set of principles for AI-native companies
 
-The principles below fall into two groups. The first are operating-model principles: establish context and ownership before agents, make the company queryable, and build a continuous-improvement loop. The second are reliability principles: measure a baseline, earn autonomy, secure the system, prefer deterministic logic where possible, and establish clear sources of truth.
+In this section we describe a set of principles to develop these capabilities. These principles are grounded in real experience. They fall into two groups: operating-model principles, which develop these capabilities, and reliability principles, which make the system more robust.
+
+These are especially important when AI agents can access critical company systems, when an error can become critical, or when user and data privacy cannot be compromised.
 
 **Principles at a glance**
 
@@ -324,86 +342,84 @@ The principles below fall into two groups. The first are operating-model princip
 
 | Principle                                                                   | Summary                                                                                                                              |
 | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **Establish context and ownership before agents**                           | Start each workflow with reliable context, explicit owners, quality expectations, and appropriate access controls.                   |
-| **The whole system should be queryable**                                    | Enable people and agents to ask questions across organizational boundaries, with clear permissions.                                  |
+| **Establish strong context and ownership before building agents**                           | Start each workflow with reliable context, explicit owners, quality expectations, and appropriate access controls.                   |
+| **Make the whole system queryable**                                    | Enable people and agents to ask questions across organizational boundaries, with clear permissions.                                  |
 | **Build a continuous-improvement loop**                                     | Capture eval results, human feedback, and production outcomes, then turn them into reviewable system improvements.                   |
 | **Measure a quality baseline before automating a process**                  | Establish outcome, cost, speed, and quality metrics for the current process so automation can be evaluated against real performance. |
-| **Evals, human-in-the-loop and continuous monitoring come before autonomy** | Grant autonomy gradually, based on evidence, and reduce it when quality degrades or incidents occur.                                 |
+| **Put evals, human oversight, and monitoring before giving autonomy** | Grant autonomy gradually, based on evidence, and reduce it when quality degrades or incidents occur.                                 |
 | **Security: avoid the lethal trifecta**                                     | Use least privilege, isolate untrusted content, constrain external actions, and require approval for critical operations.            |
-| **Prioritize deterministic logic versus agentic judgement**                 | Use conventional code for predictable rules and reserve agents for tasks that genuinely require interpretation or judgement.         |
-| **Enforce a single source of truth for each type of information**           | Define a canonical, owned, and maintained source for each important type of information to prevent duplication and contradictions.   |
+| **Prefer deterministic logic where possible**                 | Use conventional code for predictable rules and reserve agents for tasks that genuinely require interpretation or judgement.         |
+| **Enforce a single source of truth**           | Define a canonical, owned, and maintained source for each important type of information to prevent duplication and contradictions.   |
 
 </div>
 
 ## Operating-model principles
 
-### Establish context and ownership before agents
+### Establish strong context and ownership before building agents
 
 #### Why this principle
 
-The company’s agentic layer will be only as good as the context it has. A sophisticated agentic system built on incoherent context will only produce wrong answers. This is why the context layer must be treated as strategic
-
-<blockquote class="pull-quote pull-left">
-  <p>The company’s agentic layer will be only as good as the context it has.</p>
-</blockquote>
+The company’s AI agents will be as good as the context they have. A sophisticated agentic system built on incoherent context will produce incorrect answers. Garbage in, garbage out. The context layer must therefore be prioritized.
 
 #### What it implies in practice
 
-The first step is to design proper ways of capturing, storing and retrieving context. This means answering questions such as:
+The first step is to design appropriate ways of capturing, storing, and retrieving context, such as the content of meetings, decisions, customer data, etc. This requires governance about where these assets live, for example, where company-wide decisions are stored. Many software companies use architecture decision records (ADRs), which document a decision, the context in which it was made, and its consequences.
 
-- How do we capture and store the content of a meeting?
+#### LLM-maintained wikis
 
-- How do we store company decisions?
+A problem in many organizations and teams is that information is fragmented and spread among documents, emails, tickets, code, etc. This makes it hard to convert into context that can be useful for agents.
 
-- What about databases with client information?
+One way to tackle this problem is to use AI agents to put order in that mess. The idea is to give access to the raw documentation to an AI agent, e.g. emails, folders, tickets, meeting notes, etc and instruct the agent to build a wiki on a topic, e.g. the sales team, a specific project, or even a person.
 
-- How do we give coherence to all of it?
+An [LLM-maintained wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f), or an LLM-wiki, is a collection of linked pages that agents help keep up to date, to be used as context by other agents later. Using the wiki format, the agent will compile the information, ask questions when there is conflicting information, and keep the wiki updated when new information arrives. For example, after a meeting, an agent could update the relevant project page, including new decisions. During this process the raw documents remain untouched.
 
-Treating data (the context) as a first-class citizen is strategic, not only because data is an important company asset, but also because the subsequent agentic layer built on top of it will only perform if it has the right context.
+The wiki has an index to help people and agents find the pages, while links connect related topics across wiki pages. Instructions define what belongs where and how updates should be reviewed.
 
-It is also important to assign owners to each strategic data asset. I strongly recommend adopting the “data as a product” paradigm: treating data as something designed and maintained for specific consumers and use cases, with explicit ownership, documentation, quality, access controls... This makes the data more reliable and useful for both people and AI agents. This paradigm shift is not trivial in complex organizations with a lot of legacy. That is a matter for [another book](https://www.amazon.com/-/es/Team-Topologies-2nd-Organizing-Technology/dp/1966280009/).
+It is equally important to assign owners to each strategic data asset. The data-as-a-product paradigm is particularly useful here. Data should be explicitly designed and maintained for specific consumers and use cases, with clear ownership, documentation, quality expectations, access controls, and lifecycle management. This makes it more reliable and useful for both employees and AI agents.
 
-On the data layer one should not become stuck with a company wide program before value is delivered. Do it iteratively, adding value at each step. Start each agentic workflow by establishing the minimum reliable context it needs, with explicit owners, quality expectations, and access controls. Then improve that context as the workflow reveals gaps.
-
-I discuss data further in the “one single source of truth” principle.
-
-### The whole system should be queryable
-
-#### Why this principle
-
-One key feature of an AI-native company is the ability to ask questions across organizational boundaries through agents. To make this trustworthy, answers should show where the information came from, when it was last updated, and where uncertainty or conflicting sources remain. This is critical because it brings clarity and speed.
-
-<blockquote class="pull-quote pull-right">
-  <p>One key feature of an AI-native company is the ability to ask questions across organizational boundaries through agents.</p>
-</blockquote>
-
-#### What it implies in practice
-
-Every strategic data set (and by strategic I mean: start by the most valuable datasets) should have an owner, documented meaning and interfaces, access control policies, lineage, and measurable expectations for freshness, completeness, accuracy, and availability. Think about a data service level agreement. These measurements could be implemented in the form of evals. Its users, people or agents, should also know when those expectations are not being met.
-
-Again, elements from the “data as a product” paradigm can help a lot here. Data catalogs, data interoperability software and data quality systems are some of the foundations needed.
-
-On top of that, the company needs an agentic layer that can access the right data, speak to other agents, or connect to the right tools. This could be implemented through protocols such as [A2A](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/), through tools exposed via [MCP](https://modelcontextprotocol.io/docs/getting-started/intro), or through other implementation choices. The advice provided in the [OpenAI](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) practical agentic guide about setting up the tools and orchestrating the agents can be very useful.
+As discussed before, this paradigm shift is not trivial in complex organizations with substantial legacy systems and information. However, a company should not become stuck in a company-wide data programme before delivering any value. The implementation should be iterative. Start each agentic workflow by establishing the minimum reliable context. Then improve that context as the workflow reveals missing or wrong information.
 
 ### Build a continuous-improvement loop
 
 #### Why this principle
 
-An AI-native system should have a loop to improve itself. This is critical because agentic systems will not be perfect from the start, and their quality will depend on how well they learn from evals, human feedback, production behavior and changing business needs.
+Agentic systems will not be perfect from the start. Their quality depends on how well they learn from evals, human feedback, production behaviour, and changing business needs. Adding a feedback loop allows the system to improve.
 
 #### What it implies in practice
 
-This usually requires three general capabilities, which should run parallel to each core agentic system:
+This usually requires two capabilities running alongside each Core Agentic System:
 
-1. **Feedback capture**: The system needs to capture and store the results of evals and feedback from humans in the loop.
+1. Feedback capture. The system captures and stores evaluation results, agent traces, human feedback such as corrections and accepted or rejected recommendations, tool failures, and production outcomes.
 
-1. **Improvement workflow**: Which turns captured feedback into proposed changes, for example through pull requests.
+2. An improvement workflow. The evidence can be interpreted by an AI system that proposes changes to the Core Agentic System. These may affect many parts of the system, such as its architecture, context, prompts, etc. These changes, which can be in the form of code to be integrated in production (e.g. a pull request), should be reviewed by a human and deployed. Changes should include documentation updates and communication to users on the improvements made, especially if the user will need to adjust to the workflow.
 
-1. **Governance**: For review, approval, documentation and user communication.
+The loop should initially be implemented in a smaller subsystem where the potential value is significant. Once the company understands how to run the whole feedback loop, the mechanism can be extended to other systems.
 
-One possible way to do this is to set up a daily or weekly loop that reviews the feedback, builds a PR, and has that PR reviewed and approved by the system owners and a power user.
+### Make the whole system queryable
 
-My recommendation is to start implementing the feedback loop in smaller subsystems before scaling it to the rest of the system, starting with one where the added value is significant.
+#### Why this principle
+
+One key feature of an AI-native company is the ability to ask questions across organizational boundaries through agents. This can bring significant clarity and speed to senior management.
+
+To make the answers trustworthy, the system should indicate where the information came from, when it was last updated, and where there is uncertainty or where sources conflict.
+
+#### What it implies in practice
+
+The foundation is the first principle: the quality of the context and the data foundations.
+
+Data catalogues accessible to agents, defined interfaces for retrieving information and communicating with other agents (such as [MCP](https://modelcontextprotocol.io/docs/getting-started/intro) and [A2A](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)), and ways to organize and retrieve unstructured information, such as RAG and the LLM-maintained wikis explained earlier, become very relevant.
+
+#### RAG, embeddings and vector databases
+
+[Retrieval-augmented generation (RAG)](https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html) is a way to give an LLM relevant information as context to answer a question. Instead of relying only on what the model learned during training, using the question of the user, the system searches an external collection of documents, and includes selected passages in the model’s context. The model then uses those passages to give its answer.
+
+A common implementation of a RAG system first divides documents into smaller pieces, called chunks. An AI model converts each chunk into a numeric vector, which encodes aspects of its meaning, called an embedding. The vectors are stored in a searchable index, a vector database, with links to the original text. When a user asks a question, the system first creates an embedding of that question and searches for nearby vectors stored in the embedding database. The corresponding chunks are retrieved and supplied to the LLM.
+
+For example, an employee could ask about the company’s travel policy. The system retrieves the relevant policy passages and gives them to the model so that it can answer and cite the source.
+
+A RAG system can solve a similar problem to that addressed by the LLM wiki, i.e. to provide meaningful context to the LLM. However, it does it by storing and indexing the raw information; it does not process it to get meaningful information.
+
+Agentic queryability is therefore the result of having reliable context, interoperability and permissions.
 
 ## Reliability principles
 
@@ -411,198 +427,162 @@ My recommendation is to start implementing the feedback loop in smaller subsyste
 
 #### Why this principle
 
-You will most probably use AI to enhance core processes. Before doing that, my recommendation is to understand the current quality level of the process.
-
-<blockquote class="pull-quote pull-right">
-  <p>We want to automate while maintaining or improving the current quality level.</p>
-</blockquote>
-
-By _quality level_, I mean a small scorecard that captures main metrics, such as outcome, cost, speed, safety… of the current process, including how these vary across relevant customer and case segments.
-
-This is important, because we want to automate while maintaining or improving the current quality level.
+The objective of an AI-first approach is to automate while improving or maintaining the process performance. We don’t want it to deteriorate. Hence, we need to measure a baseline before automating.
 
 #### What it implies in practice
 
-In practice, this means starting by collecting current quality metrics, or building systems to measure them if they are not available, before automating a process.
+By performance levels, in practice, we mean a scorecard containing the main dimensions of the workflow: outcome, cost, speed, quality… It should also show how performance varies across important customers and segments, because a single average can hide failures.
 
-AI can provide new ways of doing this. For example, imagine a clinic that wants to automate incoming calls using agents. Before automation, AI can transcribe the current service calls, and LLMs can help judge whether the caller question was resolved, if the answers provided comply with certain criteria, or even whether the emotion of both speakers suggests a good or bad interaction.
+The company should collect the current performance metrics. To do so, the data principles become very relevant once more, as without them building a simple dashboard can be ineffective.
 
-This gives the company a baseline against which the new AI-based process can be compared.
+AI can provide new relevant metrics that were not possible to collect before. Imagine a clinic that wants to automate incoming calls using agents. Before introducing the new system, AI could transcribe existing service calls. AI-based evaluations could help determine whether the caller’s question was resolved, whether the answers complied with the required criteria, and whether the interaction showed signs of customer frustration.
 
-### Evals, human-in-the-loop and continuous monitoring come before autonomy
+This gives the company a baseline against which the new AI-based process can be compared. It also prevents an automated workflow from being declared successful when in fact it is reducing the service quality.
+
+### Put evals, human oversight, and monitoring before giving autonomy
 
 #### Why this principle
 
-Once we have a quality baseline, we should evaluate the results of the new agentic workflows to ensure they are at the desired level.
-
-Autonomy should be earned gradually, not granted to an agent as a whole. A system should not be allowed to take important actions by itself just because it performs well in a demo or in a few selected examples. The system should also lose autonomy when quality degrades or an incident occurs.
-
-<blockquote class="pull-quote pull-left">
-  <p>Autonomy should be earned gradually.</p>
-</blockquote>
+Core Agentic Systems must be reliable. Hence, they need to be monitored as they are gradually given autonomy, to ensure that their results reach the required level.
 
 #### What it implies in practice
 
-There are three main ways to do this: evals, human-in-the-loop, and production monitoring.
+Autonomy should be earned gradually. A system should not be allowed to perform important actions because it works well in a controlled demonstration or in a few selected examples.
 
-Evals are ways of measuring the quality of the output of the agentic system or its parts. For example, one can evaluate deterministically whether a document has a certain format or contains specific fields. We can also evaluate whether it contains certain topics or whether the style falls under defined specifications using AI, for example with a classification model or an LLM-as-a-judge.
+The system should also lose autonomy when quality deteriorates or an incident occurs.
 
-We should also set error targets for these evals, and have systems that capture the errors and the corresponding inputs so they can serve as feedback loops.
+There are three main mechanisms: evals, human-in-the-loop, and production monitoring.
 
-Human-in-the-loop is a common design pattern in agentic systems where a human needs to provide input before the system continues. It is commonly used in critical systems when it is hard to evaluate the quality of the output systematically, or when the team does not trust the system yet.
+Some aspects can be evaluated deterministically, such as whether a document follows a required format or contains mandatory fields. Other aspects can be evaluated with AI, for example whether the content covers the required topics or follows a defined style.
 
-An example could be an AI agent that writes messages to customers on behalf of a person. That person will most likely want to review the messages, at least until there is enough evidence that the quality is high enough.
+Human-in-the-loop is a common agentic pattern in which a person must provide input or approval before the system continues. It is useful when the consequences are material, when quality is difficult to measure systematically, or when there is not yet enough evidence to trust the system.
 
-As with evals, one should always build a system to capture the feedback given. Did the human accept the proposal? If not, capture the output of the agent, the output of the human after modifications, and, if possible, brief feedback from the human explaining what was wrong.
+An agent that writes messages to customers, for example, may initially require the employee responsible for the relationship to review each message. The system should record whether the proposal was accepted. If it was modified, it should capture both the original output and the final human version and, where possible, a short explanation of what was wrong, to be used by the continuous-improvement workflow.
 
-<blockquote class="pull-quote pull-right">
-  <p>Quality should be continuously observed and improved, not only before launch.</p>
-</blockquote>
+Production monitoring (observability) complements evals and human review once the system is operating. Some failures appear only in real usage: unexpected inputs, changes in user behaviour, tool failures. Hence, when the system is built, production metrics should be made available, together with an incident management system when there is an issue.
 
-Production monitoring complements evals and human review once the system is running. Some failures only appear in real usage: unexpected inputs, changes in user behavior, tool failures, latency issues, cost increases, or quality degradation over time.
+#### Incident management systems
 
-For this reason, agentic workflows should be monitored with both technical and business metrics, such as success rate, escalation rate, user satisfaction, cost per task, latency, or downstream business impact.
+An Incident Management System (IMS) helps organizations detect, coordinate, and resolve unexpected disruptions to their services. Incidents may include a website outage, a payment system failure, or a sudden degradation in performance.
 
-Quality should be continuously observed and improved, not only before launch.
+An IMS coordinates the entire incident lifecycle: detecting problems, alerting engineers, assessing their severity, and tracking the resolution. Once the service is restored, it supports post-incident analysis to understand what went wrong and prevent similar failures.
+
+Modern IMS platforms integrate with monitoring tools, communication channels, and engineering workflows. Increasingly, AI agents can help investigate incidents and even execute remediation procedures.
+
+Agentic workflows should therefore be monitored through technical and business metrics such as success rate, user satisfaction, cost per task, latency, and downstream business impact.
+
+Quality should be continuously observed and improved during the life of the system.
 
 ### Security: avoid the lethal trifecta
 
 #### Why this principle
 
-The [lethal trifecta](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/), a term coined by Simon Willison, occurs when an agentic system can:
+The [lethal trifecta](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/), a term coined by Simon Willison, occurs when an agentic system can simultaneously:
 
 1. Access private data, such as passwords or confidential information.
 
-2. Use tools that expose agents to untrusted content, such as emails or webpages.
+2. Process untrusted content, such as emails or webpages.
 
-3. Send information externally, for example via email or by publishing on a social network.
+3. Send information externally, for example through email or a social network.
 
-LLMs follow written instructions. If these instructions are placed in content that is processed by LLMs (such as text in an image, hidden text on a website, or instructions embedded in an email) the model may follow those instructions and exfiltrate confidential information, if it has access to both the information and a way to send it out.
+LLMs follow written instructions. If malicious instructions are embedded in content processed by the model, such as hidden text on a website, instructions inside an email, or even text contained in an image, the model may follow them.
 
-This can happen whenever an agent reads your email, summarizes a website, or processes an image, video or audio file.
+If the agent also has access to confidential information and a mechanism for external communication, those instructions may cause it to disclose sensitive data. This can happen when an agent reads email, summarizes a website, or processes an image, video, or audio file.
 
 #### What it implies in practice
 
-Security must be part of the architecture from the beginning, not something added at the end. Some possible architectural implications are:
+Security must be part of the architecture from the beginning. Some of its architectural implications are:
 
-<blockquote class="pull-quote pull-left">
-  <p>Security must be part of the architecture from the beginning, not something added at the end.</p>
-</blockquote>
+- Agents should have the minimum access required for their task.
 
-- agents should have the minimum access required for their task;
+- Access to sensitive data should be separated from the processing of untrusted content where possible.
 
-- sensitive data access should be separated from untrusted content processing when possible;
+- External actions should be constrained or reviewed.
 
-- external actions should be constrained, reviewed or audited;
+- Critical operations should require human approval.
 
-- critical operations should require human approval;
+- Tools should be designed so that untrusted content cannot easily control privileged actions.
 
-- tools should be designed so that untrusted content cannot easily control privileged actions;
+In essence, prompt injection should be treated as an architectural problem, not only as a model-behaviour problem. I discuss related [design patterns for securing AI agents](https://manuelsh.github.io/blog/2026/summary-design-patterns-secure-ai-agents/).
 
-- prompt injection should be treated as a design problem, not only as a model behavior problem.
-
-I summarized some useful design patterns [in this article](https://manuelsh.github.io/blog/2026/summary-design-patterns-secure-ai-agents/).
-
-### Prioritize deterministic logic versus agentic judgement
+### Prefer deterministic logic where possible
 
 #### Why this principle
 
-When building AI systems, one can give AI agents tasks that could be done by deterministic logic, that is, by a simple algorithm. For tasks with explicit rules, using an LLM usually increases cost and latency, reduces predictability, and makes testing harder because outputs are probabilistic and may vary across runs or model versions.
+AI agents can be given tasks that could also be performed through deterministic logic, i.e. by explicit rules with conventional software.
 
-Not every task needs an LLM.
+For tasks with clear rules, using an LLM generally increases cost and latency, reduces predictability, and in consequence makes testing harder. Outputs may vary between runs or change when the underlying model is updated.
 
 #### What it implies in practice
 
 A good architecture should make the boundary between deterministic logic and agentic judgement explicit.
 
-Deterministic logic should be used for things such as permissions, schema validation, numerical calculations, mandatory fields, basic eligibility rules, and other cases where ordinary code is cheaper, faster and easier to test.
+Deterministic logic should normally be used for permissions, schema validation, numerical calculations, mandatory fields, stable eligibility rules, and other cases in which ordinary code is cheaper, faster, and easier to test.
 
-LLMs and agents are most useful when the task contains ambiguity: interpreting documents, identifying weak signals, comparing strategic fit, summarizing evidence, or proposing a course of action.
+LLMs and agents are most useful when the task contains ambiguity: interpreting documents, identifying signals, comparing evidence, assessing strategic fit, summarizing information, or proposing a course of action.
 
-For example, if we want to build a system that recommends a small set of options to every user, it may be tempting to take an LLM, provide some data about the user and the available options, and prompt it to recommend the best one.
+For example, a system that recommends a small set of options to a user could send all the available information to an LLM and ask it to choose. This may work as a first prototype, but it may suffer from latency, cost and unpredictability.
 
-As a first version, this may work. But it will suffer from speed, cost, unpredictability and lack of control. A better option may be to design a useful heuristic, use an AI model to infer user characteristics, or train a smaller machine learning model. There is a whole world beyond LLMs.
+A better production solution could use some heuristic, or even a machine learning model that infers relevant user characteristics to decide what to recommend. Since LLMs became mainstream, it seems that the community forgot that AI is much more than LLMs.
 
-### Enforce a single source of truth for each type of information
+An AI-native process should use the simplest mechanism.
+
+### Enforce a single source of truth
 
 #### Why this principle
 
-When building with AI, generating content becomes very easy. If one is careless, system documentation can quickly become duplicated.
+Generative AI makes producing documentation and other content very easy. If not controlled, it can duplicate that content in several places.
 
-Even in a single repository, agents may generate files like README.md, AGENTS.md or CONTRIBUTING.md, all containing information about the repository. If you do not have clear guidelines for what information goes into which file, or if you do not establish a principle of a single source of truth, duplication will appear. Over time, duplicated information may become incoherent and cause long-term problems, because it will be the wrong context for both humans and agents.
-
-<blockquote class="pull-quote pull-right">
-  <p>Over time, duplicated information may become incoherent and cause long-term problems, because it will be the wrong context for both humans and agents.</p>
-</blockquote>
+Over time, duplicated information may become inconsistent, hence incorrect context for both people and agents.
 
 #### What it implies in practice
 
-For every important type of information, there should be a defined canonical location.
+Governance becomes paramount. Every important type of information should have a defined canonical location and owner.
 
-This applies not only to software development, but also to running the company. Company decisions, data definitions, business rules, documentation, architectural choices, and operational procedures should have clear places where the authoritative version lives.
+This applies not only to software development but also to running the company. Decisions, data definitions, business rules, documentation, and policies should have clear places where their versions live.
 
-Derived representations may exist, but the system should know where the source of truth is, how it is refreshed, and who owns it.
+Derived representations of these documents may exist, but the system should know where the source of truth is and who owns it. Their provenance, derivation, refresh, and version history should be recorded explicitly.
 
-As part of the self-improvement loops, an architectural decision could be to have agents that review whether information is duplicated and, when they find duplicated or contradictory information, actively recommend the necessary changes.
+As a cleaning exercise, the continuous-improvement loop described before could also include agents that look for duplicated or contradictory information and recommend the necessary changes.
 
 # Other principles
 
-These AI-native principles complement established engineering and MLOps practices. Also, there are many other agentic best practices in the materials (referenced before, from [OpenAI](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) and [Anthropic](https://www.anthropic.com/engineering/building-effective-agents)) which should be part of the building principles. They address very relevant topics such as model selection, tools, guardrails, agent orchestration, etc. and are essential. They also give a very important recommendation: start small, validate with real users, and grow capabilities over time, including the right foundations.
+These principles complement established software-engineering, data, MLOps, and agent-design practices.
+
+Other principles remain essential: model selection, tool design, guardrails, orchestration, observability, testing, and the management of cost and latency. The practical agent guides published by [OpenAI](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) and [Anthropic](https://www.anthropic.com/engineering/building-effective-agents) provide useful recommendations in these areas.
+
+One of their most important recommendations is to start small, validate the system with real users, and expand its capabilities over time. The necessary foundations should grow with the use cases, always connected to value creation.
+
+The objective is to improve a business outcome rather than maximize the usage of AI. If a simpler technology produces a better result, the company should use it.
+
+# Case study: a software company
+
+Consider a company that produces and maintains software. That could range from a SaaS company to a digital consulting firm, or even an e-commerce business, where software is still a core part.
+
+Most probably, in such companies software developers already have access to tools that help them write code, such as Claude Code or OpenAI Codex. However, at this stage the additional productivity remains at the individual level, and its impact on the business is probably small. For real impact one needs to “level up” from the individual and think at workflow or team level.
+
+Following our playbook, we would first identify the workflows where automation could bring the most value. In my experience, three workflows are particularly relevant:
+
+1. From product idea to requirements. How does a business need become something a team can build? A product manager could use agents to investigate the problem, prepare requirements and even build a prototype. The output of this step could be a Product Requirements Document, which would make the handover from business to developers clearer.
+
+2. From requirements to production. Agents could turn requirements into an implementation plan (e.g. using requirement driven development). Once the plan is approved by an engineer, the code and tests will be implemented, and prepared for review before going to production. Automated checks can verify requirements, while humans could review depending on “blast radius”, i.e. based on the potential damage to the whole systems in case of an incident, or delegate to an AI agent and read the review.
+
+3. Production monitoring. This workflow covers the monitoring in production and the incident management system. The AI agent will proactively monitor the production system, prepare security and version updates when needed, and when there is an incident, try to find the root cause to help the engineer. In fact, this is a continuous feedback loop agent as described earlier.
+
+Once the workflows are identified, the required data foundation also becomes clear. Relevant context for the agents includes the objectives of each team, the roadmap, requirements, codebase and architecture decisions, engineering principles, and what has and has not worked. Many mature organizations record their architecture decisions systematically under documents called Architecture Decision Record.
+
+Before automating, the company should establish a baseline for each workflow: how long it takes on average and what quality it delivers, which can be measured by failures in deployments or later rework.
+
+Many companies follow an automation pattern based on where the bottleneck is. For software development, the first bottleneck is writing code. Once this is automated, the bottleneck moves to code review and production guardrails, then to setting product requirements and finally to the deployment system.
+
+In all of these automations, autonomy should be provided gradually, once the systems have demonstrated reliable performance and quality.
+
+The role of employees would also change. Product managers could actually build a prototype earlier, doing vibe coding, while engineers could supervise several agents and work on improving the whole workflow. Planning meetings could be prepared by AI. These changes require deliberate decisions, experimentation and coordination across the company.
 
 # Conclusion
 
-<blockquote class="pull-quote pull-left">
-  <p>Success in these types of projects relies on having the capacity to transform your company.</p>
-</blockquote>
+The four capabilities work together: reliable data and organizational knowledge provide context; agents and workflows perform business activities; query interfaces make information accessible across appropriate boundaries; and continuous improvement turns evidence into better systems.
 
-An AI-native company requires the coexistence of several layers: the context layer (based on data), the self-improvement loop layer (agentic), the queryable layer (agentic), and on top of that the layer of agents that performs the business activities. Without a deliberate design and governance, this coexistence may not be “peaceful”, and there is a risk that more harm than good is done.
-
-In fact, new agentic layers are being built in many companies. One must acknowledge that this is a learning path, and what works today may not work even in six months. So we shouldn’t be dogmatic about principles or design, and even less about specific tools, but let’s have a starting point that we can iterate from.
-
-Finally, system design is only one part of becoming AI-native. The other is organizational transformation: aligning leadership, roles, incentives, skills, governance, and ways of working so the technology can produce durable value. The central lesson is that the engineering and transformation tracks must be designed together, because neither succeeds alone.
-
-# References
-
-- Bek, J. (2026, March 5). _Services: The new software_. Sequoia Capital. [https://sequoiacap.com/article/services-the-new-software/](https://sequoiacap.com/article/services-the-new-software/)
-
-- Beurer-Kellner, L., Buesser, B., Creţu, A.-M., Debenedetti, E., Dobos, D., Fabian, D., Fischer, M., Froelicher, D., Grosse, K., Naeff, D., Ozoani, E., Paverd, A., Tramèr, F., & Volhejn, V. (2025). _Design patterns for securing LLM agents against prompt injections_ [Preprint]. arXiv. [https://doi.org/10.48550/arXiv.2506.08837](https://doi.org/10.48550/arXiv.2506.08837)
-
-- Breck, E., Cai, S., Nielsen, E., Salib, M., & Sculley, D. (2017). The ML test score: A rubric for ML production readiness and technical debt reduction. In _2017 IEEE International Conference on Big Data (Big Data)_ (pp. 1123–1132). IEEE. [https://doi.org/10.1109/BigData.2017.8258038](https://doi.org/10.1109/BigData.2017.8258038)
-
-- Debenedetti, E., Shumailov, I., Fan, T., Hayes, J., Carlini, N., Fabian, D., Kern, C., Shi, C., Terzis, A., & Tramèr, F. (2025). _Defeating prompt injections by design_ [Preprint]. arXiv. [https://doi.org/10.48550/arXiv.2503.18813](https://doi.org/10.48550/arXiv.2503.18813)
-
-- Dehghani, Z. (2020, December 3). _Data mesh principles and logical architecture_. MartinFowler.com. [https://martinfowler.com/articles/data-mesh-principles.html](https://martinfowler.com/articles/data-mesh-principles.html)
-
-- Hu, D. (2026, April 24). _The playbook for building an AI native company_ [Video]. Y Combinator. [https://www.ycombinator.com/library/OX-the-playbook-for-building-an-ai-native-company](https://www.ycombinator.com/library/OX-the-playbook-for-building-an-ai-native-company)
-
-- IEEE Computer Society. (n.d.). _Software Engineering Body of Knowledge (SWEBOK)_. [https://www.computer.org/education/bodies-of-knowledge/software-engineering](https://www.computer.org/education/bodies-of-knowledge/software-engineering)
-
-- Kreuzberger, D., Kühl, N., & Hirschl, S. (2023). Machine learning operations (MLOps): Overview, definition, and architecture. _IEEE Access, 11_, 31866–31879. [https://doi.org/10.1109/ACCESS.2023.3262138](https://doi.org/10.1109/ACCESS.2023.3262138)
-
-- Metzeler, F., Krawina, M., Jenkins, P., & Hillenbrand, P. (2026, June 11). _The seven operating truths of AI-native companies_. McKinsey & Company. [https://www.mckinsey.com/capabilities/business-building/our-insights/the-seven-operating-truths-of-ai-native-companies](https://www.mckinsey.com/capabilities/business-building/our-insights/the-seven-operating-truths-of-ai-native-companies)
-
-- Microsoft. (2025, April 23). _2025: The year the Frontier Firm is born_. [https://www.microsoft.com/en-us/worklab/work-trend-index/2025-the-year-the-frontier-firm-is-born](https://www.microsoft.com/en-us/worklab/work-trend-index/2025-the-year-the-frontier-firm-is-born)
-
-- Model Context Protocol. (n.d.). _What is the Model Context Protocol (MCP)?_ Retrieved July 15, 2026, from [https://modelcontextprotocol.io/docs/getting-started/intro](https://modelcontextprotocol.io/docs/getting-started/intro)
-
-- Mollick, Ethan. (2025, Dec 20). _The Shape of AI: Jaggedness, Bottlenecks and Salients_. [https://www.oneusefulthing.org/p/the-shape-of-ai-jaggedness-bottlenecks](https://www.oneusefulthing.org/p/the-shape-of-ai-jaggedness-bottlenecks)
-
-- OpenAI. (n.d.). _A practical guide to building agents_. [https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
-
-- Sánchez Hernández, M. (2026, June 21). _A summary of design patterns to secure AI agents_. [https://manuelsh.github.io/blog/2026/summary-design-patterns-secure-ai-agents/](https://manuelsh.github.io/blog/2026/summary-design-patterns-secure-ai-agents/)
-
-- Sánchez Hernández, M. (2026, March 9). _A Pragmatic Evaluation of Software Engineering AI Tooling_. [https://manuelsh.github.io/blog/2026/pragmatic-evaluation-ai-tooling/](https://manuelsh.github.io/blog/2026/pragmatic-evaluation-ai-tooling/)
-
-- Saper, J., Siniscalco, L., Nahar, R., Sial, K., & The Emergence Team. (2026, March 30). _The AI-native services playbook_. Emergence Capital. [https://www.emcap.com/thoughts/the-ai-native-services-playbook](https://www.emcap.com/thoughts/the-ai-native-services-playbook)
-
-- Schluntz, E., & Zhang, B. (2024, December 19). _Building effective agents_. Anthropic. [https://www.anthropic.com/engineering/building-effective-agents](https://www.anthropic.com/engineering/building-effective-agents)
-
-- Skelton, M., & Pais, M. (2025). _Team topologies: Organizing business and technology for fast flow of value_ (2nd ed.). IT Revolution. [https://itrevolution.com/product/team-topologies-second-edition/](https://itrevolution.com/product/team-topologies-second-edition/)
-
-- Surapaneni, R., Jha, M., Vakoc, M., & Segal, T. (2025, April 9). _Announcing the Agent2Agent Protocol (A2A)_. Google Developers Blog. [https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)
-
-- Tabassi, E. (2023). _Artificial intelligence risk management framework (AI RMF 1.0)_ (NIST AI 100-1). National Institute of Standards and Technology. [https://doi.org/10.6028/NIST.AI.100-1](https://doi.org/10.6028/NIST.AI.100-1)
-
-- Willison, S. (2025, June 16). _The lethal trifecta for AI agents: Private data, untrusted content, and external communication_. Simon Willison’s Weblog. [https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/)
+System design is only one part of becoming AI-native. The other is organizational transformation: aligning leadership, roles, incentives, skills, governance, and ways of working so that the technology can produce durable value. Both workstreams need to progress together.
 
 </div>
