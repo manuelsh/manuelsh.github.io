@@ -312,7 +312,7 @@ If building is the best option, there are many open-source tools available, free
 
 Becoming AI-native has significant implications for a business. In practice, it implies three changes:
 
-First, the company needs to identify which parts of its key processes can be performed reliably by AI. The frontier of what AI can do is expanding fast, but it is [jagged](https://doi.org/10.1287/orsc.2025.21838): a model may perform a complex task well and fail at another that appears very similar or even simpler. Hence, leaders cannot trust external generic benchmarks and should perform tests first-hand.
+First, the company needs to identify which parts of its key processes can be performed reliably by AI. The frontier of what AI can do is expanding fast, but it is [jagged](https://www.hbs.edu/ris/Publication%20Files/dell-acqua-et-al-2026-navigating-the-jagged-technological-frontier_5c589c8c-fbb5-458f-b285-c944746cd717.pdf): a model may perform a complex task well and fail at another that appears very similar or even simpler. Hence, leaders cannot trust external generic benchmarks and should perform tests first-hand.
 
 Second, the company needs a technology foundation that provides the data, access to tools and evaluations required by the redesigned processes.
 
@@ -340,16 +340,16 @@ These are especially important when AI agents can access critical company system
 
 <div class="principles-table" markdown="1">
 
-| Principle                                                                   | Summary                                                                                                                              |
-| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **Establish strong context and ownership before building agents**                           | Start each workflow with reliable context, explicit owners, quality expectations, and appropriate access controls.                   |
-| **Make the whole system queryable**                                    | Enable people and agents to ask questions across organizational boundaries, with clear permissions.                                  |
-| **Build a continuous-improvement loop**                                     | Capture eval results, human feedback, and production outcomes, then turn them into reviewable system improvements.                   |
-| **Measure a quality baseline before automating a process**                  | Establish outcome, cost, speed, and quality metrics for the current process so automation can be evaluated against real performance. |
+| Principle                                                             | Summary                                                                                                                              |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Establish strong context and ownership before building agents**     | Start each workflow with reliable context, explicit owners, quality expectations, and appropriate access controls.                   |
+| **Make the whole system queryable**                                   | Enable people and agents to ask questions across organizational boundaries, with clear permissions.                                  |
+| **Build a continuous-improvement loop**                               | Capture eval results, human feedback, and production outcomes, then turn them into reviewable system improvements.                   |
+| **Measure a quality baseline before automating a process**            | Establish outcome, cost, speed, and quality metrics for the current process so automation can be evaluated against real performance. |
 | **Put evals, human oversight, and monitoring before giving autonomy** | Grant autonomy gradually, based on evidence, and reduce it when quality degrades or incidents occur.                                 |
-| **Security: avoid the lethal trifecta**                                     | Use least privilege, isolate untrusted content, constrain external actions, and require approval for critical operations.            |
-| **Prefer deterministic logic where possible**                 | Use conventional code for predictable rules and reserve agents for tasks that genuinely require interpretation or judgement.         |
-| **Enforce a single source of truth**           | Define a canonical, owned, and maintained source for each important type of information to prevent duplication and contradictions.   |
+| **Security: avoid the lethal trifecta**                               | Use least privilege, isolate untrusted content, constrain external actions, and require approval for critical operations.            |
+| **Prefer deterministic logic where possible**                         | Use conventional code for predictable rules and reserve agents for tasks that genuinely require interpretation or judgement.         |
+| **Enforce a single source of truth**                                  | Define a canonical, owned, and maintained source for each important type of information to prevent duplication and contradictions.   |
 
 </div>
 
